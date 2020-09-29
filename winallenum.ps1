@@ -212,6 +212,8 @@ while($true){
     write-host " 215. Port forward all local addresses and all local ports to localhost and to specific local port v4 to v4";
     write-host " 222. Get Users about Service Principal Names (SPN) directory property for an Active Directory service account";
     write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file";
+    write-host "WEBDAV";
+    write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
     write-host " 158. davehardy20/Invoke-WinRMAttack`t`t`t`t159. d1pakda5/PowerShell-for-Pentesters/Code/44/Get-WinRMPassword";
     write-host "WMI";
@@ -448,6 +450,7 @@ while($true){
         '266' {Scarica "salu90/PSFPT/BruteForce-Basic-Auth" "BruteForce-Basic-Auth.ps1" "salu90/PSFPT/master/BruteForce-Basic-Auth.ps1"}
         '267' {Scarica "salu90/PSFPT/Exfiltrate" "Exfiltrate.ps1" "salu90/PSFPT/master/Exfiltrate.ps1"}
         '268' {Scarica "dafthack/MFASweep" "MFASweep.ps1" "dafthack/MFASweep/master/MFASweep.ps1"}
+        '269' {Scarica "p3nt4/Invoke-TmpDavFS" "Invoke-TmpDavFS.psm1" "p3nt4/Invoke-TmpDavFS/master/Invoke-TmpDavFS.psm1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
