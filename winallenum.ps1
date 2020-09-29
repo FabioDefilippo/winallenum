@@ -64,6 +64,8 @@ function ScaricaExt($TESTO, $FILENAME, $URL)
 while($true){
     write-host "winallenum, by FabioDefilippoSoftware";
     write-host "0. exit";
+    write-host "365";
+    write-host " 268. dafthack/MFASweep";
     write-host "ACTIVE DIRECTORY";
     write-host " 13. samratashok/nishang/ActiveDirectory`t`t`t50. BloodHoundAD/Ingestors/SharpHound`t`t`t51. PyroTek3/PowerShell-AD-Recon";
     write-host " 150. HarmJ0y/ASREPRoast`t`t`t`t`t152. Kevin-Robertson/Powermad`t`t`t`t`t156. AlsidOfficial/UncoverDCShadow";
@@ -445,6 +447,7 @@ while($true){
         '265' {Scarica "attactics/Invoke-DCOMPowerPointPivot" "Invoke-DCOMPowerPointPivot.ps1" "attactics/Invoke-DCOMPowerPointPivot/master/Invoke-DCOMPowerPointPivot.ps1"}
         '266' {Scarica "salu90/PSFPT/BruteForce-Basic-Auth" "BruteForce-Basic-Auth.ps1" "salu90/PSFPT/master/BruteForce-Basic-Auth.ps1"}
         '267' {Scarica "salu90/PSFPT/Exfiltrate" "Exfiltrate.ps1" "salu90/PSFPT/master/Exfiltrate.ps1"}
+        '268' {Scarica "dafthack/MFASweep" "MFASweep.ps1" "dafthack/MFASweep/master/MFASweep.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
