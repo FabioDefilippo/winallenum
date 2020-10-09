@@ -176,7 +176,7 @@ while($true){
     write-host "REVERSE ENGINEERING - DEBUGGING";
     write-host " 40. mattifestation/PowerShellArsenal/Disassembly`t`t41. mattifestation/PowerShellArsenal/MemoryTools`t43. mattifestation/PowerShellArsenal/Parsers";
     write-host " 44. mattifestation/PowerShellArsenal/WindowsInternals`t`t228. 0xd4d/dnSpy`t`t`t`t`t`t229. ollydbg.de/odbg110";
-    write-host " 230. rada.re/radare2-w32-2.2.0";
+    write-host " 230. rada.re/radare2-w32-2.2.0`t`t`t`t`t270. Decompile-Net-code";
     write-host "REVSHELL";
     write-host " 238. 3v4Si0N/HTTP-revshell/Invoke-WebRev`t`t`t239. 3v4Si0N/HTTP-revshell/Revshell-Generator`t`t240. besimorhino/powercat";
     write-host " 242. danielwolfmann/Invoke-WordThief";
@@ -451,6 +451,7 @@ while($true){
         '267' {Scarica "salu90/PSFPT/Exfiltrate" "Exfiltrate.ps1" "salu90/PSFPT/master/Exfiltrate.ps1"}
         '268' {Scarica "dafthack/MFASweep" "MFASweep.ps1" "dafthack/MFASweep/master/MFASweep.ps1"}
         '269' {Scarica "p3nt4/Invoke-TmpDavFS" "Invoke-TmpDavFS.psm1" "p3nt4/Invoke-TmpDavFS/master/Invoke-TmpDavFS.psm1"}
+        '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
