@@ -87,6 +87,8 @@ while($true){
     write-host " 178. nolvis/nolvis-cobol-tool/CobolTool";
     write-host "COVER TRACKING";
     write-host " 209. ivan-sincek/file-shredder";
+    write-host "DRIVER";
+    write-host " 271. FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys";
     write-host "DUMPING - EXTRACTING";
     write-host " 115. EmpireProject/Empire/credentials/Invoke-PowerDump`t`t116. PS-NTDSUTIL`t`t`t`t`t`t117. Get-MemoryDump";
     write-host " 118. peewpw/Invoke-WCMDump`t`t`t`t`t119. clymb3r/PowerShell/Invoke-Mimikatz`t`t`t120. sperner/PowerShell";
@@ -452,6 +454,7 @@ while($true){
         '268' {Scarica "dafthack/MFASweep" "MFASweep.ps1" "dafthack/MFASweep/master/MFASweep.ps1"}
         '269' {Scarica "p3nt4/Invoke-TmpDavFS" "Invoke-TmpDavFS.psm1" "p3nt4/Invoke-TmpDavFS/master/Invoke-TmpDavFS.psm1"}
         '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
+        '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
