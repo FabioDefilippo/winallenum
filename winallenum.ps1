@@ -75,14 +75,14 @@ while($true){
     write-host " 232. hyp3rlinx/DarkFinger-C2-Agent";
     write-host "ANALISYS";
     write-host " 30. sysinternals/NotMyFault`t`t`t`t`t31. sysinternals/Procdump`t`t`t`t`t32. sysinternals/PSTools";
-    write-host " 33. eternallybored.org/netcat-win32-1.12`t`t`t174. sysinternals/TCPView";
+    write-host " 174. sysinternals/TCPView";
     write-host "ANONYMIZATION";
     write-host " 234. torbrowser/9.5/tor-win64-0.4.3.5`t`t`t`t235. torbrowser/9.5/tor-win32-0.4.3.5";
     write-host "AZURE";
     write-host " 58. PrateekKumarSingh/AzViz`t`t`t`t`t153. hausec/PowerZure`t`t`t`t`t`t189. NetSPI/MicroBurst/Az";
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
     write-host "BACKDOOR";
-    write-host " 263. HarmJ0y/DAMP";
+    write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12";
     write-host "COBOL";
     write-host " 178. nolvis/nolvis-cobol-tool/CobolTool";
     write-host "COVER TRACKING";
@@ -151,7 +151,7 @@ while($true){
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails";
     write-host "MITM";
-    write-host " 163. Kevin-Robertson/Inveigh";
+    write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark";
     write-host "OSINT";
     write-host " 255. ecstatic-nobel/pOSINT";
     write-host "OWA";
@@ -455,6 +455,7 @@ while($true){
         '269' {Scarica "p3nt4/Invoke-TmpDavFS" "Invoke-TmpDavFS.psm1" "p3nt4/Invoke-TmpDavFS/master/Invoke-TmpDavFS.psm1"}
         '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
+        '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
