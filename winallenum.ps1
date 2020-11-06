@@ -151,7 +151,7 @@ while($true){
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails";
     write-host "MITM";
-    write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark";
+    write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host "OSINT";
     write-host " 255. ecstatic-nobel/pOSINT";
     write-host "OWA";
@@ -456,6 +456,7 @@ while($true){
         '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
         '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
+        '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
