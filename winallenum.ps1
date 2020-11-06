@@ -87,6 +87,8 @@ while($true){
     write-host " 178. nolvis/nolvis-cobol-tool/CobolTool";
     write-host "COVER TRACKING";
     write-host " 209. ivan-sincek/file-shredder";
+    write-host "DCOM";
+    write-host " 274. sud0woodo/DCOMrade";
     write-host "DRIVER";
     write-host " 271. FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys";
     write-host "DUMPING - EXTRACTING";
@@ -457,6 +459,7 @@ while($true){
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
         '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
         '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
+        '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "https://github.com/sud0woodo/DCOMrade/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
