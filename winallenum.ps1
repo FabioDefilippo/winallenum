@@ -137,7 +137,7 @@ while($true){
     write-host " 201. chryzsh/JenkinsPasswordSpray";
     write-host "KERBEROS";
     write-host " 37. mdavis332/DomainPasswordSpray/Invoke-DomainPasswordSpray`t38. mdavis332/DomainPasswordSpray/Get-DomainPasswordPolicy";
-    write-host " 39. mdavis332/DomainPasswordSpray/Get-DomainUserList`t`t134. nidem/kerberoast/master/GetUserSPNs.ps1";
+    write-host " 39. mdavis332/DomainPasswordSpray/Get-DomainUserList`t`t134. nidem/kerberoast/GetUserSPNs";
     write-host " 223. tmenochet/PowerSpray`t`t`t`t`t251. NotMedic/NetNTLMtoSilverTicket";
     write-host "LDAP";
     write-host " 145. Nillth/PWSH-LDAP/LDAP-Query`t`t`t`t147. dinigalab/ldapsearch";
@@ -459,7 +459,7 @@ while($true){
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
         '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
         '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
-        '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "https://github.com/sud0woodo/DCOMrade/archive/master.zip"}
+        '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
