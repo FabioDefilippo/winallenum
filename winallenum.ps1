@@ -170,7 +170,7 @@ while($true){
     write-host " 112. HarmJ0y/Misc-PowerShell/Invoke-WdigestDowngrade`t`t127. PowerShellMafia/PowerSploit/Privesc/Get-System`t143. FuzzySecurity/PowerShell-Suite/Bypass-UAC";
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host "RAT";
-    write-host " 213. FortyNorthSecurity/WMImplant";
+    write-host " 213. FortyNorthSecurity/WMImplant`t`t`t275. quasar/Quasar.v1.4.0";
     write-host "RDP";
     write-host " 146. 3gstudent/List-RDP-Connections-History";
     write-host "RECON";
@@ -460,6 +460,7 @@ while($true){
         '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
         '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
+        '275' {ScaricaSSL "quasar/Quasar.v1.4.0" "Quasar.v1.4.0.zip" "quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
