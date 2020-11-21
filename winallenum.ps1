@@ -461,7 +461,7 @@ while($true){
         '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
         '275' {ScaricaSSL "quasar/Quasar.v1.4.0" "Quasar.v1.4.0.zip" "quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip"}
-        '276' {$HFILE = read-host "Digit full path file to hash"; if(test-path $HFILE){$HALGO = read-host "Digit an hash algo"; if($HALGO -ne){certutil -hashfile $HFILE $HALGO}}}
+        '276' {$HFILE = read-host "Digit full path file to hash"; if(test-path $HFILE){$HALGO = read-host "Digit an hash algo"; if($HALGO -ne ""){certutil.exe -hashfile $HFILE $HALGO}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
