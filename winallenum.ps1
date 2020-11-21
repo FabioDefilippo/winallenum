@@ -128,9 +128,9 @@ while($true){
     write-host " 231. limbenjamin/nTimetools";
     write-host "GATHERING";
     write-host " 109. TonyPhipps/Meerkat/Modules`t`t`t`t16. samratashok/nishang/Gather`t`t`t`t`t184. dafthack/PowerMeta";
-    write-host "HOOKING - HIJACKING";
+    write-host "HOOKING - HIJACKING - INJECTION";
     write-host " 168. netbiosX/Digital-Signature-Hijack`t`t`t`t176. cyberark/DLLSpy-x64`t`t`t`t`t177. rapid7/DLLHijackAuditKit";
-    write-host " 246. nccgroup/acCOMplice";
+    write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection";
     write-host "HTTP";
     write-host " 266. salu90/PSFPT/BruteForce-Basic-Auth";
     write-host "JENKINS";
@@ -462,6 +462,7 @@ while($true){
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
         '275' {ScaricaSSL "quasar/Quasar.v1.4.0" "Quasar.v1.4.0.zip" "quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip"}
         '276' {$HFILE = read-host "Digit full path file to hash"; if(test-path $HFILE){$HALGO = read-host "Digit an hash algo"; if($HALGO -ne ""){certutil.exe -hashfile $HFILE $HALGO}}}
+        '277' {ScaricaSSL "antonioCoco/Mapping-Injection/1.3" "mapping_injection.zip" "antonioCoco/Mapping-Injection/releases/download/1.3/mapping_injection.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
