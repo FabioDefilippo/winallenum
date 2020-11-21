@@ -215,7 +215,7 @@ while($true){
     write-host " 214. Shred a file`t`t`t`t`t`t221. ActiveDirectory Enum";
     write-host " 215. Port forward all local addresses and all local ports to localhost and to specific local port v4 to v4";
     write-host " 222. Get Users about Service Principal Names (SPN) directory property for an Active Directory service account";
-    write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file";
+    write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file`t`t`t`t`t`t276. compute hash checksum of a file";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
@@ -461,6 +461,7 @@ while($true){
         '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
         '275' {ScaricaSSL "quasar/Quasar.v1.4.0" "Quasar.v1.4.0.zip" "quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip"}
+        '276' {$HFILE = read-host "Digit full path file to hash"; if(test-path $HFILE){$HALGO = read-host "Digit an hash algo"; if($HALGO -ne){certutil -hashfile $HFILE $HALGO}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
