@@ -151,7 +151,7 @@ while($true){
     write-host " 241. r00t-3xp10it/meterpeter`t`t`t`t`t243. InfosecMatter/Minimalistic-offensive-security-tools";
     write-host " 248. k8gege/PowerLadon`t`t`t`t`t`t252. BankSecurity/Red_Team`t`t`t`t`t253. cutaway-security/chaps";
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
-    write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails";
+    write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t278. ScorpionesLabs/DVS";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host "OSINT";
@@ -457,12 +457,13 @@ while($true){
         '269' {Scarica "p3nt4/Invoke-TmpDavFS" "Invoke-TmpDavFS.psm1" "p3nt4/Invoke-TmpDavFS/master/Invoke-TmpDavFS.psm1"}
         '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
-        '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
+        '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli.exe" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
         '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
         '275' {ScaricaSSL "quasar/Quasar.v1.4.0" "Quasar.v1.4.0.zip" "quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip"}
         '276' {$HFILE = read-host "Digit full path file to hash"; if(test-path $HFILE){$HALGO = read-host "Digit an hash algo"; if($HALGO -ne ""){certutil.exe -hashfile $HFILE $HALGO}}}
         '277' {ScaricaSSL "antonioCoco/Mapping-Injection/1.3" "mapping_injection.zip" "antonioCoco/Mapping-Injection/releases/download/1.3/mapping_injection.zip"}
+        '278' {ScaricaSSL "ScorpionesLabs/DVS" "DVS.zip" "ScorpionesLabs/DVS/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
