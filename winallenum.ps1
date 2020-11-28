@@ -115,6 +115,7 @@ while($true){
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
     write-host " 236. 360-Linton-Lab/WMIHACKER`t`t`t`t`t245. the-xentropy/xencrypt`t`t`t`t279. OmerYa/Invisi-Shell";
+    write-host " 280. lukebaggett/dnscat2-powershell";
     write-host "EXFILTRATION";
     write-host " 210. danielwolfmann/Invoke-WordThief/Invoke-WordThief`t`t267. salu90/PSFPT/Exfiltrate";
     write-host "EXPLOITATION";
@@ -466,6 +467,7 @@ while($true){
         '277' {ScaricaSSL "antonioCoco/Mapping-Injection/1.3" "mapping_injection.zip" "antonioCoco/Mapping-Injection/releases/download/1.3/mapping_injection.zip"}
         '278' {ScaricaSSL "ScorpionesLabs/DVS" "DVS.zip" "ScorpionesLabs/DVS/archive/master.zip"}
         '279' {ScaricaSSL "OmerYa/Invisi-Shell/InvisiShellProfiler" "InvisiShellProfiler.dll" "OmerYa/Invisi-Shell/raw/master/build/x64/Release/InvisiShellProfiler.dll"; Scarica "OmerYa/Invisi-Shell/RunWithPathAsAdmin" "RunWithPathAsAdmin.bat" "OmerYa/Invisi-Shell/master/RunWithPathAsAdmin.bat"; Scarica "OmerYa/Invisi-Shell/RunWithRegistryNonAdmin" "RunWithRegistryNonAdmin.bat" "OmerYa/Invisi-Shell/master/RunWithRegistryNonAdmin.bat"}
+        '280' {Scarica "lukebaggett/dnscat2-powershell" "dnscat2.ps1" "lukebaggett/dnscat2-powershell/master/dnscat2.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
