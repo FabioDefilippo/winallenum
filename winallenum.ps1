@@ -218,7 +218,7 @@ while($true){
     write-host " 215. Port forward all local addresses and all local ports to localhost and to specific local port v4 to v4";
     write-host " 222. Get Users about Service Principal Names (SPN) directory property for an Active Directory service account";
     write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file`t`t`t`t`t`t276. compute hash checksum of a file";
-    write-host " 282. attack a Domain or IP with username and password wordlist files";
+    write-host " 282. attack a Domain or IP with username and password wordlist files starting a remote powershell process";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
