@@ -145,6 +145,8 @@ while($true){
     write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain";
     write-host "MACRO";
     write-host " 130. 0xm4v3rick/Extract-Macro`t`t`t`t`t131. enigma0x3/Generate-Macro`t`t`t`t`t219. curi0usJack/luckystrike";
+    write-host "MEMCACHED";
+    write-host " 287. AdamDotCom/memcached-on-powershell";
     write-host "MISC";
     write-host " 19. FuzzySecurity/PowerShell-Suite`t`t`t`t42. mattifestation/PowerShellArsenal/Misc`t`t45. andrew-d/static-binaries/windows/x86";
     write-host " 46. andrew-d/static-binaries/windows/x64`t`t`t126. HarmJ0y/Misc-PowerShell`t`t`t`t`t160. S3cur3Th1sSh1t/WinPwn";
@@ -477,6 +479,7 @@ while($true){
         '284' {write-host "Digit a specific host or a smb name"; $LHST = read-host "(example, VM1 or empty for all)"; if($LHST -ne ""){Get-SmbShare -Name $LHST | Format-List -Property *}else{Get-SmbShare | Format-List -Property *}}
         '285' {write-host "Digit a specific path with extension"; $EXT = read-host "(example, *.xml)"; if($EXT -ne ""){write-host "Digit a regular expression, use a pipe to search more words"; $RGX = read-host "(example, passws|password)"; if($RGX -ne ""){get-childitem -recurse $EXT|select-string -pattern $RGX}}}
         '286' {Scarica "Viralmaniar/Remote-Desktop-Caching" "rdpcache.ps1" "Viralmaniar/Remote-Desktop-Caching-/master/rdpcache.ps1"}
+        '287' {Scarica "AdamDotCom/memcached-on-powershell" "memcached-on-powershell.ps1" "AdamDotCom/memcached-on-powershell/master/memcached-on-powershell.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
