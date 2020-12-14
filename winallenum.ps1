@@ -157,6 +157,7 @@ while($true){
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
+    write-host " 290. bettercap/bettercap";
     write-host "OSINT";
     write-host " 255. ecstatic-nobel/pOSINT";
     write-host "OWA";
@@ -482,6 +483,7 @@ while($true){
         '287' {Scarica "AdamDotCom/memcached-on-powershell" "memcached-on-powershell.ps1" "AdamDotCom/memcached-on-powershell/master/memcached-on-powershell.ps1"}
         '288' {ScaricaExt "technet.microsoft/scriptcenter/NLA" "NLA.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-9d66257a/file/150221/1/NLA.ps1"}
         '289' {nslookup myip.opendns.com resolver1.opendns.com}
+        '290' {ScaricaSSL "bettercap/bettercap" "bettercap_amd64_v2.28.zip" "https://github.com/bettercap/bettercap/releases/download/v2.28/bettercap_windows_amd64_v2.28.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
