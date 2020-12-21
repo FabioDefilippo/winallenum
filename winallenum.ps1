@@ -223,7 +223,8 @@ while($true){
     write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file`t`t`t`t`t`t276. compute hash checksum of a file";
     write-host " 282. attack a Domain or IP with username and password wordlist files starting a remote powershell process";
     write-host " 283. attack an IP and Domain with username and password wordlist files entering in a remote powershell session";
-    write-host " 284. list all smb shares or a specific share name`t`t`t285. search words in files`t`t`t`t`t`tprint my public ip";
+    write-host " 284. list all smb shares or a specific share name`t`t`t285. search words in files`t`t`t`t`t`t289. print my public ip";
+    write-host " 291. print my public ip (other method)";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
@@ -484,6 +485,7 @@ while($true){
         '288' {ScaricaExt "technet.microsoft/scriptcenter/NLA" "NLA.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-9d66257a/file/150221/1/NLA.ps1"}
         '289' {nslookup myip.opendns.com resolver1.opendns.com}
         '290' {ScaricaSSL "bettercap/bettercap" "bettercap_amd64_v2.28.zip" "bettercap/bettercap/releases/download/v2.28/bettercap_windows_amd64_v2.28.zip"}
+        '291' {$(Resolve-DnsName -Name myip.opendns.com -Server 208.67.222.220).​IPAddress}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
