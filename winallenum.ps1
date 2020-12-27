@@ -174,7 +174,7 @@ while($true){
     write-host " 29. itm4n/PrivescCheck`t`t`t`t`t`t60. PrintDemon PrivEsc";
     write-host " 112. HarmJ0y/Misc-PowerShell/Invoke-WdigestDowngrade`t`t127. PowerShellMafia/PowerSploit/Privesc/Get-System`t143. FuzzySecurity/PowerShell-Suite/Bypass-UAC";
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
-    write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck";
+    write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t`t`t298. pentestmonkey/windows-privesc-check";
     write-host "RAT";
     write-host " 213. FortyNorthSecurity/WMImplant`t`t`t275. quasar/Quasar.v1.4.0";
     write-host "RDP";
@@ -493,6 +493,7 @@ while($true){
         '295' {ScaricaSSL "Xservus/P0w3rSh3ll" "P0w3rSh3ll.zip" "Xservus/P0w3rSh3ll/archive/master.zip"}
         '296' {Scarica "threatexpress/red-team-scripts/HostEnum" "HostEnum.ps1" "threatexpress/red-team-scripts/master/HostEnum.ps1"}
         '297' {Scarica "silentsignal/wpc-ps/WindowsPrivescCheck" "WindowsPrivescCheck.psm1" "silentsignal/wpc-ps/master/WindowsPrivescCheck/WindowsPrivescCheck.psm1"}
+        '298' {ScaricaSSL "pentestmonkey/windows-privesc-check" "windows-privesc-check2.exe" "pentestmonkey/windows-privesc-check/raw/master/windows-privesc-check2.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
