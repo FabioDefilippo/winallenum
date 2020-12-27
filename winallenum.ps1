@@ -110,7 +110,7 @@ while($true){
     write-host " 7. hausec/ADAPE-Script`t`t`t`t`t`t8. frizb/Windows-Privilege-Escalation`t`t`t9. mattiareggiani/WinEnum";
     write-host " 56. TsukiCTF/Lovely-Potato/Invoke-LovelyPotato`t`t`t57. TsukiCTF/Lovely-Potato/JuicyPotato-Static";
     write-host " 155. HarmJ0y/WINspect`t`t`t`t`t`t161. Arvanaghi/SessionGopher`t`t`t`t`t207. dafthack/HostRecon";
-    write-host " 244. phackt/Invoke-Recon";
+    write-host " 244. phackt/Invoke-Recon`t`t`t`t`t`t292. Z3R0th-13/Enum";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
@@ -486,6 +486,7 @@ while($true){
         '289' {nslookup myip.opendns.com resolver1.opendns.com}
         '290' {ScaricaSSL "bettercap/bettercap" "bettercap_amd64_v2.28.zip" "bettercap/bettercap/releases/download/v2.28/bettercap_windows_amd64_v2.28.zip"}
         '291' {$(Resolve-DnsName -Name myip.opendns.com -Server 208.67.222.220).​IPAddress}
+        '292' {Scarica "Z3R0th-13/Enum" "Enum.ps1" "Z3R0th-13/Enum/master/Enum.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
