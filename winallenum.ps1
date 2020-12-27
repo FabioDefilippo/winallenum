@@ -111,6 +111,7 @@ while($true){
     write-host " 56. TsukiCTF/Lovely-Potato/Invoke-LovelyPotato`t`t`t57. TsukiCTF/Lovely-Potato/JuicyPotato-Static";
     write-host " 155. HarmJ0y/WINspect`t`t`t`t`t`t161. Arvanaghi/SessionGopher`t`t`t`t`t207. dafthack/HostRecon";
     write-host " 244. phackt/Invoke-Recon`t`t`t`t`t`t292. Z3R0th-13/Enum`t`t`t`t`t`t293. duckingtoniii/Powershell-Domain-User-Enumeration";
+    write-host " 294. Z3R0th-13/Profit";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
@@ -488,6 +489,7 @@ while($true){
         '291' {$(Resolve-DnsName -Name myip.opendns.com -Server 208.67.222.220).​IPAddress}
         '292' {Scarica "Z3R0th-13/Enum" "Enum.ps1" "Z3R0th-13/Enum/master/Enum.ps1"}
         '293' {Scarica "duckingtoniii/Powershell-Domain-User-Enumeration" "User_Enumeration.ps1" "duckingtoniii/Powershell-Domain-User-Enumeration/master/User_Enumeration.ps1"}
+        '294' {Scarica "Z3R0th-13/Profit" "Profit.ps1" "Z3R0th-13/Profit/master/Profit.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
