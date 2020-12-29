@@ -225,7 +225,7 @@ while($true){
     write-host " 282. attack a Domain or IP with username and password wordlist files starting a remote powershell process";
     write-host " 283. attack an IP and Domain with username and password wordlist files entering in a remote powershell session";
     write-host " 284. list all smb shares or a specific share name`t`t`t285. search words in files`t`t`t`t`t`t289. print my public ip";
-    write-host " 291. print my public ip (other method)`t`t`t299. get target ip net infos";
+    write-host " 291. print my public ip (other method)`t`t`t299. get target ip net infos`t`t`t`t`t300. get remote ip docker version";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
@@ -494,7 +494,8 @@ while($true){
         '296' {Scarica "threatexpress/red-team-scripts/HostEnum" "HostEnum.ps1" "threatexpress/red-team-scripts/master/HostEnum.ps1"}
         '297' {Scarica "silentsignal/wpc-ps/WindowsPrivescCheck" "WindowsPrivescCheck.psm1" "silentsignal/wpc-ps/master/WindowsPrivescCheck/WindowsPrivescCheck.psm1"}
         '298' {ScaricaSSL "pentestmonkey/windows-privesc-check" "windows-privesc-check2.exe" "pentestmonkey/windows-privesc-check/raw/master/windows-privesc-check2.exe"}
-        '299' {$TIP = read-host "Digit an IP to get its net infos"; if($IP -ne ""){ get-netipaddress -ipaddress $TIP | select-object}}
+        '299' {write-host "Digit an IP to get its net infos"; $TIP = read-host "(example, 192.168.1.10)"; if($IP -ne ""){get-netipaddress -ipaddress $TIP | select-object}}
+        '300' {write-host "Digit an IP with protocol to get docker version"; $TIP = read-host "(example, http://192.168.1.10)"; if($TIP -ne ""){try{invoke-webrequest -uri $TIP":3276/version"}catch{}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
