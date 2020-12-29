@@ -495,7 +495,7 @@ while($true){
         '297' {Scarica "silentsignal/wpc-ps/WindowsPrivescCheck" "WindowsPrivescCheck.psm1" "silentsignal/wpc-ps/master/WindowsPrivescCheck/WindowsPrivescCheck.psm1"}
         '298' {ScaricaSSL "pentestmonkey/windows-privesc-check" "windows-privesc-check2.exe" "pentestmonkey/windows-privesc-check/raw/master/windows-privesc-check2.exe"}
         '299' {write-host "Digit an IP to get its net infos"; $TIP = read-host "(example, 192.168.1.10)"; if($IP -ne ""){get-netipaddress -ipaddress $TIP | select-object}}
-        '300' {write-host "Digit an IP with protocol to get docker version"; $TIP = read-host "(example, http://192.168.1.10)"; if($TIP -ne ""){try{invoke-webrequest -uri $TIP":3276/version"}catch{}}}
+        '300' {write-host "Digit an IP with protocol to get docker version"; $TIP = read-host "(example, http://192.168.1.10)"; if($TIP -ne ""){try{invoke-webrequest -uri $TIP":2376/version"}catch{}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
 }
