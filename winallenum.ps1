@@ -500,4 +500,5 @@ while($true){
         '301' {write-host "Digit a target domain to get users infos via finger"; $TDMN = read-host "(example, example.com)"; if($TDMN -ne ""){finger -l "@$TDMN"}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
+    read-host "Press ENTER to continue";
 }
