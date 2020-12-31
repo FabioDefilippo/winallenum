@@ -510,7 +510,6 @@ while($true){
         '300' {write-host "Digit an IP with protocol to get docker version"; $TIP = read-host "(example, http://192.168.1.10)"; if($TIP -ne ""){try{invoke-webrequest -uri $TIP":2376/version"}catch{}}}
         '301' {write-host "Digit a target domain to get users infos via finger"; $TDMN = read-host "(example, example.com)"; if($TDMN -ne ""){finger -l "@$TDMN"}}
         '302' {write-host "Digit a file name of exploit"; $EXPL = read-host "(example, 123)"; if($EXPL -ne ""){ScaricaEDB $EXPL}}
-
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
