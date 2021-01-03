@@ -113,7 +113,7 @@ while($true){
     write-host " 187. sperner/PowerShell/Sniffer`t`t`t`t202. adnan-alhomssi/chrome-passwords`t`t`t203. haris989/Chrome-password-stealer";
     write-host " 204. kspearrin/ff-password-exporter/FF-Password-Exporter-Portable-1.2.0`t`t`t`t`t`t`t211. sec-1/gp3finder_v4.0";
     write-host " 237. gentilkiwi/2.2.0-20200917/mimikatz`t`t`t258. scipag/PowerShellUtilities/Invoke-MimikatzNetwork`t260. scipag/PowerShellUtilities/Select-MimikatzLocalAccounts";
-    write-host " 259. scipag/PowerShellUtilities/Select-MimikatzDomainAccounts";
+    write-host " 259. scipag/PowerShellUtilities/Select-MimikatzDomainAccounts`t`t`t`t307. nettitude/Invoke-PowerThIEf";
     write-host "ENUMERATION";
     write-host " 1. HarmJ0y/PowerUp`t`t`t`t`t`t2. absolomb/WindowsEnum`t`t`t`t`t`t3. Rasta-Mouse/Sherlock";
     write-host " 4. Enjoiz/Privesc`t`t`t`t`t`t5. 411Hall/Jaws-Enum`t`t`t`t`t`t6. carlospolop/winPEAS";
@@ -515,6 +515,7 @@ while($true){
         '304' {Scarica "kmkz/PowerShell/CLM-bypass" "CLM-bypass.ps1" "kmkz/PowerShell/master/CLM-bypass.ps1"}
         '305' {Scarica "kmkz/PowerShell/ole-payload-generator" "ole-payload-generator.ps1" "kmkz/PowerShell/master/ole-payload-generator.ps1"}
         '306' {Scarica "kmkz/PowerShell/Reverse-Shell" "Reverse-Shell.ps1" "kmkz/PowerShell/master/Reverse-Shell.ps1"}
+        '307' {Scarica "nettitude/Invoke-PowerThIEf" "Invoke-PowerThIEf.ps1" "nettitude/Invoke-PowerThIEf/master/Invoke-PowerThIEf.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
