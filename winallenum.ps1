@@ -133,6 +133,7 @@ while($true){
     write-host " 20. WindowsExploits/CVE-2012-0217/sysret`t`t`t21. WindowsExploits/CVE-2016-3309/bfill`t`t`t22. WindowsExploits/CVE-2016-3371/40429";
     write-host " 23. WindowsExploits/CVE-2016-7255/CVE-2016-7255`t`t24. WindowsExploits/CVE-2017-0213_x86`t`t`t25. WindowsExploits/CVE-2017-0213_x64";
     write-host " 26. EmpireProject/Empire/privesc`t`t`t`t27. EmpireProject/Empire/exploitation`t`t`t28. hausec/PowerZure";
+    write-host " 302. exploit-db all exploits";
     write-host "EXTRA";
     write-host " 181. gallery.technet.microsoft.com/scriptcenter/PS2EXE-Convert/PS2EXE`t`t`t`t`t`t`t`t192. NetSPI/MicroBurst/MSOL";
     write-host " 233. antonioCoco/Invoke-RunasCs";
@@ -185,7 +186,7 @@ while($true){
     write-host " 112. HarmJ0y/Misc-PowerShell/Invoke-WdigestDowngrade`t`t127. PowerShellMafia/PowerSploit/Privesc/Get-System`t143. FuzzySecurity/PowerShell-Suite/Bypass-UAC";
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t`t298. pentestmonkey/windows-privesc-check";
-    write-host " 302. exploit-db all exploits";
+    write-host " 305. kmkz/PowerShell/ole-payload-generator";
     write-host "RAT";
     write-host " 213. FortyNorthSecurity/WMImplant`t`t`t`t275. quasar/Quasar.v1.4.0";
     write-host "RDP";
@@ -512,6 +513,7 @@ while($true){
         '302' {write-host "Digit a file name of exploit"; $EXPL = read-host "(example, 123)"; if($EXPL -ne ""){ScaricaEDB $EXPL}}
         '303' {Scarica "kmkz/PowerShell/amsi-bypass" "amsi-bypass.ps1" "kmkz/PowerShell/master/amsi-bypass.ps1"}
         '304' {Scarica "kmkz/PowerShell/CLM-bypass" "CLM-bypass.ps1" "kmkz/PowerShell/master/CLM-bypass.ps1"}
+        '305' {Scarica "kmkz/PowerShell/ole-payload-generator" "ole-payload-generator.ps1" "kmkz/PowerShell/master/ole-payload-generator.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
