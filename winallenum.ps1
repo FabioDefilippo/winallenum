@@ -144,6 +144,7 @@ while($true){
     write-host "HOOKING - HIJACKING - INJECTION";
     write-host " 168. netbiosX/Digital-Signature-Hijack`t`t`t`t176. cyberark/DLLSpy-x64`t`t`t`t`t177. rapid7/DLLHijackAuditKit";
     write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection`t`t`t`t`t`t`t`t308. 3gstudent/CLR-Injection_x64";
+    write-host " 309. 3gstudent/CLR-Injection_x86";
     write-host "HTTP";
     write-host " 266. salu90/PSFPT/BruteForce-Basic-Auth";
     write-host "JENKINS";
@@ -517,6 +518,7 @@ while($true){
         '306' {Scarica "kmkz/PowerShell/Reverse-Shell" "Reverse-Shell.ps1" "kmkz/PowerShell/master/Reverse-Shell.ps1"}
         '307' {Scarica "nettitude/Invoke-PowerThIEf" "Invoke-PowerThIEf.ps1" "nettitude/Invoke-PowerThIEf/master/Invoke-PowerThIEf.ps1"}
         '308' {Scarica "3gstudent/CLR-Injection_x64" "CLR-Injection_x64.bat" "3gstudent/CLR-Injection/master/CLR-Injection_x64.bat"}
+        '309' {Scarica "3gstudent/CLR-Injection_x86" "CLR-Injection_x86.bat" "3gstudent/CLR-Injection/master/CLR-Injection_x86.bat"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
