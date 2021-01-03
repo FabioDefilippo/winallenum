@@ -201,7 +201,7 @@ while($true){
     write-host " 230. rada.re/radare2-w32-2.2.0`t`t`t`t`t270. Decompile-Net-code";
     write-host "REVSHELL";
     write-host " 238. 3v4Si0N/HTTP-revshell/Invoke-WebRev`t`t`t239. 3v4Si0N/HTTP-revshell/Revshell-Generator`t`t240. besimorhino/powercat";
-    write-host " 242. danielwolfmann/Invoke-WordThief";
+    write-host " 242. danielwolfmann/Invoke-WordThief`t`t`t`t306. kmkz/PowerShell/Reverse-Shell";
     write-host "SCANNING";
     write-host " 47. nmap.org/nmap-7.80-win32`t`t`t`t`t17. samratashok/nishang/Scan";
     write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus";
@@ -514,6 +514,7 @@ while($true){
         '303' {Scarica "kmkz/PowerShell/amsi-bypass" "amsi-bypass.ps1" "kmkz/PowerShell/master/amsi-bypass.ps1"}
         '304' {Scarica "kmkz/PowerShell/CLM-bypass" "CLM-bypass.ps1" "kmkz/PowerShell/master/CLM-bypass.ps1"}
         '305' {Scarica "kmkz/PowerShell/ole-payload-generator" "ole-payload-generator.ps1" "kmkz/PowerShell/master/ole-payload-generator.ps1"}
+        '306' {Scarica "kmkz/PowerShell/Reverse-Shell" "Reverse-Shell.ps1" "kmkz/PowerShell/master/Reverse-Shell.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
