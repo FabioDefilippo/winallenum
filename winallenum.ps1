@@ -126,7 +126,7 @@ while($true){
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
     write-host " 236. 360-Linton-Lab/WMIHACKER`t`t`t`t`t245. the-xentropy/xencrypt`t`t`t`t279. OmerYa/Invisi-Shell";
-    write-host " 280. lukebaggett/dnscat2-powershell";
+    write-host " 280. lukebaggett/dnscat2-powershell`t`t`t`t303. kmkz/PowerShell/amsi-bypass";
     write-host "EXFILTRATION";
     write-host " 210. danielwolfmann/Invoke-WordThief/Invoke-WordThief`t`t267. salu90/PSFPT/Exfiltrate";
     write-host "EXPLOITATION";
@@ -510,6 +510,7 @@ while($true){
         '300' {write-host "Digit an IP with protocol to get docker version"; $TIP = read-host "(example, http://192.168.1.10)"; if($TIP -ne ""){try{invoke-webrequest -uri $TIP":2376/version"}catch{}}}
         '301' {write-host "Digit a target domain to get users infos via finger"; $TDMN = read-host "(example, example.com)"; if($TDMN -ne ""){finger -l "@$TDMN"}}
         '302' {write-host "Digit a file name of exploit"; $EXPL = read-host "(example, 123)"; if($EXPL -ne ""){ScaricaEDB $EXPL}}
+        '303' {Scarica "kmkz/PowerShell/amsi-bypass" "amsi-bypass.ps1" "kmkz/PowerShell/master/amsi-bypass.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
