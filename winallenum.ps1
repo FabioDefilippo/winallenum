@@ -144,7 +144,7 @@ while($true){
     write-host "HOOKING - HIJACKING - INJECTION";
     write-host " 168. netbiosX/Digital-Signature-Hijack`t`t`t`t176. cyberark/DLLSpy-x64`t`t`t`t`t177. rapid7/DLLHijackAuditKit";
     write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection`t`t`t`t`t`t`t`t308. 3gstudent/CLR-Injection_x64";
-    write-host " 309. 3gstudent/CLR-Injection_x86";
+    write-host " 309. 3gstudent/CLR-Injection_x86`t`t`t`t310. 3gstudent/COM-Object-hijacking";
     write-host "HTTP";
     write-host " 266. salu90/PSFPT/BruteForce-Basic-Auth";
     write-host "JENKINS";
@@ -519,6 +519,7 @@ while($true){
         '307' {Scarica "nettitude/Invoke-PowerThIEf" "Invoke-PowerThIEf.ps1" "nettitude/Invoke-PowerThIEf/master/Invoke-PowerThIEf.ps1"}
         '308' {Scarica "3gstudent/CLR-Injection_x64" "CLR-Injection_x64.bat" "3gstudent/CLR-Injection/master/CLR-Injection_x64.bat"}
         '309' {Scarica "3gstudent/CLR-Injection_x86" "CLR-Injection_x86.bat" "3gstudent/CLR-Injection/master/CLR-Injection_x86.bat"}
+        '310' {Scarica "3gstudent/COM-Object-hijacking" "COM-Object-hijacking-persistence.ps1" "3gstudent/COM-Object-hijacking/master/COM%20Object%20hijacking%20persistence.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
