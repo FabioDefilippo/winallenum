@@ -114,7 +114,7 @@ while($true){
     write-host " 204. kspearrin/ff-password-exporter/FF-Password-Exporter-Portable-1.2.0`t`t`t`t`t`t`t211. sec-1/gp3finder_v4.0";
     write-host " 237. gentilkiwi/2.2.0-20200917/mimikatz`t`t`t258. scipag/PowerShellUtilities/Invoke-MimikatzNetwork`t260. scipag/PowerShellUtilities/Select-MimikatzLocalAccounts";
     write-host " 259. scipag/PowerShellUtilities/Select-MimikatzDomainAccounts`t`t`t`t307. nettitude/Invoke-PowerThIEf";
-    write-host " 311. 3gstudent/Winpcap_Install";
+    write-host " 311. 3gstudent/Winpcap_Install`t`t`t`t312. 3gstudent/Dump-Clear-Password-after-KB2871997-installed";
     write-host "ENUMERATION";
     write-host " 1. HarmJ0y/PowerUp`t`t`t`t`t`t2. absolomb/WindowsEnum`t`t`t`t`t`t3. Rasta-Mouse/Sherlock";
     write-host " 4. Enjoiz/Privesc`t`t`t`t`t`t5. 411Hall/Jaws-Enum`t`t`t`t`t`t6. carlospolop/winPEAS";
@@ -522,6 +522,7 @@ while($true){
         '309' {Scarica "3gstudent/CLR-Injection_x86" "CLR-Injection_x86.bat" "3gstudent/CLR-Injection/master/CLR-Injection_x86.bat"}
         '310' {Scarica "3gstudent/COM-Object-hijacking" "COM-Object-hijacking-persistence.ps1" "3gstudent/COM-Object-hijacking/master/COM%20Object%20hijacking%20persistence.ps1"}
         '311' {ScaricaSSL "3gstudent/Winpcap_Install" "Winpcap.zip" "3gstudent/Winpcap_Install/archive/master.zip"}
+        '312' {Scarica "3gstudent/Dump-Clear-Password-after-KB2871997-installed" "dump.ps1" "3gstudent/Dump-Clear-Password-after-KB2871997-installed/master/dump.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
