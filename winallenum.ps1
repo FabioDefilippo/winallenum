@@ -220,6 +220,8 @@ while($true){
     write-host " 148. NetSPI/PowerUpSQL`t`t`t`t`t`t206. nullbind/Powershellery/Stable-ish/MSSQL/Invoke-SqlServer-Escalate-Dbowner";
     write-host "SSH";
     write-host " 104. InfosecMatter/SSH-PuTTY-login-bruteforcer";
+    write-host "TEXT EDITOR";
+    write-host " 314. zyedidia/micro/v2.0.8-win32";
     write-host "TUNNELING - FORWARDING";
     write-host " 34. T3rry7f/ICMPTunnel/IcmpTunnel_C`t`t`t`t35. T3rry7f/ICMPTunnel/IcmpTunnel_C_64`t`t`t144. Kevin-Robertson/Inveigh/Inveigh-Relay";
     write-host " 169. deepzec/Win-PortFwd`t`t`t`t`t249. p3nt4/Invoke-SocksProxy";
@@ -525,6 +527,7 @@ while($true){
         '311' {ScaricaSSL "3gstudent/Winpcap_Install" "Winpcap.zip" "3gstudent/Winpcap_Install/archive/master.zip"}
         '312' {Scarica "3gstudent/Dump-Clear-Password-after-KB2871997-installed" "dump.ps1" "3gstudent/Dump-Clear-Password-after-KB2871997-installed/master/dump.ps1"}
         '313' {ScaricaExt "chocolatey" "install.ps1" "https://chocolatey.org/install.ps1"}
+        '314' {ScaricaSSL "zyedidia/micro/v2.0.8-win32" "micro-2.0.8-win32.zip" "zyedidia/micro/releases/download/v2.0.8/micro-2.0.8-win32.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
