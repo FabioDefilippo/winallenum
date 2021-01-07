@@ -155,7 +155,7 @@ while($true){
     write-host " 39. mdavis332/DomainPasswordSpray/Get-DomainUserList`t`t134. nidem/kerberoast/GetUserSPNs";
     write-host " 223. tmenochet/PowerSpray`t`t`t`t`t251. NotMedic/NetNTLMtoSilverTicket";
     write-host "LDAP";
-    write-host " 145. Nillth/PWSH-LDAP/LDAP-Query`t`t`t`t147. dinigalab/ldapsearch";
+    write-host " 145. Nillth/PWSH-LDAP/LDAP-Query`t`t`t`t147. dinigalab/ldapsearch`t`t`t`t`t318. roggenk/PowerShell/LDAPS";
     write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain";
     write-host "MACRO";
     write-host " 130. 0xm4v3rick/Extract-Macro`t`t`t`t`t131. enigma0x3/Generate-Macro`t`t`t`t`t219. curi0usJack/luckystrike";
@@ -531,6 +531,7 @@ while($true){
         '315' {ScaricaSSL "zyedidia/micro/v2.0.8-win64" "micro-2.0.8-win64.zip" "zyedidia/micro/releases/download/v2.0.8/micro-2.0.8-win64.zip"}
         '316' {Scarica "canix1/ADACLScanner" "ADACLScan.ps1" "canix1/ADACLScanner/master/ADACLScan.ps1"}
         '317' {ScaricaSSL "cyberark/ACLight" "ACLight.zip" "cyberark/ACLight/archive/master.zip"}
+        '318' {Scarica "roggenk/PowerShell/LDAPS" "LDAPS.ps1" "roggenk/PowerShell/master/LDAPS/LDAPS.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
