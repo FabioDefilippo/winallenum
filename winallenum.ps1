@@ -80,7 +80,7 @@ while($true){
     write-host " 13. samratashok/nishang/ActiveDirectory`t`t`t50. BloodHoundAD/Ingestors/SharpHound`t`t`t51. PyroTek3/PowerShell-AD-Recon";
     write-host " 150. HarmJ0y/ASREPRoast`t`t`t`t`t152. Kevin-Robertson/Powermad`t`t`t`t`t156. AlsidOfficial/UncoverDCShadow";
     write-host " 157. clr2of8/parse-net-users-bat`t`t`t`t165. leoloobeek/LAPSToolkit`t`t`t`t`t166. sense-of-security/ADRecon";
-    write-host " 264. phillips321/adaudit";
+    write-host " 264. phillips321/adaudit`t`t`t`t`t316. canix1/ADACLScanner";
     write-host "AGENTS";
     write-host " 232. hyp3rlinx/DarkFinger-C2-Agent";
     write-host "ANALISYS";
@@ -529,6 +529,7 @@ while($true){
         '313' {ScaricaExt "chocolatey" "install.ps1" "https://chocolatey.org/install.ps1"}
         '314' {ScaricaSSL "zyedidia/micro/v2.0.8-win32" "micro-2.0.8-win32.zip" "zyedidia/micro/releases/download/v2.0.8/micro-2.0.8-win32.zip"}
         '315' {ScaricaSSL "zyedidia/micro/v2.0.8-win64" "micro-2.0.8-win64.zip" "zyedidia/micro/releases/download/v2.0.8/micro-2.0.8-win64.zip"}
+        '316' {Scarica "canix1/ADACLScanner" "ADACLScan.ps1" "canix1/ADACLScanner/master/ADACLScan.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
