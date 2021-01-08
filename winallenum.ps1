@@ -196,6 +196,8 @@ while($true){
     write-host " 146. 3gstudent/List-RDP-Connections-History`t`t`t286. Viralmaniar/Remote-Desktop-Caching`t`t`t288. technet.microsoft/scriptcenter/NLA";
     write-host "RECON";
     write-host " 49. PowerShellMafia/PowerSploit/Recon`t`t`t`t167. xorrior/RemoteRecon";
+    write-host "REG KEYS";
+    write-host " 319. microsoft/scriptcenter/GetRegistryKeyLastWriteTimeAndClassName";
     write-host "REST";
     write-host " 194. NetSPI/MicroBurst/REST";
     write-host "REVERSE ENGINEERING - DEBUGGING";
@@ -532,6 +534,7 @@ while($true){
         '316' {Scarica "canix1/ADACLScanner" "ADACLScan.ps1" "canix1/ADACLScanner/master/ADACLScan.ps1"}
         '317' {ScaricaSSL "cyberark/ACLight" "ACLight.zip" "cyberark/ACLight/archive/master.zip"}
         '318' {Scarica "roggenk/PowerShell/LDAPS" "LDAPS.ps1" "roggenk/PowerShell/master/LDAPS/LDAPS.ps1"}
+319' {ScaricaExt "microsoft/scriptcenter/GetRegistryKeyLastWriteTimeAndClassName" "GetRegistryKeyLastWriteTimeAndClassName.zip" "https://gallery.technet.microsoft.com/scriptcenter/Get-Last-Write-Time-and-06dcf3fb/file/106244/1/GetRegistryKeyLastWriteTimeAndClassName.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
