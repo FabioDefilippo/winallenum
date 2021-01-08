@@ -190,6 +190,7 @@ while($true){
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t`t298. pentestmonkey/windows-privesc-check";
     write-host " 305. kmkz/PowerShell/ole-payload-generator";
+    write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
     write-host " 213. FortyNorthSecurity/WMImplant`t`t`t`t275. quasar/Quasar.v1.4.0";
