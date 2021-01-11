@@ -247,7 +247,7 @@ while($true){
     write-host " 283. attack an IP and Domain with username and password wordlist files entering in a remote powershell session";
     write-host " 284. list all smb shares or a specific share name`t`t285. search words in files`t`t`t`t`t289. print my public ip method 1";
     write-host " 291. print my public ip method 2`t`t`t`t299. get target ip net infos`t`t`t`t`t300. get remote ip docker version";
-    write-host " 301. get all remote users infos via finger";
+    write-host " 301. get all remote users infos via finger`t`t`t321. import an xml file to dump credentials";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
@@ -538,6 +538,7 @@ while($true){
         '318' {Scarica "roggenk/PowerShell/LDAPS" "LDAPS.ps1" "roggenk/PowerShell/master/LDAPS/LDAPS.ps1"}
         '319' {ScaricaExt "microsoft/scriptcenter/GetRegistryKeyLastWriteTimeAndClassName" "GetRegistryKeyLastWriteTimeAndClassName.zip" "https://gallery.technet.microsoft.com/scriptcenter/Get-Last-Write-Time-and-06dcf3fb/file/106244/1/GetRegistryKeyLastWriteTimeAndClassName.zip"}
         '320' {Scarica "wavestone-cdt/powerpxe" "PowerPXE.ps1" "wavestone-cdt/powerpxe/master/PowerPXE.ps1"}
+        '321' {write-host "Digit a xml file fullpath"; $XFL=read-host "(example, admin.xml)"; if(test-path $XFL){$XML=Import-CliXml -Path $XFL; $XML.GetNetworkCredential().Password; select-string -pattern "UserName" $XFL; write-host "Digit the username"; $USRN=read-host "(example, admin)"; if($USRN -ne ""){$XML.GetNetworkCredential().$USRN}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
