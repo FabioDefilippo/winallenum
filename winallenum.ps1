@@ -248,13 +248,13 @@ while($true){
     write-host " 284. list all smb shares or a specific share name`t`t285. search words in files`t`t`t`t`t289. print my public ip method 1";
     write-host " 291. print my public ip method 2`t`t`t`t299. get target ip net infos`t`t`t`t`t300. get remote ip docker version";
     write-host " 301. get all remote users infos via finger`t`t`t321. import an xml file to dump credentials";
-    write-host " 322. simple TCP port scan`t`t`t`t`t323. check adminless mode enabled`t`t`t`t`t325. os and arch";
+    write-host " 322. simple TCP port scan`t`t`t`t`t323. check adminless mode enabled`t`t`t`t325. os and arch";
     write-host " 326. envi vars`t`t`t`t`t`t`t327. connected drives`t`t`t`t`t`t328. privileges";
-    write-host " 329. other users`t`t`t`t`t`t330. list all groups`t`t331. list all admins";
-    write-host " 332. user autologon`t`t`t`t`t`t333. dump from Cred man`t`t`t`t334. check access to SAM and SYSTEM files";
+    write-host " 329. other users`t`t`t`t`t`t330. list all groups`t`t`t`t`t`t331. list all admins";
+    write-host " 332. user autologon`t`t`t`t`t`t333. dump from Cred man`t`t`t`t`t`t334. check access to SAM and SYSTEM files";
     write-host " 335. list all softwares installed`t`t`t`t336. use accesschk`t`t`t`t`t`t337. unquoted service path";
-    write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t340. check AlwaysInstallElevated enabled";
-    write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t343. sysprep or unattend files";
+    write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t`t`t340. check AlwaysInstallElevated enabled";
+    write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
