@@ -554,7 +554,7 @@ while($true){
         '327' {Get-PSDrive | where {$_.Provider -like "Microsoft.PowerShell.Core\FileSystem"}| ft Name,Root}
         '328' {whoami /priv}
         '329' {Get-LocalUser | ft Name,Enabled,LastLogon; Get-ChildItem C:\Users -Force | select Name; qwinsta}
-        '330' {Get-LocalGroup | ft Name}
+        '330' {net localgroup}
         '331' {Get-LocalGroupMember Administrators | ft Name, PrincipalSource}
         '332' {Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WinLogon' | select "Default*"}
         '333' {Get-ChildItem -Hidden C:\Users\username\AppData\Local\Microsoft\Credentials\; Get-ChildItem -Hidden C:\Users\username\AppData\Roaming\Microsoft\Credentials\}
