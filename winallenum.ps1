@@ -248,7 +248,13 @@ while($true){
     write-host " 284. list all smb shares or a specific share name`t`t285. search words in files`t`t`t`t`t289. print my public ip method 1";
     write-host " 291. print my public ip method 2`t`t`t`t299. get target ip net infos`t`t`t`t`t300. get remote ip docker version";
     write-host " 301. get all remote users infos via finger`t`t`t321. import an xml file to dump credentials";
-    write-host " 322. simple TCP port scan`t`t`t`t`t323. check adminless mode enabled";
+    write-host " 322. simple TCP port scan`t`t`t`t`t323. check adminless mode enabled`t`t`t`t`t325. os and arch";
+    write-host " 326. envi vars`t`t`t`t`t`t327. connected drives`t`t328. privileges";
+    write-host " 329. other users`t`t`t`t`t`t330. list all groups`t`t331. list all admins";
+    write-host " 332. user autologon`t`t`t`t`t`t333. dump from Cred man`t`t`t`t334. check access to SAM and SYSTEM files";
+    write-host " 335. list all softwares installed`t`t`t`t336. use accesschk`t`t`t`t`t`t337. unquoted service path";
+    write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t340. check AlwaysInstallElevated enabled";
+    write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t343. sysprep or unattend files";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
@@ -543,6 +549,25 @@ while($true){
         '322' {write-host "Digit an IP target"; $TIP=read-host "(example, 192.168.1.188)"; if($TIP -ne ""){for($PORT=0; $PORT -le 65536; $PORT++){try{if((new-object system.net.sockets.tcpclient($TIP, $PORT)).connected){write-host $TIP":"$PORT" open"}}catch{}}}}
         '323' {[NtApiDotNet.NtSystemInfo]::CodeIntegrityPolicy}
         '324' {ScaricaExt "sysinternals/AccessChk" "AccessChk.zip" "https://download.sysinternals.com/files/AccessChk.zip"}
+        '325' {systeminfo; wmic qfe}
+        '326' {Get-ChildItem Env: | ft Key,Value}
+        '327' {Get-PSDrive | where {$_.Provider -like "Microsoft.PowerShell.Core\FileSystem"}| ft Name,Root}
+        '328' {whoami /priv}
+        '329' {Get-LocalUser | ft Name,Enabled,LastLogon; Get-ChildItem C:\Users -Force | select Name; qwinsta}
+        '330' {Get-LocalGroup | ft Name}
+        '331' {Get-LocalGroupMember Administrators | ft Name, PrincipalSource}
+        '332' {Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WinLogon' | select "Default*"}
+        '333' {Get-ChildItem -Hidden C:\Users\username\AppData\Local\Microsoft\Credentials\; Get-ChildItem -Hidden C:\Users\username\AppData\Roaming\Microsoft\Credentials\}
+        '334' {cmd.exe /c '%SYSTEMROOT%\repair\SAM && %SYSTEMROOT%\System32\config\RegBack\SAM && %SYSTEMROOT%\System32\config\SAM && %SYSTEMROOT%\repair\system && %SYSTEMROOT%\System32\config\SYSTEM && %SYSTEMROOT%\System32\config\RegBack\system'}
+        '335' {Get-ChildItem 'C:\Program Files', 'C:\Program Files (x86)' | ft Parent,Name,LastWriteTime; Get-ChildItem -path Registry::HKEY_LOCAL_MACHINE\SOFTWARE | ft Name}
+        '336' {cmd.exe /c 'accesschk.exe -qwsu "Everyone" * && accesschk.exe -qwsu "Authenticated Users" * && accesschk.exe -qwsu "Users" *'}
+        '337' {gwmi -class Win32_Service -Property Name, DisplayName, PathName, StartMode | Where {$_.StartMode -eq "Auto" -and $_.PathName -notlike "C:\Windows*" -and $_.PathName -notlike '"*'} | select PathName,DisplayName,Name}
+        '338' {Get-ScheduledTask | where {$_.TaskPath -notlike "\Microsoft*"} | ft TaskName,TaskPath,State}
+        '339' {Get-CimInstance Win32_StartupCommand | select Name, command, Location, User | fl; Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run'; Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce'; Get-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run'; Get-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce'; Get-ChildItem "C:\Users\All Users\Start Menu\Programs\Startup"; Get-ChildItem "C:\Users\$env:USERNAME\Start Menu\Programs\Startup"}
+        '340' {reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated}
+        '341' {reg query HKLM\SYSTEM\CurrentControlSet\Services\SNMP /s}
+        '342' {reg query HKCU /f password /t; REG_SZ /s; reg query HKLM /f password /t REG_SZ /s}
+        '343' {Get-Childitem –Path C:\ -Include *unattend*,*sysprep* -File -Recurse -ErrorAction SilentlyContinue | where {($_.Name -like "*.xml" -or $_.Name -like "*.txt" -or $_.Name -like "*.ini")}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
