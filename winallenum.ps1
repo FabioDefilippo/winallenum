@@ -189,7 +189,7 @@ while($true){
     write-host " 112. HarmJ0y/Misc-PowerShell/Invoke-WdigestDowngrade`t`t127. PowerShellMafia/PowerSploit/Privesc/Get-System`t143. FuzzySecurity/PowerShell-Suite/Bypass-UAC";
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t`t298. pentestmonkey/windows-privesc-check";
-    write-host " 305. kmkz/PowerShell/ole-payload-generator";
+    write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk";
     write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
@@ -542,6 +542,7 @@ while($true){
         '321' {write-host "Digit a xml file fullpath"; $XFL=read-host "(example, admin.xml)"; if(test-path $XFL){$XML=Import-CliXml -Path $XFL; $XML.GetNetworkCredential().Password; select-string -pattern "UserName" $XFL; write-host "Digit the username"; $USRN=read-host "(example, admin)"; if($USRN -ne ""){$XML.GetNetworkCredential().$USRN}}}
         '322' {write-host "Digit an IP target"; $TIP=read-host "(example, 192.168.1.188)"; if($TIP -ne ""){for($PORT=0; $PORT -le 65536; $PORT++){try{if((new-object system.net.sockets.tcpclient($TIP, $PORT)).connected){write-host $TIP":"$PORT" open"}}catch{}}}}
         '323' {[NtApiDotNet.NtSystemInfo]::CodeIntegrityPolicy}
+        '324' {ScaricaExt "sysinternals/AccessChk" "AccessChk.zip" "https://download.sysinternals.com/files/AccessChk.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
