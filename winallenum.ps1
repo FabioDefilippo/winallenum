@@ -555,7 +555,7 @@ while($true){
         '328' {whoami /priv}
         '329' {Get-LocalUser | ft Name,Enabled,LastLogon; Get-ChildItem C:\Users -Force | select Name; qwinsta}
         '330' {net localgroup}
-        '331' {Get-LocalGroupMember Administrators | ft Name, PrincipalSource}
+        '331' {net localgroup Administrators}
         '332' {Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WinLogon' | select "Default*"}
         '333' {Get-ChildItem -Hidden C:\Users\username\AppData\Local\Microsoft\Credentials\; Get-ChildItem -Hidden C:\Users\username\AppData\Roaming\Microsoft\Credentials\}
         '334' {cmd.exe /c '%SYSTEMROOT%\repair\SAM && %SYSTEMROOT%\System32\config\RegBack\SAM && %SYSTEMROOT%\System32\config\SAM && %SYSTEMROOT%\repair\system && %SYSTEMROOT%\System32\config\SYSTEM && %SYSTEMROOT%\System32\config\RegBack\system'}
