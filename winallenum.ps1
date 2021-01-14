@@ -553,7 +553,7 @@ while($true){
         '326' {Get-ChildItem Env: | ft Key,Value}
         '327' {Get-PSDrive | where {$_.Provider -like "Microsoft.PowerShell.Core\FileSystem"}| ft Name,Root}
         '328' {whoami /priv}
-        '329' {Get-LocalUser | ft Name,Enabled,LastLogon; Get-ChildItem C:\Users -Force | select Name; qwinsta}
+        '329' {net users; Get-ChildItem C:\Users -Force | select Name; qwinsta}
         '330' {net localgroup}
         '331' {net localgroup Administrators}
         '332' {Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WinLogon' | select "Default*"}
