@@ -248,7 +248,7 @@ while($true){
     write-host " 284. list all smb shares or a specific share name`t`t285. search words in files`t`t`t`t`t289. print my public ip method 1";
     write-host " 291. print my public ip method 2`t`t`t`t299. get target ip net infos`t`t`t`t`t300. get remote ip docker version";
     write-host " 301. get all remote users infos via finger`t`t`t321. import an xml file to dump credentials";
-    write-host " 322. simple TCP port scan`t`t`t`t`t323. enabling adminless mode";
+    write-host " 322. simple TCP port scan`t`t`t`t`t323. check adminless mode enabled";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
