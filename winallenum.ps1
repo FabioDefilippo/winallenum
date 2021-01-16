@@ -546,7 +546,7 @@ while($true){
         '319' {ScaricaExt "microsoft/scriptcenter/GetRegistryKeyLastWriteTimeAndClassName" "GetRegistryKeyLastWriteTimeAndClassName.zip" "https://gallery.technet.microsoft.com/scriptcenter/Get-Last-Write-Time-and-06dcf3fb/file/106244/1/GetRegistryKeyLastWriteTimeAndClassName.zip"}
         '320' {Scarica "wavestone-cdt/powerpxe" "PowerPXE.ps1" "wavestone-cdt/powerpxe/master/PowerPXE.ps1"}
         '321' {write-host "Digit a xml file fullpath"; $XFL=read-host "(example, admin.xml)"; if(test-path $XFL){$XML=Import-CliXml -Path $XFL; $XML.GetNetworkCredential().Password; select-string -pattern "UserName" $XFL; write-host "Digit the username"; $USRN=read-host "(example, admin)"; if($USRN -ne ""){$XML.GetNetworkCredential().$USRN}}}
-        '322' {write-host "Digit an IP target"; $TIP=read-host "(example, 192.168.1.188)"; if($TIP -ne ""){for($PORT=0; $PORT -le 65536; $PORT++){try{if((new-object system.net.sockets.tcpclient($TIP, $PORT)).connected){write-host $TIP":"$PORT" open"}}catch{}}}}
+        '322' {write-host "Digit an IP target"; $TIP=read-host "(example, 192.168.1.188)"; if($TIP -ne ""){write-host "Scanning "$TIP; for($PORT=1; $PORT -le 65536; $PORT++){try{$SOCK=new-object system.net.sockets.tcpclient($TIP, $PORT); if($SOCK.connected){write-host $PORT"`topen"}$SOCK.Close()}catch{}}}}
         '323' {[NtApiDotNet.NtSystemInfo]::CodeIntegrityPolicy}
         '324' {ScaricaExt "sysinternals/AccessChk" "AccessChk.zip" "https://download.sysinternals.com/files/AccessChk.zip"}
         '325' {systeminfo; wmic qfe}
