@@ -19,6 +19,18 @@ $AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
 [System.Net.ServicePointManager]::SecurityProtocol = $AllProtocols
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
 
+function ScaricaGist($TESTO, $FILENAME, $URL)
+{
+    write-host "Downloading $TESTO";
+    try{
+    invoke-webrequest -uri "https://gist.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
+    get-content -path $FILENAME".tmp" | set-content -encoding default -path $FILENAME;
+    remove-item -path $FILENAME".tmp"
+    }catch{
+    write-host $_
+    }
+}
+
 function Scarica($TESTO, $FILENAME, $URL)
 {
     write-host "Downloading $TESTO";
@@ -124,6 +136,7 @@ while($true){
     write-host " 244. phackt/Invoke-Recon`t`t`t`t`t292. Z3R0th-13/Enum`t`t`t`t`t`t293. duckingtoniii/Powershell-Domain-User-Enumeration";
     write-host " 294. Z3R0th-13/Profit`t`t`t`t`t`t295. Xservus/P0w3rSh3ll`t`t`t`t`t`t296. threatexpress/red-team-scripts/HostEnum";
     write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t`t`t`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
+    write-host " 353. ankitdobhal/TTLOs";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
@@ -581,6 +594,7 @@ while($true){
         '350' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter" "webhunter.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/webhunter.exe"}
         '351' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility" "wmiutility2.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/wmiutility.exe"}
         '352' {write-host "you will get https://github.com/rvrsh3ll/Misc-Powershell-Scripts"; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "rvrsh3ll/Misc-Powershell-Scripts/$FILENAME" "$FILENAME" "rvrsh3ll/Misc-Powershell-Scripts/master/$FILENAME"}}
+        '353' {ScaricaGist "ankitdobhal/TTLOs" "TTLOs.psm1" "ankitdobhal/8ab380ad0290028f9a1efe6333683a5a/raw/40cb310019e0acf132239c955c28a8558f5b8a20/TTLOs.psm1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
