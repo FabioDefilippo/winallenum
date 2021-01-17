@@ -184,7 +184,8 @@ while($true){
     write-host " 248. k8gege/PowerLadon`t`t`t`t`t`t252. BankSecurity/Red_Team`t`t`t`t`t253. cutaway-security/chaps";
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
-    write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts";
+    write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t`t`t354. Killeroo/PowerPing.x86";
+    write-host " 355. Killeroo/PowerPing";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -595,6 +596,8 @@ while($true){
         '351' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility" "wmiutility2.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/wmiutility.exe"}
         '352' {write-host "you will get https://github.com/rvrsh3ll/Misc-Powershell-Scripts"; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "rvrsh3ll/Misc-Powershell-Scripts/$FILENAME" "$FILENAME" "rvrsh3ll/Misc-Powershell-Scripts/master/$FILENAME"}}
         '353' {ScaricaGist "ankitdobhal/TTLOs" "TTLOs.psm1" "ankitdobhal/8ab380ad0290028f9a1efe6333683a5a/raw/40cb310019e0acf132239c955c28a8558f5b8a20/TTLOs.psm1"}
+        '354' {ScaricaSSL "Killeroo/PowerPing.x86/v1.3.3" "PowerPing.x86.exe" "Killeroo/PowerPing/releases/download/v1.3.3/PowerPing.x86.exe"}
+        '355' {ScaricaSSL "Killeroo/PowerPing/v1.3.3" "PowerPing.exe" "Killeroo/PowerPing/releases/download/v1.3.3/PowerPing.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
