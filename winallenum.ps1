@@ -514,7 +514,7 @@ while($true){
         '269' {Scarica "p3nt4/Invoke-TmpDavFS" "Invoke-TmpDavFS.psm1" "p3nt4/Invoke-TmpDavFS/master/Invoke-TmpDavFS.psm1"}
         '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
-        '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli.exe" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkCli"}
+        '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli.exe" "odedshimon/BruteShark/releases/download/v1.1.4/BruteSharkCli"}
         '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.1/BruteSharkDesktopInstaller_x64.msi"}
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
         '275' {ScaricaSSL "quasar/Quasar.v1.4.0" "Quasar.v1.4.0.zip" "quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip"}
