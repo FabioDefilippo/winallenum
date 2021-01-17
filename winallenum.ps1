@@ -123,6 +123,7 @@ while($true){
     write-host " 155. HarmJ0y/WINspect`t`t`t`t`t`t161. Arvanaghi/SessionGopher`t`t`t`t`t207. dafthack/HostRecon";
     write-host " 244. phackt/Invoke-Recon`t`t`t`t`t292. Z3R0th-13/Enum`t`t`t`t`t`t293. duckingtoniii/Powershell-Domain-User-Enumeration";
     write-host " 294. Z3R0th-13/Profit`t`t`t`t`t`t295. Xservus/P0w3rSh3ll`t`t`t`t`t`t296. threatexpress/red-team-scripts/HostEnum";
+    write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t`t`t`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
@@ -156,7 +157,8 @@ while($true){
     write-host " 223. tmenochet/PowerSpray`t`t`t`t`t251. NotMedic/NetNTLMtoSilverTicket";
     write-host "LDAP";
     write-host " 145. Nillth/PWSH-LDAP/LDAP-Query`t`t`t`t147. dinigalab/ldapsearch`t`t`t`t`t318. roggenk/PowerShell/LDAPS";
-    write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain";
+    write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain`t`t346. Mr-Un1k0d3r/RedTeamCSharpScripts/ldapquery";
+    write-host " 347. Mr-Un1k0d3r/RedTeamCSharpScripts/ldaputility";
     write-host "MACRO";
     write-host " 130. 0xm4v3rick/Extract-Macro`t`t`t`t`t131. enigma0x3/Generate-Macro`t`t`t`t`t219. curi0usJack/luckystrike";
     write-host "MEMCACHED";
@@ -255,12 +257,14 @@ while($true){
     write-host " 335. list all softwares installed`t`t`t`t336. use accesschk`t`t`t`t`t`t337. unquoted service path";
     write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t`t`t340. check AlwaysInstallElevated enabled";
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
+    write-host "WEBAPP";
+    write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
     write-host " 158. davehardy20/Invoke-WinRMAttack`t`t`t`t159. d1pakda5/PowerShell-for-Pentesters/Code/44/Get-WinRMPassword";
     write-host "WMI";
-    write-host " 262. Cybereason/Invoke-WMILM";
+    write-host " 262. Cybereason/Invoke-WMILM`t`t`t`t344. Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility`t`t`t`t351. Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility";
     
     $RISP=read-host 'Make your choice';
     switch ($RISP){
@@ -568,6 +572,15 @@ while($true){
         '341' {reg query HKLM\SYSTEM\CurrentControlSet\Services\SNMP /s}
         '342' {reg query HKCU /f password /t; REG_SZ /s; reg query HKLM /f password /t REG_SZ /s}
         '343' {Get-Childitem –Path C:\ -Include *unattend*,*sysprep* -File -Recurse -ErrorAction SilentlyContinue | where {($_.Name -like "*.xml" -or $_.Name -like "*.txt" -or $_.Name -like "*.ini")}}
+        '344' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility" "WMIUtility.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/WMIUtility.exe"}
+        '345' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser" "enumerateuser.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/enumerateuser.exe"}
+        '346' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/ldapquery" "ldapquery.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/ldapquery.exe"}
+        '347' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/ldaputility" "ldaputility.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/ldaputility.exe"}
+        '348' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/set" "set.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/set.exe"}
+        '349' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/unmanagedps" "unmanagedps.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/unmanagedps.exe"}
+        '350' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter" "webhunter.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/webhunter.exe"}
+        '351' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility" "wmiutility2.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/wmiutility.exe"}
+
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
