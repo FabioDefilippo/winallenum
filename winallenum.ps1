@@ -171,7 +171,7 @@ while($true){
     write-host " 248. k8gege/PowerLadon`t`t`t`t`t`t252. BankSecurity/Red_Team`t`t`t`t`t253. cutaway-security/chaps";
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
-    write-host " 313. chocolatey/install";
+    write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -580,7 +580,7 @@ while($true){
         '349' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/unmanagedps" "unmanagedps.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/unmanagedps.exe"}
         '350' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter" "webhunter.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/webhunter.exe"}
         '351' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility" "wmiutility2.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/wmiutility.exe"}
-
+        '352' {write-host "you will get https://github.com/rvrsh3ll/Misc-Powershell-Scripts"; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "rvrsh3ll/Misc-Powershell-Scripts/$FILENAME" "$FILENAME" "rvrsh3ll/Misc-Powershell-Scripts/master/$FILENAME"}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
