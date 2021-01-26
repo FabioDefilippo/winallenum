@@ -185,7 +185,7 @@ while($true){
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
     write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t`t`t354. Killeroo/PowerPing.x86";
-    write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit";
+    write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t`t357. fireeye/commando-vm";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -599,6 +599,7 @@ while($true){
         '354' {ScaricaSSL "Killeroo/PowerPing.x86/v1.3.3" "PowerPing.x86.exe" "Killeroo/PowerPing/releases/download/v1.3.3/PowerPing.x86.exe"}
         '355' {ScaricaSSL "Killeroo/PowerPing/v1.3.3" "PowerPing.exe" "Killeroo/PowerPing/releases/download/v1.3.3/PowerPing.exe"}
         '356' {ScaricaSSL "PowerShellMafia/PowerSploit" "PowerSploit.zip" "PowerShellMafia/PowerSploit/archive/master.zip"}
+        '357' {ScaricaSSL "fireeye/commando-vm" "commando-vm.zip" "fireeye/commando-vm/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
