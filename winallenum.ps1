@@ -142,7 +142,7 @@ while($true){
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
     write-host " 236. 360-Linton-Lab/WMIHACKER`t`t`t`t`t245. the-xentropy/xencrypt`t`t`t`t`t279. OmerYa/Invisi-Shell";
     write-host " 280. lukebaggett/dnscat2-powershell`t`t`t`t303. kmkz/PowerShell/amsi-bypass`t`t`t`t304. kmkz/PowerShell/CLM-bypass";
-    write-host " 361. 3gstudent/Bypass-Windows-AppLocker";
+    write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass";
     write-host "EXFILTRATION";
     write-host " 210. danielwolfmann/Invoke-WordThief/Invoke-WordThief`t`t267. salu90/PSFPT/Exfiltrate";
     write-host "EXPLOITATION";
@@ -608,6 +608,7 @@ while($true){
         '359' {ScaricaSSL "DarkCoderSc/Win64/win-brute-logon" "WinBruteLogon.exe" "DarkCoderSc/win-brute-logon/raw/master/Win64/Release/WinBruteLogon.exe"}
         '360' {ScaricaSSL "L3cr0f/DccwBypassUAC" "DccwBypassUAC.exe" "L3cr0f/DccwBypassUAC/raw/release/DccwBypassUAC/Release/DccwBypassUAC.exe"}
         '361' {Scarica "3gstudent/Bypass-Windows-AppLocker" "AppLockerBypassChecker-v1.ps1" "3gstudent/Bypass-Windows-AppLocker/master/AppLockerBypassChecker-v1.ps1"}
+        '362' {ScaricaGist "netbiosX/FodhelperUACBypass" "FodhelperUACBypass.ps1" "netbiosX/a114f8822eb20b115e33db55deee6692/raw/bd61ba9db7af8ffcd57d3dbfa8208b495cdc854d/FodhelperUACBypass.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
