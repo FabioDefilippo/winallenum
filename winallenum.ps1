@@ -606,6 +606,7 @@ while($true){
         '358' {ScaricaSSL "DarkCoderSc/Win32/win-brute-logon" "WinBruteLogon.exe" "DarkCoderSc/win-brute-logon/raw/master/Win32/Release/WinBruteLogon.exe"}
         '359' {ScaricaSSL "DarkCoderSc/Win64/win-brute-logon" "WinBruteLogon.exe" "DarkCoderSc/win-brute-logon/raw/master/Win64/Release/WinBruteLogon.exe"}
         '360' {ScaricaSSL "L3cr0f/DccwBypassUAC" "DccwBypassUAC.exe" "L3cr0f/DccwBypassUAC/raw/release/DccwBypassUAC/Release/DccwBypassUAC.exe"}
+        '361' {Scarica "3gstudent/Bypass-Windows-AppLocker" "AppLockerBypassChecker-v1.ps1" "3gstudent/Bypass-Windows-AppLocker/master/AppLockerBypassChecker-v1.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
