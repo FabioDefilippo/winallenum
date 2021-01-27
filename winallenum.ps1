@@ -105,9 +105,6 @@ while($true){
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
     write-host "BACKDOOR";
     write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12";
-    write-host "BYPASSING - GUESSING";
-    write-host " 358. DarkCoderSc/Win32/win-brute-logon`t`t`t`t359. DarkCoderSc/Win64/win-brute-logon";
-    write-host " 360. L3cr0f/DccwBypassUAC";
     write-host "COBOL";
     write-host " 178. nolvis/nolvis-cobol-tool/CobolTool";
     write-host "COVER TRACKING";
@@ -159,6 +156,9 @@ while($true){
     write-host " 231. limbenjamin/nTimetools";
     write-host "GATHERING";
     write-host " 109. TonyPhipps/Meerkat/Modules`t`t`t`t16. samratashok/nishang/Gather`t`t`t`t`t184. dafthack/PowerMeta";
+    write-host "GUESSING";
+    write-host " 358. DarkCoderSc/Win32/win-brute-logon`t`t`t`t359. DarkCoderSc/Win64/win-brute-logon";
+    write-host " 360. L3cr0f/DccwBypassUAC";
     write-host "HOOKING - HIJACKING - INJECTION";
     write-host " 168. netbiosX/Digital-Signature-Hijack`t`t`t`t176. cyberark/DLLSpy-x64`t`t`t`t`t177. rapid7/DLLHijackAuditKit";
     write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection`t`t`t`t`t308. 3gstudent/CLR-Injection_x64";
