@@ -105,7 +105,7 @@ while($true){
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
     write-host "BACKDOOR";
     write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12";
-    write-host "BYPASSING"
+    write-host "BYPASSING";
     write-host " 358. DarkCoderSc/Win32/win-brute-logon`t`t`t`t359. DarkCoderSc/Win64/win-brute-logon";
     write-host "COBOL";
     write-host " 178. nolvis/nolvis-cobol-tool/CobolTool";
