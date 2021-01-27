@@ -144,7 +144,7 @@ while($true){
     write-host " 280. lukebaggett/dnscat2-powershell`t`t`t`t303. kmkz/PowerShell/amsi-bypass`t`t`t`t304. kmkz/PowerShell/CLM-bypass";
     write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass`t`t`t`t363. gushmazuko/WinBypass/SluiHijackBypass_direct";
     write-host " 364. gushmazuko/WinBypass/SluiHijackBypass`t`t`t365. gushmazuko/WinBypass/EventVwrBypass`t`t366. gushmazuko/WinBypass/DiskCleanupBypass_direct";
-    write-host " 360. L3cr0f/DccwBypassUAC";
+    write-host " 360. L3cr0f/DccwBypassUAC`t`t`t`t`t`t367. Mncx86/Windows-10-UAC-bypass";
     write-host "EXFILTRATION";
     write-host " 210. danielwolfmann/Invoke-WordThief/Invoke-WordThief`t`t267. salu90/PSFPT/Exfiltrate";
     write-host "EXPLOITATION";
@@ -614,6 +614,7 @@ while($true){
         '364' {Scarica "gushmazuko/WinBypass/SluiHijackBypass" "SluiHijackBypass.ps1" "gushmazuko/WinBypass/master/SluiHijackBypass.ps1"}
         '365' {Scarica "gushmazuko/WinBypass/EventVwrBypass" "EventVwrBypass.ps1" "gushmazuko/WinBypass/master/EventVwrBypass.ps1"}
         '366' {Scarica "gushmazuko/WinBypass/DiskCleanupBypass_direct" "DiskCleanupBypass_direct.ps1" "gushmazuko/WinBypass/master/DiskCleanupBypass_direct.ps1"}
+        '367' {ScaricaBat "Mncx86/Windows-10-UAC-bypass" "uacdisabler.bat" "Mncx86/Windows-10-UAC-bypass/master/uacdisabler.bat"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
