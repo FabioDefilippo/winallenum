@@ -85,7 +85,7 @@ function ScaricaEDB($EXPL)
 
 while($true){
     write-host "winallenum, by FabioDefilippoSoftware";
-    write-host "0. exit";
+    write-host " 0. exit";
     write-host "365";
     write-host " 268. dafthack/MFASweep";
     write-host "ACTIVE DIRECTORY";
