@@ -206,7 +206,7 @@ while($true){
     write-host "PIVOTING";
     write-host " 265. attactics/Invoke-DCOMPowerPointPivot";
     write-host "POST-EXPLOITATION";
-    write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t375. BloodHoundAD/BloodHound-win32-ia32";
+    write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t375. BloodHoundAD/BloodHound-win32-ia32`t`t`t376. enigma0x3/Old-Powershell-payload-Excel-Delivery";
     write-host "PRIVESC";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
     write-host " 14. samratashok/nishang/Backdoors`t`t`t`t15. samratashok/nishang/Bypass`t`t`t`t`t18. samratashok/nishang/powerpreter";
@@ -629,6 +629,7 @@ while($true){
         '373' {ScaricaSSL "antonioCoco/RoguePotato" "RoguePotato.zip" "antonioCoco/RoguePotato/releases/download/1.0/RoguePotato.zip"}
         '374' {ScaricaSSL "BloodHoundAD/BloodHound-win32-x64" "BloodHound-win32-x64.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-x64.zip"}
         '375' {ScaricaSSL "BloodHoundAD/BloodHound-win32-ia32" "BloodHound-win32-ia32.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-ia32.zip"}
+        '376' {ScaricaSSL "enigma0x3/Old-Powershell-payload-Excel-Delivery" "Old-Powershell-payload-Excel-Delivery.zip" "enigma0x3/Old-Powershell-payload-Excel-Delivery/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
