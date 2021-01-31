@@ -205,6 +205,8 @@ while($true){
     write-host " 124. securethelogs/PSBruteZip";
     write-host "PIVOTING";
     write-host " 265. attactics/Invoke-DCOMPowerPointPivot";
+    write-host "POST-EXPLOITATION";
+    write-host " 374. BloodHoundAD/BloodHound";
     write-host "PRIVESC";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
     write-host " 14. samratashok/nishang/Backdoors`t`t`t`t15. samratashok/nishang/Bypass`t`t`t`t`t18. samratashok/nishang/powerpreter";
@@ -625,6 +627,7 @@ while($true){
         '371' {ScaricaSSL "icsharpcode/AvaloniaILSpy" "ILSpy-win-x64-Release.zip" "icsharpcode/AvaloniaILSpy/releases/download/v5.0-rc2/ILSpy-win-x64-Release.zip"}
         '372' {ScaricaSSL "BenChaliah/Arbitrium-RAT" "Arbitrium-RAT.zip" "BenChaliah/Arbitrium-RAT/archive/main.zip"}
         '373' {ScaricaSSL "antonioCoco/RoguePotato" "RoguePotato.zip" "antonioCoco/RoguePotato/releases/download/1.0/RoguePotato.zip"}
+        '374' {ScaricaSSL "BloodHoundAD/BloodHound" "BloodHound-win32-x64.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-x64.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
