@@ -631,7 +631,7 @@ while($true){
         '374' {ScaricaSSL "BloodHoundAD/BloodHound-win32-x64" "BloodHound-win32-x64.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-x64.zip"}
         '375' {ScaricaSSL "BloodHoundAD/BloodHound-win32-ia32" "BloodHound-win32-ia32.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-ia32.zip"}
         '376' {ScaricaSSL "enigma0x3/Old-Powershell-payload-Excel-Delivery" "Old-Powershell-payload-Excel-Delivery.zip" "enigma0x3/Old-Powershell-payload-Excel-Delivery/archive/master.zip"}
-        '377' {Scarica "gfoss/PSRecon" "psrecon.ps1" "gfoss/PSRecon/master/psrecon.ps1"}
+        '377' {Scarica "gfoss/PSRecon" "psrecon.ps1" "gfoss/PSRecon/master/psrecon.ps1"; Scarica "gfoss/PSRecon/actions" "actions.xml" "gfoss/PSRecon/master/actions.xml"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
