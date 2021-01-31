@@ -105,6 +105,8 @@ while($true){
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
     write-host "BACKDOOR";
     write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12";
+    write-host "C&C";
+    write-host " 378. enigma0x3/Powershell-C2";
     write-host "COBOL";
     write-host " 178. nolvis/nolvis-cobol-tool/CobolTool";
     write-host "COVER TRACKING";
@@ -632,6 +634,7 @@ while($true){
         '375' {ScaricaSSL "BloodHoundAD/BloodHound-win32-ia32" "BloodHound-win32-ia32.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-ia32.zip"}
         '376' {ScaricaSSL "enigma0x3/Old-Powershell-payload-Excel-Delivery" "Old-Powershell-payload-Excel-Delivery.zip" "enigma0x3/Old-Powershell-payload-Excel-Delivery/archive/master.zip"}
         '377' {Scarica "gfoss/PSRecon" "psrecon.ps1" "gfoss/PSRecon/master/psrecon.ps1"; Scarica "gfoss/PSRecon/actions" "actions.xml" "gfoss/PSRecon/master/actions.xml"}
+        '378' {Scarica "enigma0x3/Powershell-C2" "C2Code.ps1" "enigma0x3/Powershell-C2/master/C2Code.ps1"; Scarica "enigma0x3/Powershell-C2/Macro" "Macro" "enigma0x3/Powershell-C2/master/Macro"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
