@@ -131,6 +131,7 @@ while($true){
     write-host " 237. gentilkiwi/mimikatz`t`t`t258. scipag/PowerShellUtilities/Invoke-MimikatzNetwork`t260. scipag/PowerShellUtilities/Select-MimikatzLocalAccounts";
     write-host " 259. scipag/PowerShellUtilities/Select-MimikatzDomainAccounts`t`t`t`t`t`t`t`t`t307. nettitude/Invoke-PowerThIEf";
     write-host " 311. 3gstudent/Winpcap_Install`t`t`t`t`t`t312. 3gstudent/Dump-Clear-Password-after-KB2871997-installed";
+    write-host " 379. orlyjamie/mimikittenz";
     write-host "ENUMERATION";
     write-host " 1. HarmJ0y/PowerUp`t`t`t`t`t`t2. absolomb/WindowsEnum`t`t`t`t`t`t3. Rasta-Mouse/Sherlock";
     write-host " 4. Enjoiz/Privesc`t`t`t`t`t`t5. 411Hall/Jaws-Enum`t`t`t`t`t`t6. carlospolop/winPEAS";
@@ -635,6 +636,7 @@ while($true){
         '376' {ScaricaSSL "enigma0x3/Old-Powershell-payload-Excel-Delivery" "Old-Powershell-payload-Excel-Delivery.zip" "enigma0x3/Old-Powershell-payload-Excel-Delivery/archive/master.zip"}
         '377' {Scarica "gfoss/PSRecon" "psrecon.ps1" "gfoss/PSRecon/master/psrecon.ps1"; Scarica "gfoss/PSRecon/actions" "actions.xml" "gfoss/PSRecon/master/actions.xml"}
         '378' {Scarica "enigma0x3/Powershell-C2" "C2Code.ps1" "enigma0x3/Powershell-C2/master/C2Code.ps1"; Scarica "enigma0x3/Powershell-C2/Macro" "Macro" "enigma0x3/Powershell-C2/master/Macro"}
+        '379' {Scarica "orlyjamie/mimikittenz" "Invoke-mimikittenz.ps1" "orlyjamie/mimikittenz/master/Invoke-mimikittenz.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
