@@ -547,7 +547,7 @@ while($true){
         '287' {Scarica "AdamDotCom/memcached-on-powershell" "memcached-on-powershell.ps1" "AdamDotCom/memcached-on-powershell/master/memcached-on-powershell.ps1"}
         '288' {ScaricaExt "technet.microsoft/scriptcenter/NLA" "NLA.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-9d66257a/file/150221/1/NLA.ps1"}
         '289' {nslookup myip.opendns.com resolver1.opendns.com}
-        '290' {ScaricaSSL "bettercap/bettercap" "bettercap_amd64_v2.28.zip" "bettercap/bettercap/releases/download/v2.28/bettercap_windows_amd64_v2.28.zip"}
+        '290' {ScaricaSSL "bettercap/bettercap" "bettercap_amd64_v2.29.zip" "bettercap/bettercap/releases/download/v2.29/bettercap_windows_amd64_v2.29.zip"}
         '291' {$(Resolve-DnsName -Name myip.opendns.com -Server 208.67.222.220).IPAddress}
         '292' {Scarica "Z3R0th-13/Enum" "Enum.ps1" "Z3R0th-13/Enum/master/Enum.ps1"}
         '293' {Scarica "duckingtoniii/Powershell-Domain-User-Enumeration" "User_Enumeration.ps1" "duckingtoniii/Powershell-Domain-User-Enumeration/master/User_Enumeration.ps1"}
