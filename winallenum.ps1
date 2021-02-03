@@ -641,7 +641,7 @@ while($true){
         '380' {ScaricaSSL "uknowsec/SharpSQLTools" "SharpSQLTools.zip" "uknowsec/SharpSQLTools/releases/download/10/SharpSQLTools.zip"}
         '381' {ScaricaExt "digitalcorpora/bulk_extractor32" "bulk_extractor32.exe" "http://downloads.digitalcorpora.org/downloads/bulk_extractor/bulk_extractor32.exe"}
         '382' {ScaricaExt "digitalcorpora/bulk_extractor64" "bulk_extractor64.exe" "http://downloads.digitalcorpora.org/downloads/bulk_extractor/bulk_extractor64.exe"}
-        '383' {ScaricaSSL "Invoke-IR/PowerForensics" "PowerForensics.zip" "Invoke-IR/PowerForensics/archive/master.zip"}
+        '383' {ScaricaSSL "Invoke-IR/PowerForensics" "PowerForensics.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensics.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
