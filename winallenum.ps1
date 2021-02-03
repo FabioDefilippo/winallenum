@@ -196,7 +196,7 @@ while($true){
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
     write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t`t`t354. Killeroo/PowerPing.x86";
     write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t`t357. fireeye/commando-vm";
-    write-host " 383. Invoke-IR/PowerForensics";
+    write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -642,6 +642,7 @@ while($true){
         '381' {ScaricaExt "digitalcorpora/bulk_extractor32" "bulk_extractor32.exe" "http://downloads.digitalcorpora.org/downloads/bulk_extractor/bulk_extractor32.exe"}
         '382' {ScaricaExt "digitalcorpora/bulk_extractor64" "bulk_extractor64.exe" "http://downloads.digitalcorpora.org/downloads/bulk_extractor/bulk_extractor64.exe"}
         '383' {ScaricaSSL "Invoke-IR/PowerForensics" "PowerForensics.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensics.zip"}
+        '384' {ScaricaSSL "Invoke-IR/PowerForensicsv2" "PowerForensicsv2.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensicsv2.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
