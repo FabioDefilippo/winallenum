@@ -124,13 +124,13 @@ while($true){
     write-host " 162. giMini/PowerMemory`t`t`t`t`t164. hlldz/Invoke-Phant0m`t`t`t`t`t170. sysinternals/ProcessExplorer";
     write-host " 171. processhacker/processhacker`t`t`t`t172. sysinternals/ProcessMonitor`t`t`t`t173. sysinternals/Autoruns";
     write-host " 180. PowerShellMafia/PowerSploit/Exfiltration";
-    write-host " 182. gallery.technet.microsoft.com/scriptcenter/POWERSHELL-SCRIPT-TO/MemoryDump_PageFile_ConfigurationExtract";
+    write-host " 182. gallery.technet.microsoft.com/scriptcenter/POWERSHELL-SCRIPT-TO/MemoryDump_PageFile_ConfigurationExtract`t`t260. scipag/PowerShellUtilities/Select-MimikatzLocalAccounts";
     write-host " 183. gallery.technet.microsoft.com/scriptcenter/Get-MemoryDump/Get-MemoryDump`t`t`t`t`t`t`t186. Zimm/tcpdump-powershell/PacketCapture";
     write-host " 187. sperner/PowerShell/Sniffer`t`t`t`t202. adnan-alhomssi/chrome-passwords`t`t`t203. haris989/Chrome-password-stealer";
     write-host " 204. kspearrin/ff-password-exporter/FF-Password-Exporter-Portable-1.2.0`t`t`t`t`t`t`t211. sec-1/gp3finder_v4.0";
-    write-host " 237. gentilkiwi/mimikatz`t`t`t258. scipag/PowerShellUtilities/Invoke-MimikatzNetwork`t260. scipag/PowerShellUtilities/Select-MimikatzLocalAccounts";
+    write-host " 237. gentilkiwi/mimikatz`t`t`t`t`t`t258. scipag/PowerShellUtilities/Invoke-MimikatzNetwork";
     write-host " 259. scipag/PowerShellUtilities/Select-MimikatzDomainAccounts`t`t`t`t`t`t`t`t`t307. nettitude/Invoke-PowerThIEf";
-    write-host " 311. 3gstudent/Winpcap_Install`t`t`t`t`t`t312. 3gstudent/Dump-Clear-Password-after-KB2871997-installed";
+    write-host " 311. 3gstudent/Winpcap_Install`t`t`t`t`t312. 3gstudent/Dump-Clear-Password-after-KB2871997-installed";
     write-host " 379. orlyjamie/mimikittenz`t`t`t`t`t381. digitalcorpora/bulk_extractor32`t`t`t382. digitalcorpora/bulk_extractor64";
     write-host "ENUMERATION";
     write-host " 1. HarmJ0y/PowerUp`t`t`t`t`t`t2. absolomb/WindowsEnum`t`t`t`t`t`t3. Rasta-Mouse/Sherlock";
@@ -140,7 +140,7 @@ while($true){
     write-host " 155. HarmJ0y/WINspect`t`t`t`t`t`t161. Arvanaghi/SessionGopher`t`t`t`t`t207. dafthack/HostRecon";
     write-host " 244. phackt/Invoke-Recon`t`t`t`t`t292. Z3R0th-13/Enum`t`t`t`t`t`t293. duckingtoniii/Powershell-Domain-User-Enumeration";
     write-host " 294. Z3R0th-13/Profit`t`t`t`t`t`t295. Xservus/P0w3rSh3ll`t`t`t`t`t`t296. threatexpress/red-team-scripts/HostEnum";
-    write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t`t`t`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
+    write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
     write-host " 353. ankitdobhal/TTLOs";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
@@ -149,7 +149,7 @@ while($true){
     write-host " 280. lukebaggett/dnscat2-powershell`t`t`t`t303. kmkz/PowerShell/amsi-bypass`t`t`t`t304. kmkz/PowerShell/CLM-bypass";
     write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass`t`t`t`t363. gushmazuko/WinBypass/SluiHijackBypass_direct";
     write-host " 364. gushmazuko/WinBypass/SluiHijackBypass`t`t`t365. gushmazuko/WinBypass/EventVwrBypass`t`t366. gushmazuko/WinBypass/DiskCleanupBypass_direct";
-    write-host " 360. L3cr0f/DccwBypassUAC`t`t`t`t`t`t367. Mncx86/Windows-10-UAC-bypass";
+    write-host " 360. L3cr0f/DccwBypassUAC`t`t`t`t`t367. Mncx86/Windows-10-UAC-bypass";
     write-host "EXFILTRATION";
     write-host " 210. danielwolfmann/Invoke-WordThief/Invoke-WordThief`t`t267. salu90/PSFPT/Exfiltrate";
     write-host "EXPLOITATION";
@@ -168,8 +168,8 @@ while($true){
     write-host " 358. DarkCoderSc/Win32/win-brute-logon`t`t`t`t359. DarkCoderSc/Win64/win-brute-logon";
     write-host "HOOKING - HIJACKING - INJECTION";
     write-host " 168. netbiosX/Digital-Signature-Hijack`t`t`t`t176. cyberark/DLLSpy-x64`t`t`t`t`t177. rapid7/DLLHijackAuditKit";
-    write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection`t`t`t`t`t308. 3gstudent/CLR-Injection_x64";
-    write-host " 309. 3gstudent/CLR-Injection_x86`t`t`t`t310. 3gstudent/COM-Object-hijacking`t`t`t380. uknowsec/SharpSQLTools";
+    write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection`t`t`t`t308. 3gstudent/CLR-Injection_x64";
+    write-host " 309. 3gstudent/CLR-Injection_x86`t`t`t`t310. 3gstudent/COM-Object-hijacking`t`t`t`t380. uknowsec/SharpSQLTools";
     write-host "HTTP";
     write-host " 266. salu90/PSFPT/BruteForce-Basic-Auth";
     write-host "JENKINS";
@@ -180,7 +180,7 @@ while($true){
     write-host " 223. tmenochet/PowerSpray`t`t`t`t`t251. NotMedic/NetNTLMtoSilverTicket";
     write-host "LDAP";
     write-host " 145. Nillth/PWSH-LDAP/LDAP-Query`t`t`t`t147. dinigalab/ldapsearch`t`t`t`t`t318. roggenk/PowerShell/LDAPS";
-    write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain`t`t346. Mr-Un1k0d3r/RedTeamCSharpScripts/ldapquery";
+    write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain`t`t`t`t`t346. Mr-Un1k0d3r/RedTeamCSharpScripts/ldapquery";
     write-host " 347. Mr-Un1k0d3r/RedTeamCSharpScripts/ldaputility";
     write-host "MACRO";
     write-host " 130. 0xm4v3rick/Extract-Macro`t`t`t`t`t131. enigma0x3/Generate-Macro`t`t`t`t`t219. curi0usJack/luckystrike";
@@ -194,8 +194,8 @@ while($true){
     write-host " 248. k8gege/PowerLadon`t`t`t`t`t`t252. BankSecurity/Red_Team`t`t`t`t`t253. cutaway-security/chaps";
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
-    write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t`t`t354. Killeroo/PowerPing.x86";
-    write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t`t357. fireeye/commando-vm";
+    write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t354. Killeroo/PowerPing.x86";
+    write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm";
     write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
@@ -210,7 +210,7 @@ while($true){
     write-host "PIVOTING";
     write-host " 265. attactics/Invoke-DCOMPowerPointPivot";
     write-host "POST-EXPLOITATION";
-    write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t375. BloodHoundAD/BloodHound-win32-ia32`t`t`t376. enigma0x3/Old-Powershell-payload-Excel-Delivery";
+    write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t`t375. BloodHoundAD/BloodHound-win32-ia32`t`t`t376. enigma0x3/Old-Powershell-payload-Excel-Delivery";
     write-host " 377. gfoss/PSRecon";
     write-host "PRIVESC";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
@@ -219,7 +219,7 @@ while($true){
     write-host " 112. HarmJ0y/Misc-PowerShell/Invoke-WdigestDowngrade`t`t127. PowerShellMafia/PowerSploit/Privesc/Get-System`t143. FuzzySecurity/PowerShell-Suite/Bypass-UAC";
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
-    write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t373. antonioCoco/RoguePotato";
+    write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t`t`t324. sysinternals.com/AccessChk`t`t373. antonioCoco/RoguePotato";
     write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
@@ -293,7 +293,7 @@ while($true){
     write-host "WINRM";
     write-host " 158. davehardy20/Invoke-WinRMAttack`t`t`t`t159. d1pakda5/PowerShell-for-Pentesters/Code/44/Get-WinRMPassword";
     write-host "WMI";
-    write-host " 262. Cybereason/Invoke-WMILM`t`t`t`t344. Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility`t`t`t`t351. Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility";
+    write-host " 262. Cybereason/Invoke-WMILM`t`t`t`t`t344. Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility`t351. Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility";
     
     $RISP=read-host 'Make your choice';
     switch ($RISP){
