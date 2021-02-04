@@ -215,7 +215,7 @@ while($true){
     write-host "PRIVESC";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
     write-host " 14. samratashok/nishang/Backdoors`t`t`t`t15. samratashok/nishang/Bypass`t`t`t`t`t18. samratashok/nishang/powerpreter";
-    write-host " 29. itm4n/PrivescCheck`t`t`t`t`t`t60. PrintDemon PrivEsc";
+    write-host " 29. itm4n/PrivescCheck`t`t`t`t`t`t60. PrintDemon PrivEsc`t`t368. offensive-security/exploitdb-windows/local";
     write-host " 112. HarmJ0y/Misc-PowerShell/Invoke-WdigestDowngrade`t`t127. PowerShellMafia/PowerSploit/Privesc/Get-System`t143. FuzzySecurity/PowerShell-Suite/Bypass-UAC";
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
@@ -625,6 +625,7 @@ while($true){
         '365' {Scarica "gushmazuko/WinBypass/EventVwrBypass" "EventVwrBypass.ps1" "gushmazuko/WinBypass/master/EventVwrBypass.ps1"}
         '366' {Scarica "gushmazuko/WinBypass/DiskCleanupBypass_direct" "DiskCleanupBypass_direct.ps1" "gushmazuko/WinBypass/master/DiskCleanupBypass_direct.ps1"}
         '367' {ScaricaBat "Mncx86/Windows-10-UAC-bypass" "uacdisabler.bat" "Mncx86/Windows-10-UAC-bypass/master/uacdisabler.bat"}
+        '368' {write-host 'you will get https://github.com/offensive-security/exploitdb - windows/local'; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "offensive-security/exploitdb/master/exploits/windows/local/$FILENAME" "$FILENAME" "offensive-security/exploitdb/master/exploits/windows/local/$FILENAME"}}
         '369' {ScaricaSSL "PwnDexter/SharpEDRChecker/1.1" "SharpEDRChecker.exe" "PwnDexter/SharpEDRChecker/releases/download/1.1/SharpEDRChecker.exe"}
         '370' {Scarica "3gstudent/Javascript-Backdoor (real name, JSRat)" "JSRat.ps1" "3gstudent/Javascript-Backdoor/master/JSRat.ps1"}
         '371' {ScaricaSSL "icsharpcode/AvaloniaILSpy" "ILSpy-win-x64-Release.zip" "icsharpcode/AvaloniaILSpy/releases/download/v5.0-rc2/ILSpy-win-x64-Release.zip"}
