@@ -128,7 +128,7 @@ while($true){
     write-host " 183. gallery.technet.microsoft.com/scriptcenter/Get-MemoryDump/Get-MemoryDump`t`t`t`t`t`t`t186. Zimm/tcpdump-powershell/PacketCapture";
     write-host " 187. sperner/PowerShell/Sniffer`t`t`t`t202. adnan-alhomssi/chrome-passwords`t`t`t203. haris989/Chrome-password-stealer";
     write-host " 204. kspearrin/ff-password-exporter/FF-Password-Exporter-Portable-1.2.0`t`t`t`t`t`t`t211. sec-1/gp3finder_v4.0";
-    write-host " 237. gentilkiwi/mimikatz`t`t`t`t`t`t258. scipag/PowerShellUtilities/Invoke-MimikatzNetwork";
+    write-host " 237. gentilkiwi/mimikatz`t`t`t`t`t258. scipag/PowerShellUtilities/Invoke-MimikatzNetwork";
     write-host " 259. scipag/PowerShellUtilities/Select-MimikatzDomainAccounts`t`t`t`t`t`t`t`t`t307. nettitude/Invoke-PowerThIEf";
     write-host " 311. 3gstudent/Winpcap_Install`t`t`t`t`t312. 3gstudent/Dump-Clear-Password-after-KB2871997-installed";
     write-host " 379. orlyjamie/mimikittenz`t`t`t`t`t381. digitalcorpora/bulk_extractor32`t`t`t382. digitalcorpora/bulk_extractor64";
@@ -180,7 +180,7 @@ while($true){
     write-host " 223. tmenochet/PowerSpray`t`t`t`t`t251. NotMedic/NetNTLMtoSilverTicket";
     write-host "LDAP";
     write-host " 145. Nillth/PWSH-LDAP/LDAP-Query`t`t`t`t147. dinigalab/ldapsearch`t`t`t`t`t318. roggenk/PowerShell/LDAPS";
-    write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain`t`t`t`t`t346. Mr-Un1k0d3r/RedTeamCSharpScripts/ldapquery";
+    write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain`t`t`t`t`t`t346. Mr-Un1k0d3r/RedTeamCSharpScripts/ldapquery";
     write-host " 347. Mr-Un1k0d3r/RedTeamCSharpScripts/ldaputility";
     write-host "MACRO";
     write-host " 130. 0xm4v3rick/Extract-Macro`t`t`t`t`t131. enigma0x3/Generate-Macro`t`t`t`t`t219. curi0usJack/luckystrike";
@@ -219,11 +219,11 @@ while($true){
     write-host " 112. HarmJ0y/Misc-PowerShell/Invoke-WdigestDowngrade`t`t127. PowerShellMafia/PowerSploit/Privesc/Get-System`t143. FuzzySecurity/PowerShell-Suite/Bypass-UAC";
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
-    write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t`t`t324. sysinternals.com/AccessChk`t`t373. antonioCoco/RoguePotato";
+    write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t373. antonioCoco/RoguePotato";
     write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
-    write-host " 213. FortyNorthSecurity/WMImplant`t`t`t`t275. quasar/Quasar.v1.4.0`t`t`t`t`t370. 3gstudent/Javascript-Backdoor (real name, JSRat)";
+    write-host " 213. FortyNorthSecurity/WMImplant`t`t`t`t275. quasar/Quasar.v1.4.0`t`t`t`t`t370. 3gstudent/Javascript-Backdoor (aka JSRat)";
     write-host " 372. BenChaliah/Arbitrium-RAT";
     write-host "RDP";
     write-host " 146. 3gstudent/List-RDP-Connections-History`t`t`t286. Viralmaniar/Remote-Desktop-Caching`t`t`t288. technet.microsoft/scriptcenter/NLA";
