@@ -93,6 +93,7 @@ while($true){
     write-host " 150. HarmJ0y/ASREPRoast`t`t`t`t`t152. Kevin-Robertson/Powermad`t`t`t`t`t156. AlsidOfficial/UncoverDCShadow";
     write-host " 157. clr2of8/parse-net-users-bat`t`t`t`t165. leoloobeek/LAPSToolkit`t`t`t`t`t166. sense-of-security/ADRecon";
     write-host " 264. phillips321/adaudit`t`t`t`t`t316. canix1/ADACLScanner`t`t`t`t`t`t317. cyberark/ACLight";
+    write-host " 385. EvotecIT/GPOZaurr";
     write-host "AGENTS";
     write-host " 232. hyp3rlinx/DarkFinger-C2-Agent";
     write-host "ANALISYS";
@@ -642,6 +643,7 @@ while($true){
         '382' {ScaricaExt "digitalcorpora/bulk_extractor64" "bulk_extractor64.exe" "http://downloads.digitalcorpora.org/downloads/bulk_extractor/bulk_extractor64.exe"}
         '383' {ScaricaSSL "Invoke-IR/PowerForensics" "PowerForensics.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensics.zip"}
         '384' {ScaricaSSL "Invoke-IR/PowerForensicsv2" "PowerForensicsv2.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensicsv2.zip"}
+        '385' {ScaricaSSL "EvotecIT/GPOZaurr" "GPOZaurr.zip" "EvotecIT/GPOZaurr/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
