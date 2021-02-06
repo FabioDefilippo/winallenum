@@ -248,7 +248,7 @@ while($true){
     write-host "SMB";
     write-host " 59. mvelazc0/Invoke-SMBLogin`t`t`t`t`t52. vletoux/smbscanner`t`t`t`t`t`t125. Kevin-Robertson/Invoke-TheHash";
     write-host " 55. InfosecMatter/Minimalistic-offensive-security-tools`t`t`t`t`t`t`t`t`t36. threatexpress/Invoke-PipeShell";
-    write-host " 133. ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets";
+    write-host " 133. ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets`t`t387. deepsecurity-pe/GoGhost";
     write-host "SNIFFER";
     write-host " 53. sperner/PowerShell/Sniffer";
     write-host "SNMP";
@@ -646,6 +646,7 @@ while($true){
         '384' {ScaricaSSL "Invoke-IR/PowerForensicsv2" "PowerForensicsv2.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensicsv2.zip"}
         '385' {ScaricaSSL "EvotecIT/GPOZaurr" "GPOZaurr.zip" "EvotecIT/GPOZaurr/archive/master.zip"}
         '386' {ScaricaSSL "moonD4rk/HackBrowserData" "hack-browser-data-v0.3.3-windows-64bit.zip" "moonD4rk/HackBrowserData/releases/download/v0.3.3/hack-browser-data-v0.3.3-windows-64bit.zip"}
+        '387' {ScaricaSSL "deepsecurity-pe/GoGhost" "GoGhost_win_amd64.exe" "deepsecurity-pe/GoGhost/raw/master/GoGhost_win_amd64.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
