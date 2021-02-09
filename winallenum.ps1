@@ -95,7 +95,7 @@ while($true){
     write-host " 264. phillips321/adaudit`t`t`t`t`t316. canix1/ADACLScanner`t`t`t`t`t`t317. cyberark/ACLight";
     write-host " 385. EvotecIT/GPOZaurr";
     write-host "AGENTS";
-    write-host " 232. hyp3rlinx/DarkFinger-C2-Agent";
+    write-host " 232. hyp3rlinx/DarkFinger-C2-Agent`t`t`t`t61. xtr4nge/FruityC2/ps_agent.ps1";
     write-host "ANALISYS";
     write-host " 30. sysinternals/NotMyFault`t`t`t`t`t31. sysinternals/Procdump`t`t`t`t`t32. sysinternals/PSTools";
     write-host " 174. sysinternals/TCPView`t`t`t`t`t369. PwnDexter/SharpEDRChecker";
@@ -360,6 +360,7 @@ while($true){
         '58' {ScaricaSSL "PrateekKumarSingh/AzViz" "AzViz.zip" "PrateekKumarSingh/AzViz/archive/master.zip"}
         '59' {Scarica "mvelazc0/Invoke-SMBLogin" "Invoke-SMBLogin.ps1" "mvelazc0/Invoke-SMBLogin/master/Invoke-SMBLogin.ps1"}
         '60' {write-host "PrintDemon PrivEsc"; Add-PrinterPort -Name C:\Windows\System32\ualapi.dll}
+        '61' {Scarica "xtr4nge/FruityC2/agent" "ps_agent.ps1" "xtr4nge/FruityC2/master/agent/ps_agent.ps1"}
         '90' {(dir *.zip).Name; $NOME=read-host "Digit a zip file to extract"; if($NOME -ne "" -and $NOME.EndsWith(".zip")){if(Test-Path $NOME){[System.IO.Compression.ZipFile]::ExtractToDirectory($NOME, $NOME.Replace(".zip", ""))}else{write-host $NOME" does not exist"}}else{write-host "ERROR: empty field or it is not a zip file"}}
         '91' {write-host "Digit first three IPv4 Values dotted"; $IP=read-host "(example, 192.168.168)"; if($IP -ne ""){for ($RANGE = 0; $RANGE -lt 256; $RANGE++){$IPT="$IP.$RANGE"; Write-Host -NoNewLine "`rTest $IPT`r"; try{if((Test-Connection "$IPT" -Quiet -Count 1)){write-host "$IPT found"}}catch{}}}}
         '99' {write-host "Download a file"; write-host "Digit URI/URL and filename with extension"; $FILENAME=read-host "(example http://192.168.1.100/exploit.ps1)"; if($FILENAME -ne ""){write-host "downloading $FILENAME"; try{invoke-webrequest -uri $FILENAME -outfile $FILENAME;}catch{write-host $_}}}
