@@ -105,7 +105,7 @@ while($true){
     write-host " 58. PrateekKumarSingh/AzViz`t`t`t`t`t153. hausec/PowerZure`t`t`t`t`t`t189. NetSPI/MicroBurst/Az";
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
     write-host "BACKDOOR";
-    write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12";
+    write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12`t`t`t`t`t398. tokyoneon/Chimera/shells/misc/Add-RegBackdoor";
     write-host "C&C";
     write-host " 378. enigma0x3/Powershell-C2";
     write-host "COBOL";
@@ -226,7 +226,7 @@ while($true){
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
     write-host " 213. FortyNorthSecurity/WMImplant`t`t`t`t275. quasar/Quasar.v1.4.0`t`t`t`t`t370. 3gstudent/Javascript-Backdoor (aka JSRat)";
-    write-host " 372. BenChaliah/Arbitrium-RAT";
+    write-host " 372. BenChaliah/Arbitrium-RAT`t`t`t400. tokyoneon/Chimera/shells/misc/Invoke-PoshRatHttp";
     write-host "RDP";
     write-host " 146. 3gstudent/List-RDP-Connections-History`t`t`t286. Viralmaniar/Remote-Desktop-Caching`t`t`t288. technet.microsoft/scriptcenter/NLA";
     write-host "RECON";
@@ -241,10 +241,14 @@ while($true){
     write-host " 230. rada.re/radare2-w32-2.2.0`t`t`t`t`t270. Decompile-Net-code";
     write-host "REVSHELL";
     write-host " 238. 3v4Si0N/HTTP-revshell/Invoke-WebRev`t`t`t239. 3v4Si0N/HTTP-revshell/Revshell-Generator`t`t240. besimorhino/powercat";
-    write-host " 242. danielwolfmann/Invoke-WordThief`t`t`t`t306. kmkz/PowerShell/Reverse-Shell";
+    write-host " 242. danielwolfmann/Invoke-WordThief`t`t`t`t306. kmkz/PowerShell/Reverse-Shell`t`t`t388. tokyoneon/Chimera/shells/Invoke-PowerShellIcmp";
+    write-host " 390. tokyoneon/Chimera/shells/Invoke-PowerShellTcp`t`t`t391. tokyoneon/Chimera/shells/Invoke-PowerShellTcpOneLine`t`t`t392. tokyoneon/Chimera/shells/Invoke-PowerShellUdp";
+    write-host " 393. tokyoneon/Chimera/shells/Invoke-PowerShellUdpOneLine`t`t`t394. tokyoneon/Chimera/shells/generic1`t`t`t395. tokyoneon/Chimera/shells/generic2";
+    write-host " 396. tokyoneon/Chimera/shells/generic3`t`t`t397. tokyoneon/Chimera/shells/powershell_reverse_shell";
     write-host "SCANNING";
     write-host " 47. nmap.org/nmap-7.80-win32`t`t`t`t`t17. samratashok/nishang/Scan";
     write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus`t`t388. thom-s/netsec-ps-scripts/printer-telnet-ftp-report";
+    write-host " 401. tokyoneon/Chimera/shells/misc/Invoke-PortScan";
     write-host "SMB";
     write-host " 59. mvelazc0/Invoke-SMBLogin`t`t`t`t`t52. vletoux/smbscanner`t`t`t`t`t`t125. Kevin-Robertson/Invoke-TheHash";
     write-host " 55. InfosecMatter/Minimalistic-offensive-security-tools`t`t`t`t`t`t`t`t`t36. threatexpress/Invoke-PipeShell";
@@ -294,8 +298,12 @@ while($true){
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
     write-host " 158. davehardy20/Invoke-WinRMAttack`t`t`t`t159. d1pakda5/PowerShell-for-Pentesters/Code/44/Get-WinRMPassword";
+    write-host "WLAN - WIFI";
+    write-host " 402. tokyoneon/Chimera/shells/misc/Get-WLAN-Keys";
     write-host "WMI";
     write-host " 262. Cybereason/Invoke-WMILM`t`t`t`t`t344. Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility`t351. Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility";
+    write-host "OTHERS - ?";
+    write-host " 399. tokyoneon/Chimera/shells/misc/Get-Information";
     
     $RISP=read-host 'Make your choice';
     switch ($RISP){
