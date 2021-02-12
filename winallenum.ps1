@@ -649,6 +649,20 @@ while($true){
         '386' {ScaricaSSL "moonD4rk/HackBrowserData" "hack-browser-data-v0.3.3-windows-64bit.zip" "moonD4rk/HackBrowserData/releases/download/v0.3.3/hack-browser-data-v0.3.3-windows-64bit.zip"}
         '387' {ScaricaSSL "deepsecurity-pe/GoGhost" "GoGhost_win_amd64.exe" "deepsecurity-pe/GoGhost/raw/master/GoGhost_win_amd64.exe"}
         '388' {Scarica "thom-s/netsec-ps-scripts/printer-telnet-ftp-report" "printer-telnet-ftp-report.ps1" "thom-s/netsec-ps-scripts/master/printer-telnet-ftp-report/printer-telnet-ftp-report.ps1"}
+        '389' {Scarica "tokyoneon/Chimera/shells/Invoke-PowerShellIcmp" "Invoke-PowerShellIcmp.ps1" "tokyoneon/Chimera/master/shells/Invoke-PowerShellIcmp.ps1"}
+        '390' {Scarica "tokyoneon/Chimera/shells/Invoke-PowerShellTcp" "Invoke-PowerShellTcp.ps1" "tokyoneon/Chimera/master/shells/Invoke-PowerShellTcp.ps1"}
+        '391' {Scarica "tokyoneon/Chimera/shells/Invoke-PowerShellTcpOneLine" "Invoke-PowerShellTcpOneLine.ps1" "tokyoneon/Chimera/master/shells/Invoke-PowerShellTcpOneLine.ps1"}
+        '392' {Scarica "tokyoneon/Chimera/shells/Invoke-PowerShellUdp" "Invoke-PowerShellUdp.ps1" "tokyoneon/Chimera/master/shells/Invoke-PowerShellUdp.ps1"}
+        '393' {Scarica "tokyoneon/Chimera/shells/Invoke-PowerShellUdpOneLine" "Invoke-PowerShellUdpOneLine.ps1" "tokyoneon/Chimera/master/shells/Invoke-PowerShellUdpOneLine.ps1"}
+        '394' {Scarica "tokyoneon/Chimera/shells/generic1" "generic1.ps1" "tokyoneon/Chimera/master/shells/generic1.ps1"}
+        '395' {Scarica "tokyoneon/Chimera/shells/generic2" "generic2.ps1" "tokyoneon/Chimera/master/shells/generic2.ps1"}
+        '396' {Scarica "tokyoneon/Chimera/shells/generic3" "generic3.ps1" "tokyoneon/Chimera/master/shells/generic3.ps1"}
+        '397' {Scarica "tokyoneon/Chimera/shells/powershell_reverse_shell" "powershell_reverse_shell.ps1" "tokyoneon/Chimera/master/shells/powershell_reverse_shell.ps1"}
+        '398' {Scarica "tokyoneon/Chimera/shells/misc/Add-RegBackdoor" "Add-RegBackdoor.ps1" "tokyoneon/Chimera/master/shells/misc/Add-RegBackdoor.ps1"}
+        '399' {Scarica "tokyoneon/Chimera/shells/misc/Get-Information" "Get-Information.ps1" "tokyoneon/Chimera/master/shells/misc/Get-Information.ps1"}
+        '400' {Scarica "tokyoneon/Chimera/shells/misc/Invoke-PoshRatHttp" "Invoke-PoshRatHttp.ps1" "tokyoneon/Chimera/master/shells/misc/Invoke-PoshRatHttp.ps1"}
+        '401' {Scarica "tokyoneon/Chimera/shells/misc/Invoke-PortScan" "Invoke-PortScan.ps1" "tokyoneon/Chimera/master/shells/misc/Invoke-PortScan.ps1"}
+        '402' {Scarica "tokyoneon/Chimera/shells/misc/Get-WLAN-Keys" "Get-WLAN-Keys.ps1" "tokyoneon/Chimera/master/shells/misc/Get-WLAN-Keys.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
