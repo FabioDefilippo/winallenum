@@ -1,6 +1,6 @@
 # winallenum
-Thi powershell script has got to run in remote windows host, even for pivoting
+Thi powershell script has got to run in remote hacked windows host, even for pivoting
 
-over 300 scripts and executables to hack local and remote machines!
+over 400 scripts and executables to hack local and remote machines!
 
 Please, share and starring my repos, follow me and... Happy hacking!
