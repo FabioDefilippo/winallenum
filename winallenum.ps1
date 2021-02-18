@@ -222,6 +222,8 @@ while($true){
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
     write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t`t`t`t373. antonioCoco/RoguePotato";
+    write-host "PROXY - REVPROXY";
+    write-host " 404. fatedier/frp_386";
     write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
