@@ -672,6 +672,7 @@ while($true){
         '401' {Scarica "tokyoneon/Chimera/shells/misc/Invoke-PortScan" "Invoke-PortScan.ps1" "tokyoneon/Chimera/master/shells/misc/Invoke-PortScan.ps1"}
         '402' {Scarica "tokyoneon/Chimera/shells/misc/Get-WLAN-Keys" "Get-WLAN-Keys.ps1" "tokyoneon/Chimera/master/shells/misc/Get-WLAN-Keys.ps1"}
         '403' {Scarica "Arno0x/DNSExfiltrator" "Invoke-DNSExfiltrator.ps1" "Arno0x/DNSExfiltrator/master/Invoke-DNSExfiltrator.ps1"}
+        '404' {ScaricaSSL "fatedier/frp_386" "frp_0.35.1_windows_386.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_386.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
