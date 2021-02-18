@@ -223,7 +223,7 @@ while($true){
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
     write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t`t`t`t373. antonioCoco/RoguePotato";
     write-host "PROXY - REVPROXY";
-    write-host " 404. fatedier/frp_386";
+    write-host " 404. fatedier/frp_386`t`t`t`t`t`t405. fatedier/frp_amd64";
     write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
@@ -675,6 +675,7 @@ while($true){
         '402' {Scarica "tokyoneon/Chimera/shells/misc/Get-WLAN-Keys" "Get-WLAN-Keys.ps1" "tokyoneon/Chimera/master/shells/misc/Get-WLAN-Keys.ps1"}
         '403' {Scarica "Arno0x/DNSExfiltrator" "Invoke-DNSExfiltrator.ps1" "Arno0x/DNSExfiltrator/master/Invoke-DNSExfiltrator.ps1"}
         '404' {ScaricaSSL "fatedier/frp_386" "frp_0.35.1_windows_386.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_386.zip"}
+        '405' {ScaricaSSL "fatedier/frp_amd64" "frp_0.35.1_windows_amd64.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_amd64.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
