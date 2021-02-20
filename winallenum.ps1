@@ -143,7 +143,7 @@ while($true){
     write-host " 244. phackt/Invoke-Recon`t`t`t`t`t292. Z3R0th-13/Enum`t`t`t`t`t`t293. duckingtoniii/Powershell-Domain-User-Enumeration";
     write-host " 294. Z3R0th-13/Profit`t`t`t`t`t`t295. Xservus/P0w3rSh3ll`t`t`t`t`t`t296. threatexpress/red-team-scripts/HostEnum";
     write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
-    write-host " 353. ankitdobhal/TTLOs";
+    write-host " 353. ankitdobhal/TTLOs`t`t`t`t`t`t407. M4ximuss/Powerless";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
@@ -679,6 +679,7 @@ while($true){
         '404' {ScaricaSSL "fatedier/frp_386" "frp_0.35.1_windows_386.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_386.zip"}
         '405' {ScaricaSSL "fatedier/frp_amd64" "frp_0.35.1_windows_amd64.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_amd64.zip"}
         '406' {ScaricaSSL "iSECPartners/jailbreak" "jailbreak.zip" "iSECPartners/jailbreak/archive/master.zip"}
+        '407' {ScaricaBat "M4ximuss/Powerless" "Powerless.bat" "M4ximuss/Powerless/master/Powerless.bat"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
