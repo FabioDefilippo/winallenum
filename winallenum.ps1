@@ -302,6 +302,7 @@ while($true){
     write-host " 269. p3nt4/Invoke-TmpDavFS";
     write-host "WINRM";
     write-host " 158. davehardy20/Invoke-WinRMAttack`t`t`t`t159. d1pakda5/PowerShell-for-Pentesters/Code/44/Get-WinRMPassword";
+    write-host " 408. antonioCoco/RogueWinRM";
     write-host "WLAN - WIFI";
     write-host " 402. tokyoneon/Chimera/shells/misc/Get-WLAN-Keys";
     write-host "WMI";
@@ -680,6 +681,7 @@ while($true){
         '405' {ScaricaSSL "fatedier/frp_amd64" "frp_0.35.1_windows_amd64.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_amd64.zip"}
         '406' {ScaricaSSL "iSECPartners/jailbreak" "jailbreak.zip" "iSECPartners/jailbreak/archive/master.zip"}
         '407' {ScaricaBat "M4ximuss/Powerless" "Powerless.bat" "M4ximuss/Powerless/master/Powerless.bat"}
+        '408' {ScaricaSSL "antonioCoco/RogueWinRM" "RogueWinRM.zip" "antonioCoco/RogueWinRM/releases/download/1.1/RogueWinRM.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
