@@ -92,8 +92,9 @@ while($true){
     write-host " 13. samratashok/nishang/ActiveDirectory`t`t`t50. BloodHoundAD/Ingestors/SharpHound`t`t`t51. PyroTek3/PowerShell-AD-Recon";
     write-host " 150. HarmJ0y/ASREPRoast`t`t`t`t`t152. Kevin-Robertson/Powermad`t`t`t`t`t156. AlsidOfficial/UncoverDCShadow";
     write-host " 157. clr2of8/parse-net-users-bat`t`t`t`t165. leoloobeek/LAPSToolkit`t`t`t`t`t166. sense-of-security/ADRecon";
-    write-host " 264. phillips321/adaudit`t`t`t`t`t316. canix1/ADACLScanner`t`t`t`t`t`t317. cyberark/ACLight";
-    write-host " 385. EvotecIT/GPOZaurr`t`t`t`t`t409. ANSSI-FR/ADTimeline";
+    write-host " 264. phillips321/adaudit`t`t`t`t`t316. canix1/ADACLScanner`t`t`t`t`t317. cyberark/ACLight";
+    write-host " 385. EvotecIT/GPOZaurr`t`t`t`t`t`t409. ANSSI-FR/ADTimeline`t`t`t`t`t410. l0ss/Grouper";
+    write-host " 411. l0ss/Grouper2";
     write-host "AGENTS";
     write-host " 232. hyp3rlinx/DarkFinger-C2-Agent`t`t`t`t61. xtr4nge/FruityC2/ps_agent.ps1";
     write-host "ANALISYS";
@@ -104,8 +105,19 @@ while($true){
     write-host "AZURE";
     write-host " 58. PrateekKumarSingh/AzViz`t`t`t`t`t153. hausec/PowerZure`t`t`t`t`t`t189. NetSPI/MicroBurst/Az";
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
-    write-host "BACKDOOR";
-    write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12`t`t`t`t`t398. tokyoneon/Chimera/shells/misc/Add-RegBackdoor";
+    write-host "BACKDOOR - SHELLCODE";
+    write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12`t`t437. mgeeky/Stracciatella";
+    write-host " 415. Hackplayers/Salsa-tools/EvilSalsa_x64/NET3.5`t`t416. Hackplayers/Salsa-tools/EvilSalsa_x86/NET3.5";
+    write-host " 417. Hackplayers/Salsa-tools/EvilSalsa_x64/NET4.0`t`t418. Hackplayers/Salsa-tools/EvilSalsa_x86/NET4.0";
+    write-host " 419. Hackplayers/Salsa-tools/EvilSalsa_x64/NET4.5`t`t420. Hackplayers/Salsa-tools/EvilSalsa_x86/NET4.5";
+    write-host " 421. Hackplayers/Salsa-tools/SalseoLoader_x64/NET3.5`t`t422. Hackplayers/Salsa-tools/SalseoLoader_x86/NET3.5";
+    write-host " 424. Hackplayers/Salsa-tools/SalseoLoader_x64/NET4.0`t`t425. Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.0";
+    write-host " 426. Hackplayers/Salsa-tools/SalseoLoader_x64/NET4.5`t`t427. Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.5";
+    write-host " 428. Hackplayers/Salsa-tools/SilentMOD_x64/NET4.5`t`t429. Hackplayers/Salsa-tools/SilentMOD_x86/NET4.5";
+    write-host " 430. Hackplayers/Salsa-tools/Standalone_x64/NET4.0`t`t431. Hackplayers/Salsa-tools/Standalone_x86/NET4.0";
+    write-host " 432. Hackplayers/Salsa-tools/Standalone_x64/NET4.5`t`t433. Hackplayers/Salsa-tools/Standalone_x86/NET4.5";
+    write-host " 434. padovah4ck/PSBypassCLM/x64`t`t`t`t435. itm4n/VBA-RunPE`t`t`t`t`t`t436. cfalta/PowerShellArmoury";
+    write-host " 398. tokyoneon/Chimera/shells/misc/Add-RegBackdoor";
     write-host "C&C";
     write-host " 378. enigma0x3/Powershell-C2";
     write-host "COBOL";
@@ -124,8 +136,8 @@ while($true){
     write-host " 128. scipag/PowerShellUtilities`t`t`t`t129. nsacyber/Pass-the-Hash-Guidance`t`t`t132. AlessandroZ/LaZagne";
     write-host " 162. giMini/PowerMemory`t`t`t`t`t164. hlldz/Invoke-Phant0m`t`t`t`t`t170. sysinternals/ProcessExplorer";
     write-host " 171. processhacker/processhacker`t`t`t`t172. sysinternals/ProcessMonitor`t`t`t`t173. sysinternals/Autoruns";
-    write-host " 180. PowerShellMafia/PowerSploit/Exfiltration";
-    write-host " 182. gallery.technet.microsoft.com/scriptcenter/POWERSHELL-SCRIPT-TO/MemoryDump_PageFile_ConfigurationExtract`t`t260. scipag/PowerShellUtilities/Select-MimikatzLocalAccounts";
+    write-host " 180. PowerShellMafia/PowerSploit/Exfiltration`t`t`t260. scipag/PowerShellUtilities/Select-MimikatzLocalAccounts";
+    write-host " 182. gallery.technet.microsoft.com/scriptcenter/POWERSHELL-SCRIPT-TO/MemoryDump_PageFile_ConfigurationExtract";
     write-host " 183. gallery.technet.microsoft.com/scriptcenter/Get-MemoryDump/Get-MemoryDump`t`t`t`t`t`t`t186. Zimm/tcpdump-powershell/PacketCapture";
     write-host " 187. sperner/PowerShell/Sniffer`t`t`t`t202. adnan-alhomssi/chrome-passwords`t`t`t203. haris989/Chrome-password-stealer";
     write-host " 204. kspearrin/ff-password-exporter/FF-Password-Exporter-Portable-1.2.0`t`t`t`t`t`t`t211. sec-1/gp3finder_v4.0";
@@ -140,18 +152,21 @@ while($true){
     write-host " 7. hausec/ADAPE-Script`t`t`t`t`t`t8. frizb/Windows-Privilege-Escalation`t`t`t9. mattiareggiani/WinEnum";
     write-host " 56. TsukiCTF/Lovely-Potato/Invoke-LovelyPotato`t`t`t57. TsukiCTF/Lovely-Potato/JuicyPotato-Static";
     write-host " 155. HarmJ0y/WINspect`t`t`t`t`t`t161. Arvanaghi/SessionGopher`t`t`t`t`t207. dafthack/HostRecon";
-    write-host " 244. phackt/Invoke-Recon`t`t`t`t`t292. Z3R0th-13/Enum`t`t`t`t`t`t293. duckingtoniii/Powershell-Domain-User-Enumeration";
+    write-host " 244. phackt/Invoke-Recon`t`t`t`t`t292. Z3R0th-13/Enum";
     write-host " 294. Z3R0th-13/Profit`t`t`t`t`t`t295. Xservus/P0w3rSh3ll`t`t`t`t`t`t296. threatexpress/red-team-scripts/HostEnum";
     write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
     write-host " 353. ankitdobhal/TTLOs`t`t`t`t`t`t407. M4ximuss/Powerless";
+    write-host " 293. duckingtoniii/Powershell-Domain-User-Enumeration";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
     write-host " 236. 360-Linton-Lab/WMIHACKER`t`t`t`t`t245. the-xentropy/xencrypt`t`t`t`t`t279. OmerYa/Invisi-Shell";
     write-host " 280. lukebaggett/dnscat2-powershell`t`t`t`t303. kmkz/PowerShell/amsi-bypass`t`t`t`t304. kmkz/PowerShell/CLM-bypass";
-    write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass`t`t`t`t363. gushmazuko/WinBypass/SluiHijackBypass_direct";
-    write-host " 364. gushmazuko/WinBypass/SluiHijackBypass`t`t`t365. gushmazuko/WinBypass/EventVwrBypass`t`t366. gushmazuko/WinBypass/DiskCleanupBypass_direct";
-    write-host " 360. L3cr0f/DccwBypassUAC`t`t`t`t`t367. Mncx86/Windows-10-UAC-bypass`t`t`t`t`t403. Arno0x/DNSExfiltrator";
+    write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass";
+    write-host " 364. gushmazuko/WinBypass/SluiHijackBypass`t`t`t365. gushmazuko/WinBypass/EventVwrBypass`t`t403. Arno0x/DNSExfiltrator";
+    write-host " 360. L3cr0f/DccwBypassUAC`t`t`t`t`t367. Mncx86/Windows-10-UAC-bypass";
+    write-host " 412. p3nt4/PowerShdll`t`t`t`t`t`t414. OmerYa/Invisi-Shell";
+    write-host " 366. gushmazuko/WinBypass/DiskCleanupBypass_direct`t`t363. gushmazuko/WinBypass/SluiHijackBypass_direct";
     write-host "EXFILTRATION";
     write-host " 210. danielwolfmann/Invoke-WordThief/Invoke-WordThief`t`t267. salu90/PSFPT/Exfiltrate";
     write-host "EXPLOITATION";
@@ -200,7 +215,7 @@ while($true){
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
     write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t354. Killeroo/PowerPing.x86";
     write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm";
-    write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2";
+    write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2`t`t`t`t`t413. jaredhaight/PSAttack";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -214,8 +229,8 @@ while($true){
     write-host "PIVOTING";
     write-host " 265. attactics/Invoke-DCOMPowerPointPivot";
     write-host "POST-EXPLOITATION";
-    write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t`t375. BloodHoundAD/BloodHound-win32-ia32`t`t`t376. enigma0x3/Old-Powershell-payload-Excel-Delivery";
-    write-host " 377. gfoss/PSRecon";
+    write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t`t375. BloodHoundAD/BloodHound-win32-ia32`t`t`t377. gfoss/PSRecon";
+    write-host " 376. enigma0x3/Old-Powershell-payload-Excel-Delivery";
     write-host "PRIVESC";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
     write-host " 14. samratashok/nishang/Backdoors`t`t`t`t15. samratashok/nishang/Bypass`t`t`t`t`t18. samratashok/nishang/powerpreter";
@@ -230,7 +245,7 @@ while($true){
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
     write-host " 213. FortyNorthSecurity/WMImplant`t`t`t`t275. quasar/Quasar.v1.4.0`t`t`t`t`t370. 3gstudent/Javascript-Backdoor (aka JSRat)";
-    write-host " 372. BenChaliah/Arbitrium-RAT`t`t`t400. tokyoneon/Chimera/shells/misc/Invoke-PoshRatHttp";
+    write-host " 372. BenChaliah/Arbitrium-RAT`t`t`t`t`t400. tokyoneon/Chimera/shells/misc/Invoke-PoshRatHttp";
     write-host "RDP";
     write-host " 146. 3gstudent/List-RDP-Connections-History`t`t`t286. Viralmaniar/Remote-Desktop-Caching`t`t`t288. technet.microsoft/scriptcenter/NLA";
     write-host "RECON";
@@ -245,14 +260,15 @@ while($true){
     write-host " 230. rada.re/radare2-w32-2.2.0`t`t`t`t`t270. Decompile-Net-code";
     write-host "REVSHELL";
     write-host " 238. 3v4Si0N/HTTP-revshell/Invoke-WebRev`t`t`t239. 3v4Si0N/HTTP-revshell/Revshell-Generator`t`t240. besimorhino/powercat";
-    write-host " 242. danielwolfmann/Invoke-WordThief`t`t`t`t306. kmkz/PowerShell/Reverse-Shell`t`t`t388. tokyoneon/Chimera/shells/Invoke-PowerShellIcmp";
-    write-host " 390. tokyoneon/Chimera/shells/Invoke-PowerShellTcp`t`t`t391. tokyoneon/Chimera/shells/Invoke-PowerShellTcpOneLine`t`t`t392. tokyoneon/Chimera/shells/Invoke-PowerShellUdp";
-    write-host " 393. tokyoneon/Chimera/shells/Invoke-PowerShellUdpOneLine`t`t`t394. tokyoneon/Chimera/shells/generic1`t`t`t395. tokyoneon/Chimera/shells/generic2";
-    write-host " 396. tokyoneon/Chimera/shells/generic3`t`t`t397. tokyoneon/Chimera/shells/powershell_reverse_shell";
+    write-host " 242. danielwolfmann/Invoke-WordThief`t`t`t`t306. kmkz/PowerShell/Reverse-Shell`t`t`t`t";
+    write-host " 390. tokyoneon/Chimera/shells/Invoke-PowerShellTcp`t`t391. tokyoneon/Chimera/shells/Invoke-PowerShellTcpOneLine";
+    write-host " 393. tokyoneon/Chimera/shells/Invoke-PowerShellUdpOneLine`t394. tokyoneon/Chimera/shells/generic1`t`t`t395. tokyoneon/Chimera/shells/generic2";
+    write-host " 396. tokyoneon/Chimera/shells/generic3`t`t`t`t397. tokyoneon/Chimera/shells/powershell_reverse_shell";
+    write-host " 388. tokyoneon/Chimera/shells/Invoke-PowerShellIcmp`t`t392. tokyoneon/Chimera/shells/Invoke-PowerShellUdp";
     write-host "SCANNING";
     write-host " 47. nmap.org/nmap-7.80-win32`t`t`t`t`t17. samratashok/nishang/Scan";
-    write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus`t`t388. thom-s/netsec-ps-scripts/printer-telnet-ftp-report";
-    write-host " 401. tokyoneon/Chimera/shells/misc/Invoke-PortScan";
+    write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus";
+    write-host " 401. tokyoneon/Chimera/shells/misc/Invoke-PortScan`t`t388. thom-s/netsec-ps-scripts/printer-telnet-ftp-report";
     write-host "SMB";
     write-host " 59. mvelazc0/Invoke-SMBLogin`t`t`t`t`t52. vletoux/smbscanner`t`t`t`t`t`t125. Kevin-Robertson/Invoke-TheHash";
     write-host " 55. InfosecMatter/Minimalistic-offensive-security-tools`t`t`t`t`t`t`t`t`t36. threatexpress/Invoke-PipeShell";
@@ -698,7 +714,7 @@ while($true){
         '422' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET3.5" "SalseoLoader_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET3.5/SalseoLoader_x86.exe"}
         '424' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x64/NET4.0" "SalseoLoader_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.0/SalseoLoader_x64.exe"}
         '425' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.0" "SalseoLoader_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.0/SalseoLoader_x86.exe"}
-        '426' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.5" "SalseoLoader_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.5/SalseoLoader_x64.exe"}
+        '426' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x64/NET4.5" "SalseoLoader_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.5/SalseoLoader_x64.exe"}
         '427' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.5" "SalseoLoader_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.5/SalseoLoader_x86.exe"}
         '428' {ScaricaSSL "Hackplayers/Salsa-tools/SilentMOD_x64/NET4.5" "SilentMOD_x64.dll" "Hackplayers/Salsa-tools/raw/master/releases/SilentMOD/NET4.5/SilentMOD_x64.dll"}
         '429' {ScaricaSSL "Hackplayers/Salsa-tools/SilentMOD_x86/NET4.5" "SilentMOD_x86.dll" "Hackplayers/Salsa-tools/raw/master/releases/SilentMOD/NET4.5/SilentMOD_x86.dll"}
