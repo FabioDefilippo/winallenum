@@ -94,7 +94,8 @@ while($true){
     write-host " 157. clr2of8/parse-net-users-bat`t`t`t`t165. leoloobeek/LAPSToolkit`t`t`t`t`t166. sense-of-security/ADRecon";
     write-host " 264. phillips321/adaudit`t`t`t`t`t316. canix1/ADACLScanner`t`t`t`t`t317. cyberark/ACLight";
     write-host " 385. EvotecIT/GPOZaurr`t`t`t`t`t`t409. ANSSI-FR/ADTimeline`t`t`t`t`t410. l0ss/Grouper";
-    write-host " 411. l0ss/Grouper2";
+    write-host " 411. l0ss/Grouper2`t`t`t`t`t`t438. SnaffCon/Snaffler`t`t`t`t`t`t442. vletoux/pingcastle";
+    write-host " 443. canix1/ADACLScanner`t`t`t`t`t444. fox-it/Invoke-ACLPwn`t`t`t`t`t445. FatRodzianko/Get-RBCD-Threaded";
     write-host "AGENTS";
     write-host " 232. hyp3rlinx/DarkFinger-C2-Agent`t`t`t`t61. xtr4nge/FruityC2/ps_agent.ps1";
     write-host "ANALISYS";
@@ -105,7 +106,7 @@ while($true){
     write-host "AZURE";
     write-host " 58. PrateekKumarSingh/AzViz`t`t`t`t`t153. hausec/PowerZure`t`t`t`t`t`t189. NetSPI/MicroBurst/Az";
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
-    write-host "BACKDOOR - SHELLCODE";
+    write-host "BACKDOOR - SHELLCODE - PERSISTENCE";
     write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12`t`t437. mgeeky/Stracciatella";
     write-host " 415. Hackplayers/Salsa-tools/EvilSalsa_x64/NET3.5`t`t416. Hackplayers/Salsa-tools/EvilSalsa_x86/NET3.5";
     write-host " 417. Hackplayers/Salsa-tools/EvilSalsa_x64/NET4.0`t`t418. Hackplayers/Salsa-tools/EvilSalsa_x86/NET4.0";
@@ -117,7 +118,7 @@ while($true){
     write-host " 430. Hackplayers/Salsa-tools/Standalone_x64/NET4.0`t`t431. Hackplayers/Salsa-tools/Standalone_x86/NET4.0";
     write-host " 432. Hackplayers/Salsa-tools/Standalone_x64/NET4.5`t`t433. Hackplayers/Salsa-tools/Standalone_x86/NET4.5";
     write-host " 434. padovah4ck/PSBypassCLM/x64`t`t`t`t435. itm4n/VBA-RunPE`t`t`t`t`t`t436. cfalta/PowerShellArmoury";
-    write-host " 398. tokyoneon/Chimera/shells/misc/Add-RegBackdoor";
+    write-host " 398. tokyoneon/Chimera/shells/misc/Add-RegBackdoor`t`t446. fireeye/SharPersist/v1.0.1";
     write-host "C&C";
     write-host " 378. enigma0x3/Powershell-C2";
     write-host "COBOL";
@@ -181,6 +182,7 @@ while($true){
     write-host " 231. limbenjamin/nTimetools";
     write-host "GATHERING";
     write-host " 109. TonyPhipps/Meerkat/Modules`t`t`t`t16. samratashok/nishang/Gather`t`t`t`t`t184. dafthack/PowerMeta";
+    write-host " 439. vivami/SauronEye/v0.0.9";
     write-host "GUESSING";
     write-host " 358. DarkCoderSc/Win32/win-brute-logon`t`t`t`t359. DarkCoderSc/Win64/win-brute-logon";
     write-host "HOOKING - HIJACKING - INJECTION";
@@ -230,7 +232,7 @@ while($true){
     write-host " 265. attactics/Invoke-DCOMPowerPointPivot";
     write-host "POST-EXPLOITATION";
     write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t`t375. BloodHoundAD/BloodHound-win32-ia32`t`t`t377. gfoss/PSRecon";
-    write-host " 376. enigma0x3/Old-Powershell-payload-Excel-Delivery";
+    write-host " 376. enigma0x3/Old-Powershell-payload-Excel-Delivery`t`t441. mubix/post-exploitation";
     write-host "PRIVESC";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
     write-host " 14. samratashok/nishang/Backdoors`t`t`t`t15. samratashok/nishang/Bypass`t`t`t`t`t18. samratashok/nishang/powerpreter";
@@ -239,6 +241,7 @@ while($true){
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
     write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t`t`t`t373. antonioCoco/RoguePotato";
+    write-host " 440. xct/xc/PrivescCheck";
     write-host "PROXY - REVPROXY";
     write-host " 404. fatedier/frp_386`t`t`t`t`t`t405. fatedier/frp_amd64";
     write-host "PXE";
@@ -726,6 +729,15 @@ while($true){
         '435' {ScaricaSSL "itm4n/VBA-RunPE" "VBA-RunPE.zip" "itm4n/VBA-RunPE/archive/master.zip"}
         '436' {ScaricaSSL "cfalta/PowerShellArmoury" "PowerShellArmoury.zip" "cfalta/PowerShellArmoury/archive/master.zip"}
         '437' {ScaricaSSL "mgeeky/Stracciatella" "Stracciatella.exe" "mgeeky/Stracciatella/raw/master/Stracciatella.exe"}
+        '438' {ScaricaSSL "SnaffCon/Snaffler/0.9.2" "Snaffler.zip" "SnaffCon/Snaffler/releases/download/0.9.2/Snaffler.zip"}
+        '439' {ScaricaSSL "vivami/SauronEye/v0.0.9" "SauronEye.exe" "vivami/SauronEye/releases/download/v0.0.9/SauronEye.exe"}
+        '440' {Scarica "xct/xc/PrivescCheck" "PrivescCheck.ps1" "xct/xc/master/files/powershell/PrivescCheck.ps1"}
+        '441' {ScaricaSSL "mubix/post-exploitation" "post-exploitation.zip" "mubix/post-exploitation/archive/master.zip"}
+        '442' {ScaricaSSL "vletoux/pingcastle" "PingCastle_2.9.2.0.zip" "vletoux/pingcastle/releases/download/2.9.2.0/PingCastle_2.9.2.0.zip"}
+        '443' {Scarica "canix1/ADACLScanner" "ADACLScan.ps1" "canix1/ADACLScanner/master/ADACLScan.ps1"}
+        '444' {Scarica "fox-it/Invoke-ACLPwn" "Invoke-ACLPwn.ps1" "fox-it/Invoke-ACLPwn/master/Invoke-ACLPwn.ps1"};
+        '445' {ScaricaSSL "FatRodzianko/Get-RBCD-Threaded/1.05" "Get-RBCD-Threaded.exe" "FatRodzianko/Get-RBCD-Threaded/releases/download/1.05/Get-RBCD-Threaded.exe"}
+        '446' {ScaricaSSL "fireeye/SharPersist/v1.0.1" "SharPersist.exe" "fireeye/SharPersist/releases/download/v1.0.1/SharPersist.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
