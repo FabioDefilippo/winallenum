@@ -683,6 +683,33 @@ while($true){
         '407' {ScaricaBat "M4ximuss/Powerless" "Powerless.bat" "M4ximuss/Powerless/master/Powerless.bat"}
         '408' {ScaricaSSL "antonioCoco/RogueWinRM" "RogueWinRM.zip" "antonioCoco/RogueWinRM/releases/download/1.1/RogueWinRM.zip"}
         '409' {ScaricaSSL "ANSSI-FR/ADTimeline" "ADTimeline.zip" "ANSSI-FR/ADTimeline/archive/master.zip"}
+        '410' {Scarica "l0ss/Grouper" "grouper.psm1" "l0ss/Grouper/master/grouper.psm1"}
+        '411' {ScaricaSSL "l0ss/Grouper2" "Grouper2.exe" "l0ss/Grouper2/releases/download/0.9.64/Grouper2.exe"}
+        '412' {ScaricaSSL "p3nt4/PowerShdll" "Powershdll.exe" "p3nt4/PowerShdll/raw/master/exe/bin/Release/Powershdll.exe"; Scarica "p3nt4/PowerShdll" "PowerShdll.exe.config" "p3nt4/PowerShdll/master/exe/bin/Release/PowerShdll.exe.config"}
+        '413' {ScaricaSSL "jaredhaight/PSAttack" "PSAttack-1.99.1.zip" "jaredhaight/PSAttack/releases/download/v1.99.1/PSAttack-1.99.1.zip"}
+        '414' {ScaricaSSL "OmerYa/Invisi-Shell" "InvisiShellProfiler.dll" "OmerYa/Invisi-Shell/raw/master/build/x64/Release/InvisiShellProfiler.dll"}
+        '415' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x64/NET3.5" "EvilSalsa_x64.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET3.5/EvilSalsa_x64.dll"}
+        '416' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x86/NET3.5" "EvilSalsa_x86.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET3.5/EvilSalsa_x86.dll"}
+        '417' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x64/NET4.0" "EvilSalsa_x64.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET4.0/EvilSalsa_x64.dll"}
+        '418' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x86/NET4.0" "EvilSalsa_x86.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET4.0/EvilSalsa_x86.dll"}
+        '419' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x64/NET4.5" "EvilSalsa_x64.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET4.5/EvilSalsa_x64.dll"}
+        '420' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x86/NET4.5" "EvilSalsa_x86.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET4.5/EvilSalsa_x86.dll"}
+        '421' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x64/NET3.5" "SalseoLoader_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET3.5/SalseoLoader_x64.exe"}
+        '422' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET3.5" "SalseoLoader_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET3.5/SalseoLoader_x86.exe"}
+        '424' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x64/NET4.0" "SalseoLoader_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.0/SalseoLoader_x64.exe"}
+        '425' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.0" "SalseoLoader_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.0/SalseoLoader_x86.exe"}
+        '426' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.5" "SalseoLoader_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.5/SalseoLoader_x64.exe"}
+        '427' {ScaricaSSL "Hackplayers/Salsa-tools/SalseoLoader_x86/NET4.5" "SalseoLoader_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/SalseoLoader/NET4.5/SalseoLoader_x86.exe"}
+        '428' {ScaricaSSL "Hackplayers/Salsa-tools/SilentMOD_x64/NET4.5" "SilentMOD_x64.dll" "Hackplayers/Salsa-tools/raw/master/releases/SilentMOD/NET4.5/SilentMOD_x64.dll"}
+        '429' {ScaricaSSL "Hackplayers/Salsa-tools/SilentMOD_x86/NET4.5" "SilentMOD_x86.dll" "Hackplayers/Salsa-tools/raw/master/releases/SilentMOD/NET4.5/SilentMOD_x86.dll"}
+        '430' {ScaricaSSL "Hackplayers/Salsa-tools/Standalone_x64/NET4.0" "SalseoStandalone_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/Standalone/NET4.0/SalseoStandalone_x64.exe"}
+        '431' {ScaricaSSL "Hackplayers/Salsa-tools/Standalone_x86/NET4.0" "SalseoStandalone_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/Standalone/NET4.0/SalseoStandalone_x86.exe"}
+        '432' {ScaricaSSL "Hackplayers/Salsa-tools/Standalone_x64/NET4.5" "SalseoStandalone_x64.exe" "Hackplayers/Salsa-tools/raw/master/releases/Standalone/NET4.5/SalseoStandalone_x64.exe"}
+        '433' {ScaricaSSL "Hackplayers/Salsa-tools/Standalone_x86/NET4.5" "SalseoStandalone_x86.exe" "Hackplayers/Salsa-tools/raw/master/releases/Standalone/NET4.5/SalseoStandalone_x86.exe"}
+        '434' {ScaricaSSL "padovah4ck/PSBypassCLM/x64" "PsBypassCLM.exe" "padovah4ck/PSByPassCLM/raw/master/PSBypassCLM/PSBypassCLM/bin/x64/Debug/PsBypassCLM.exe"}
+        '435' {ScaricaSSL "itm4n/VBA-RunPE" "VBA-RunPE.zip" "itm4n/VBA-RunPE/archive/master.zip"}
+        '436' {ScaricaSSL "cfalta/PowerShellArmoury" "PowerShellArmoury.zip" "cfalta/PowerShellArmoury/archive/master.zip"}
+        '437' {ScaricaSSL "mgeeky/Stracciatella" "Stracciatella.exe" "mgeeky/Stracciatella/raw/master/Stracciatella.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
