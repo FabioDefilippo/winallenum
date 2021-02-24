@@ -157,7 +157,7 @@ while($true){
     write-host " 294. Z3R0th-13/Profit`t`t`t`t`t`t295. Xservus/P0w3rSh3ll`t`t`t`t`t`t296. threatexpress/red-team-scripts/HostEnum";
     write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
     write-host " 353. ankitdobhal/TTLOs`t`t`t`t`t`t407. M4ximuss/Powerless";
-    write-host " 293. duckingtoniii/Powershell-Domain-User-Enumeration";
+    write-host " 293. duckingtoniii/Powershell-Domain-User-Enumeration`t`t450. adrianlois/Fingerprinting-envio-FTP-PowerShell/SysInfo";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
@@ -180,6 +180,8 @@ while($true){
     write-host " 233. antonioCoco/Invoke-RunasCs";
     write-host "FILE SYSTEM";
     write-host " 231. limbenjamin/nTimetools";
+    write-host "FTP";
+    write-host " 452. tonylanglet/crushftp.powershell";
     write-host "GATHERING";
     write-host " 109. TonyPhipps/Meerkat/Modules`t`t`t`t16. samratashok/nishang/Gather`t`t`t`t`t184. dafthack/PowerMeta";
     write-host " 439. vivami/SauronEye/v0.0.9";
@@ -218,6 +220,7 @@ while($true){
     write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t354. Killeroo/PowerPing.x86";
     write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm";
     write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2`t`t`t`t`t413. jaredhaight/PSAttack";
+    write-host " 449. VikasSukhija/Downloads/Multi-Tools";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -275,7 +278,7 @@ while($true){
     write-host "SMB";
     write-host " 59. mvelazc0/Invoke-SMBLogin`t`t`t`t`t52. vletoux/smbscanner`t`t`t`t`t`t125. Kevin-Robertson/Invoke-TheHash";
     write-host " 55. InfosecMatter/Minimalistic-offensive-security-tools`t`t`t`t`t`t`t`t`t36. threatexpress/Invoke-PipeShell";
-    write-host " 133. ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets`t`t387. deepsecurity-pe/GoGhost";
+    write-host " 133. ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets`t`t387. deepsecurity-pe/GoGhost`t`t`t448. arjansturing/smbv1finder";
     write-host "SNIFFER";
     write-host " 53. sperner/PowerShell/Sniffer";
     write-host "SNMP";
@@ -738,6 +741,12 @@ while($true){
         '444' {Scarica "fox-it/Invoke-ACLPwn" "Invoke-ACLPwn.ps1" "fox-it/Invoke-ACLPwn/master/Invoke-ACLPwn.ps1"};
         '445' {ScaricaSSL "FatRodzianko/Get-RBCD-Threaded/1.05" "Get-RBCD-Threaded.exe" "FatRodzianko/Get-RBCD-Threaded/releases/download/1.05/Get-RBCD-Threaded.exe"}
         '446' {ScaricaSSL "fireeye/SharPersist/v1.0.1" "SharPersist.exe" "fireeye/SharPersist/releases/download/v1.0.1/SharPersist.exe"}
+        '447' {ScaricaSSL "Dviros/Excalibur" "Excalibur.zip" "Dviros/Excalibur/archive/master.zip"}
+        '448' {Scarica "arjansturing/smbv1finder" "SMBv1Finder.ps1" "arjansturing/smbv1finder/master/SMBv1Finder.ps1"}
+        '449' {ScaricaSSL "VikasSukhija/Downloads/Multi-Tools" "Multi-Tools.zip" "VikasSukhija/Downloads/archive/master.zip"}
+        '450' {Scarica "adrianlois/Fingerprinting-envio-FTP-PowerShell/SysInfo" "SysInfo.ps1" "adrianlois/Fingerprinting-envio-FTP-PowerShell/master/SysInfo.ps1"}
+        '451' {Scarica "SMATechnologies/winscp-powershell" "Winscp.ps1" "SMATechnologies/winscp-powershell/master/Winscp.ps1"}
+        '452' {ScaricaSSL "tonylanglet/crushftp.powershell" "crushftp.zip" "tonylanglet/crushftp.powershell/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
