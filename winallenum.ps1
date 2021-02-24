@@ -279,6 +279,7 @@ while($true){
     write-host " 59. mvelazc0/Invoke-SMBLogin`t`t`t`t`t52. vletoux/smbscanner`t`t`t`t`t`t125. Kevin-Robertson/Invoke-TheHash";
     write-host " 55. InfosecMatter/Minimalistic-offensive-security-tools`t`t`t`t`t`t`t`t`t36. threatexpress/Invoke-PipeShell";
     write-host " 133. ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets`t`t387. deepsecurity-pe/GoGhost`t`t`t448. arjansturing/smbv1finder";
+    write-host " 447. Dviros/Excalibur";
     write-host "SNIFFER";
     write-host " 53. sperner/PowerShell/Sniffer";
     write-host "SNMP";
