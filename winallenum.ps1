@@ -244,7 +244,7 @@ while($true){
     write-host " 151. Kevin-Robertson/Tater`t`t`t`t`t224. phackt/accesschk-XP`t`t`t`t`t225. sysinternals/accesschk";
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
     write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t`t`t`t373. antonioCoco/RoguePotato";
-    write-host " 440. xct/xc/PrivescCheck";
+    write-host " 440. xct/xc/PrivescCheck`t`t`t`t`t453. Mr-Un1k0d3r/SCShell";
     write-host "PROXY - REVPROXY";
     write-host " 404. fatedier/frp_386`t`t`t`t`t`t405. fatedier/frp_amd64";
     write-host "PXE";
@@ -748,6 +748,7 @@ while($true){
         '450' {Scarica "adrianlois/Fingerprinting-envio-FTP-PowerShell/SysInfo" "SysInfo.ps1" "adrianlois/Fingerprinting-envio-FTP-PowerShell/master/SysInfo.ps1"}
         '451' {Scarica "SMATechnologies/winscp-powershell" "Winscp.ps1" "SMATechnologies/winscp-powershell/master/Winscp.ps1"}
         '452' {ScaricaSSL "tonylanglet/crushftp.powershell" "crushftp.zip" "tonylanglet/crushftp.powershell/archive/master.zip"}
+        '453' {ScaricaSSL "Mr-Un1k0d3r/SCShell" "SCShell.exe" "Mr-Un1k0d3r/SCShell/raw/master/SCShell.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
