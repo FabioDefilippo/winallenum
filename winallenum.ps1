@@ -191,7 +191,7 @@ while($true){
     write-host " 168. netbiosX/Digital-Signature-Hijack`t`t`t`t176. cyberark/DLLSpy-x64`t`t`t`t`t177. rapid7/DLLHijackAuditKit";
     write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection`t`t`t`t308. 3gstudent/CLR-Injection_x64";
     write-host " 309. 3gstudent/CLR-Injection_x86`t`t`t`t310. 3gstudent/COM-Object-hijacking`t`t`t`t380. uknowsec/SharpSQLTools";
-    write-host " 456. rem1ndsec/DLLJack";
+    write-host " 456. rem1ndsec/DLLJack`t`t`t`t`t`t457. wietze/windows-dll-hijacking";
     write-host "HTTP";
     write-host " 266. salu90/PSFPT/BruteForce-Basic-Auth";
     write-host "iOS";
@@ -754,6 +754,7 @@ while($true){
         '454' {$search = New-Object DirectoryServices.DirectorySearcher([ADSI]""); $search.filter = "(servicePrincipalName=*)"; $results = $search.Findall(); foreach($result in $results){$userEntry = $result.GetDirectoryEntry(); Write-host "Object Name = " $userEntry.name -backgroundcolor "yellow" -foregroundcolor "black"; Write-host "DN      =      "  $userEntry.distinguishedName; Write-host "Object Cat. = "  $userEntry.objectCategory; Write-host "servicePrincipalNames"; $i=1; foreach($SPN in $userEntry.servicePrincipalName{Write-host "SPN(" $i ")   =      " $SPN       $i+=1}Write-host ""}}
         '455' {ScaricaSSL "PowerShellEmpire/PowerTools" "PowerTools.zip" "PowerShellEmpire/PowerTools/archive/master.zip"}
         '456' {Scarica "rem1ndsec/DLLJack" "dlljack.ps1" "rem1ndsec/DLLJack/master/dlljack.ps1"}
+        '457' {ScaricaSSL "wietze/windows-dll-hijacking" "windows-dll-hijacking.zip" "wietze/windows-dll-hijacking/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
