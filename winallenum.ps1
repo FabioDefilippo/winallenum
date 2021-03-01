@@ -103,7 +103,7 @@ function ScaricaEDB($EXPL)
 $EVA="0"
 
 while($true){
-    if($EVA -ne "0"){
+    if($EVA -eq "0"){
         $EVT="Evasion/Bypassing=Disabled"
     }else{
         $EVT="Evasion/Bypassing=Enabled"
