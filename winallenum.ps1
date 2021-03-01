@@ -21,7 +21,7 @@ $AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
 
 function ScaricaGist($TESTO, $FILENAME, $URL)
 {
-    if($EVA -ne "0"){
+    if($EVA -eq "0"){
         write-host "Downloading $TESTO";
         try{
             invoke-webrequest -uri "https://gist.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
@@ -41,7 +41,7 @@ function ScaricaGist($TESTO, $FILENAME, $URL)
 
 function Scarica($TESTO, $FILENAME, $URL)
 {
-    if($EVA -ne "0"){
+    if($EVA -eq "0"){
         write-host "Downloading $TESTO";
         try{
             invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
