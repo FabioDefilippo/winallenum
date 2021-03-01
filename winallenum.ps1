@@ -61,22 +61,13 @@ function Scarica($TESTO, $FILENAME, $URL)
 }
 
 function ScaricaBat($TESTO, $FILENAME, $URL)
-{
-    if($EVA -eq "0"){
-       write-host "Downloading $TESTO";
-       try{
-           invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME;
-       }catch{
-           write-host $_
-       }
-    }else{
-        write-host "Downloading $TESTO";
-        try{
-            cmd /c (invoke-webrequest -uri "https://raw.githubusercontent.com/$URL").content
-       }catch{
-           write-host $_
-       }
-    }
+{    
+   write-host "Downloading $TESTO";
+   try{
+       invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME;
+   }catch{
+       write-host $_
+   }
 }
 
 function ScaricaSSL($TESTO, $FILENAME, $URL)
