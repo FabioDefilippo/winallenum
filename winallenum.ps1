@@ -41,7 +41,7 @@ function ScaricaGist($TESTO, $FILENAME, $URL)
 
 function Scarica($TESTO, $FILENAME, $URL)
 {
-if($EVA -ne "0"){
+    if($EVA -ne "0"){
         write-host "Downloading $TESTO";
         try{
             invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
@@ -100,7 +100,7 @@ function ScaricaEDB($EXPL)
     }
 }
 
-$EVA=0
+$EVA="0"
 
 while($true){
     if($EVA -ne "0"){
