@@ -250,7 +250,7 @@ while($true){
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
     write-host "OSINT";
-    write-host " 255. ecstatic-nobel/pOSINT";
+    write-host " 255. ecstatic-nobel/pOSINT`t`t`t`t`t462. ElevenPaths/FOCA";
     write-host "OWA";
     write-host " 217. dafthack/MailSniper`t`t`t`t`t218. fugawi/EASSniper`t`t`t`t`t`t220. johnnyDEP/OWA-Toolkit";
     write-host "PASSWORD";
@@ -783,6 +783,7 @@ while($true){
         '459' {tasklist; write-host "Digit PID, Process ID"; $TPID=read-host "(example, 6095)"; if($TPID -ne ""){rundll32.exe C:\Windows\System32\comsvcs.dll,MiniDump $TPID .\$TPID.bin full}}
         '460' {write-host "Enable or Disable Evasion/Bypassing?"; $EVA=read-host "(example, 1=Enable, 0=Disable)"; if($EVA -ne "1"){$EVA="0"}}
         '461' {Scarica "ShawnDEvans/smbmap/psutils/Get-FileLockProcess" "Get-FileLockProcess.ps1" "ShawnDEvans/smbmap/master/psutils/Get-FileLockProcess.ps1"}
+        '462' {ScaricaSSL "ElevenPaths/FOCA" "FOCA-v3.4.7.0.zip" "ElevenPaths/FOCA/releases/download/v3.4.7.0/FOCA-v3.4.7.0.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
