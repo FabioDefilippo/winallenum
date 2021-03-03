@@ -256,6 +256,10 @@ while($true){
     write-host "PASSWORD";
     write-host " 121. kfosaaen/Get-LAPSPasswords`t`t`t`t122. dafthack/DomainPasswordSpray`t`t`t`t123. NetSPI/PS_MultiCrack";
     write-host " 124. securethelogs/PSBruteZip";
+    write-host "PAYLOAD";
+    write-host " 463. mdsecactivebreach/CACTUSTORCH.cna`t`t`t`t464. mdsecactivebreach/CACTUSTORCH.hta`t`t`t465. mdsecactivebreach/CACTUSTORCH.js";
+    write-host " 466. mdsecactivebreach/CACTUSTORCH.jse`t`t`t`t467. mdsecactivebreach/CACTUSTORCH.vba`t`t`t468. mdsecactivebreach/CACTUSTORCH.vbe";
+    write-host " 469. mdsecactivebreach/CACTUSTORCH.vbs";
     write-host "PIVOTING";
     write-host " 265. attactics/Invoke-DCOMPowerPointPivot";
     write-host "POST-EXPLOITATION";
@@ -784,6 +788,13 @@ while($true){
         '460' {write-host "Enable or Disable Evasion/Bypassing?"; $EVA=read-host "(example, 1=Enable, 0=Disable)"; if($EVA -ne "1"){$EVA="0"}}
         '461' {Scarica "ShawnDEvans/smbmap/psutils/Get-FileLockProcess" "Get-FileLockProcess.ps1" "ShawnDEvans/smbmap/master/psutils/Get-FileLockProcess.ps1"}
         '462' {ScaricaSSL "ElevenPaths/FOCA" "FOCA-v3.4.7.0.zip" "ElevenPaths/FOCA/releases/download/v3.4.7.0/FOCA-v3.4.7.0.zip"}
+        '463' {Scarica "mdsecactivebreach/CACTUSTORCH.cna" "CACTUSTORCH.cna" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.cna"}
+        '464' {Scarica "mdsecactivebreach/CACTUSTORCH.hta" "CACTUSTORCH.hta" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.hta"}
+        '465' {Scarica "mdsecactivebreach/CACTUSTORCH.js" "CACTUSTORCH.js" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.js"}
+        '466' {Scarica "mdsecactivebreach/CACTUSTORCH.jse" "CACTUSTORCH.jse" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.jse"}
+        '467' {Scarica "mdsecactivebreach/CACTUSTORCH.vba" "CACTUSTORCH.vba" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vba"}
+        '468' {Scarica "mdsecactivebreach/CACTUSTORCH.vbe" "CACTUSTORCH.vbe" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vbe"}
+        '469' {Scarica "mdsecactivebreach/CACTUSTORCH.vbs" "CACTUSTORCH.vbs" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vbs"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
