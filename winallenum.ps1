@@ -190,7 +190,7 @@ while($true){
     write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass";
     write-host " 364. gushmazuko/WinBypass/SluiHijackBypass`t`t`t365. gushmazuko/WinBypass/EventVwrBypass`t`t403. Arno0x/DNSExfiltrator";
     write-host " 360. L3cr0f/DccwBypassUAC`t`t`t`t`t367. Mncx86/Windows-10-UAC-bypass";
-    write-host " 412. p3nt4/PowerShdll`t`t`t`t`t`t414. OmerYa/Invisi-Shell";
+    write-host " 412. p3nt4/PowerShdll`t`t`t`t`t`t414. OmerYa/Invisi-Shell`t470. microsoft/CSS-Exchange/Test-ProxyLogon";
     write-host " 366. gushmazuko/WinBypass/DiskCleanupBypass_direct`t`t363. gushmazuko/WinBypass/SluiHijackBypass_direct";
     write-host "EXFILTRATION";
     write-host " 210. danielwolfmann/Invoke-WordThief/Invoke-WordThief`t`t267. salu90/PSFPT/Exfiltrate";
@@ -795,6 +795,7 @@ while($true){
         '467' {Scarica "mdsecactivebreach/CACTUSTORCH.vba" "CACTUSTORCH.vba" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vba"}
         '468' {Scarica "mdsecactivebreach/CACTUSTORCH.vbe" "CACTUSTORCH.vbe" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vbe"}
         '469' {Scarica "mdsecactivebreach/CACTUSTORCH.vbs" "CACTUSTORCH.vbs" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vbs"}
+        '470' {Scarica "microsoft/CSS-Exchange/Test-ProxyLogon" "Test-ProxyLogon.ps1" "microsoft/CSS-Exchange/main/Security/Test-ProxyLogon.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
