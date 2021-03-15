@@ -245,7 +245,7 @@ while($true){
     write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t354. Killeroo/PowerPing.x86";
     write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm";
     write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2`t`t`t`t`t413. jaredhaight/PSAttack";
-    write-host " 449. VikasSukhija/Downloads/Multi-Tools`t`t`t`t455. PowerShellEmpire/PowerTools";
+    write-host " 449. VikasSukhija/Downloads/Multi-Tools`t`t`t`t455. PowerShellEmpire/PowerTools`t`t471. S3cur3Th1sSh1t/PowerSharpPack";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -796,6 +796,7 @@ while($true){
         '468' {Scarica "mdsecactivebreach/CACTUSTORCH.vbe" "CACTUSTORCH.vbe" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vbe"}
         '469' {Scarica "mdsecactivebreach/CACTUSTORCH.vbs" "CACTUSTORCH.vbs" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vbs"}
         '470' {Scarica "microsoft/CSS-Exchange/Test-ProxyLogon" "Test-ProxyLogon.ps1" "microsoft/CSS-Exchange/main/Security/Test-ProxyLogon.ps1"}
+        '471' {ScaricaSSL "S3cur3Th1sSh1t/PowerSharpPack" "PowerSharpPack.zip" "S3cur3Th1sSh1t/PowerSharpPack/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
