@@ -247,6 +247,7 @@ while($true){
     write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm";
     write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2`t`t`t`t`t413. jaredhaight/PSAttack";
     write-host " 449. VikasSukhija/Downloads/Multi-Tools`t`t`t`t455. PowerShellEmpire/PowerTools`t`t471. S3cur3Th1sSh1t/PowerSharpPack";
+    write-host " 474. TonyPhipps/Meerkat";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -800,6 +801,7 @@ while($true){
         '471' {ScaricaSSL "S3cur3Th1sSh1t/PowerSharpPack" "PowerSharpPack.zip" "S3cur3Th1sSh1t/PowerSharpPack/archive/master.zip"}
         '472' {ScaricaSSL "ctxis/DLLHSCx64" "DLLHSCx64.zip" "ctxis/DLLHSC/releases/download/1/DLLHSCx64.zip"}
         '473' {ScaricaSSL "ctxis/DLLHSCx86" "DLLHSCx86.zip" "ctxis/DLLHSC/releases/download/1/DLLHSCx86.zip"}
+        '474' {ScaricaSSL "TonyPhipps/Meerkat" "Meerkat.zip" "TonyPhipps/Meerkat/archive/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
