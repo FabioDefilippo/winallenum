@@ -306,6 +306,7 @@ while($true){
     write-host " 47. nmap.org/nmap-7.80-win32`t`t`t`t`t17. samratashok/nishang/Scan";
     write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus";
     write-host " 401. tokyoneon/Chimera/shells/misc/Invoke-PortScan`t`t388. thom-s/netsec-ps-scripts/printer-telnet-ftp-report";
+    write-host " 475. k8gege/K8tools/K8PortScan";
     write-host "SMB";
     write-host " 59. mvelazc0/Invoke-SMBLogin`t`t`t`t`t52. vletoux/smbscanner`t`t`t`t`t`t125. Kevin-Robertson/Invoke-TheHash";
     write-host " 55. InfosecMatter/Minimalistic-offensive-security-tools`t`t`t`t`t`t`t`t`t36. threatexpress/Invoke-PipeShell";
@@ -802,6 +803,7 @@ while($true){
         '472' {ScaricaSSL "ctxis/DLLHSCx64" "DLLHSCx64.zip" "ctxis/DLLHSC/releases/download/1/DLLHSCx64.zip"}
         '473' {ScaricaSSL "ctxis/DLLHSCx86" "DLLHSCx86.zip" "ctxis/DLLHSC/releases/download/1/DLLHSCx86.zip"}
         '474' {ScaricaSSL "TonyPhipps/Meerkat" "Meerkat.zip" "TonyPhipps/Meerkat/archive/master.zip"}
+        '475' {ScaricaSSL "k8gege/K8tools/K8PortScan" "K8PortScan.exe" "k8gege/K8tools/raw/master/K8PortScan.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
