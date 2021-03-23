@@ -277,7 +277,7 @@ while($true){
     write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t`t`t`t373. antonioCoco/RoguePotato";
     write-host " 440. xct/xc/PrivescCheck`t`t`t`t`t453. Mr-Un1k0d3r/SCShell";
     write-host "PROXY - REVPROXY";
-    write-host " 404. fatedier/frp_386`t`t`t`t`t`t405. fatedier/frp_amd64";
+    write-host " 404. fatedier/frp_386`t`t`t`t`t`t405. fatedier/frp_amd64`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
     write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
@@ -807,6 +807,7 @@ while($true){
         '476' {ScaricaSSL "Aetsu/OffensivePipeline" "OffensivePipeline_v0.8.2.zip" "Aetsu/OffensivePipeline/releases/download/v0.8.2/OffensivePipeline_v0.8.2.zip"}
         '477' {write-host "Digit a tool with extension from https://github.com/andrew-d/static-binaries/tree/master/binaries/windows/x86"; $BNF=read-host "(example, nmap.exe)"; if($BNF -ne ""){ScaricaSSL "andrew-d/static-binaries/windows/x86/$BNF" "$BNF" "andrew-d/static-binaries/raw/master/binaries/windows/x86/$BNF"}}
         '478' {write-host "Digit a tool with extension from https://github.com/andrew-d/static-binaries/tree/master/binaries/windows/x64"; $BNF=read-host "(example, nmap.exe)"; if($BNF -ne ""){ScaricaSSL "andrew-d/static-binaries/windows/x64/$BNF" "$BNF" "andrew-d/static-binaries/raw/master/binaries/windows/x64/$BNF"}}
+        '479' {Scarica "p3nt4/Invoke-SocksProxy" "Invoke-SocksProxy.psm1" "p3nt4/Invoke-SocksProxy/master/Invoke-SocksProxy.psm1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
