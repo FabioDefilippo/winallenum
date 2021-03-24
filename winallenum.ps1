@@ -353,6 +353,7 @@ while($true){
     write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t`t`t340. check AlwaysInstallElevated enabled";
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
     write-host " 454. Active Directory infos`t`t`t`t`t459. Dump memory of a process`t`t`t`t`t460. Enable/Disable Evasion/Bypassing";
+    write-host " 482. find password in *.xml *.ini *.txt`t`t`t483. find password in *.xml *.ini *.txt *.config`t`t`t484. find password in all files";
     write-host "WEBAPP";
     write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
@@ -811,6 +812,9 @@ while($true){
         '479' {Scarica "p3nt4/Invoke-SocksProxy" "Invoke-SocksProxy.psm1" "p3nt4/Invoke-SocksProxy/master/Invoke-SocksProxy.psm1"}
         '480' {ScaricaSSL "abatchy17/WindowsExploits" "WindowsExploits.zip" "abatchy17/WindowsExploits/archive/refs/heads/master.zip"}
         '481' {ScaricaSSL "SecWiki/windows-kernel-exploits" "windows-kernel-exploits.zip" "SecWiki/windows-kernel-exploits/archive/refs/heads/master.zip"}
+        '482' {cd C:\; findstr /SI /M "password" *.xml *.ini *.txt}
+        '483' {cd C:\; findstr /si password *.xml *.ini *.txt *.config}
+        '484' {cd C:\; findstr /spin "password" *.*}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
