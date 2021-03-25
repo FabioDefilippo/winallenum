@@ -820,6 +820,17 @@ while($true){
         '485' {ScaricaExt "sysinternals.com/files/SysinternalsSuite" "SysinternalsSuite.zip" "https://download.sysinternals.com/files/SysinternalsSuite.zip"}
         '486' {ScaricaExt "sysinternals.com/files/SysinternalsSuite-ARM64" "SysinternalsSuite-ARM64.zip" "https://download.sysinternals.com/files/SysinternalsSuite-ARM64.zip"}
         '487' {ScaricaSSL "ohpe/juicy-potato" "JuicyPotato.exe" "ohpe/juicy-potato/releases/download/v0.1/JuicyPotato.exe"}
+        '488' {sc qc upnphost}
+        '489' {ScaricaSSL "phackt/pentest/privesc/accesschk" "accesschk.exe" "phackt/pentest/raw/master/privesc/windows/accesschk.exe"}
+        '490' {ScaricaSSL "phackt/pentest/privesc/windows/accesschk64" "accesschk64.exe" "phackt/pentest/raw/master/privesc/windows/accesschk64.exe"}
+        '491' {ScaricaSSL "phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management" "Microsoft.ActiveDirectory.Management.dll" "phackt/pentest/raw/master/privesc/windows/Microsoft.ActiveDirectory.Management.dll"}
+        '492' {Scarica "phackt/pentest/privesc/windows/Set-LHSTokenPrivilege" "Set-LHSTokenPrivilege.ps1" "phackt/pentest/master/privesc/windows/Set-LHSTokenPrivilege.ps1"}
+        '493' {ScaricaSSL "phackt/pentest/privesc/windows/nc" "nc.exe" "phackt/pentest/raw/master/privesc/windows/nc.exe"}
+        '494' {ScaricaSSL "phackt/pentest/privesc/windows/nc64" "nc64.exe" "phackt/pentest/raw/master/privesc/windows/nc64.exe"}
+        '495' {ScaricaBat "phackt/pentest/privesc/windows/privesc" "privesc.bat" "phackt/pentest/master/privesc/windows/privesc.bat"}
+        '496' {ScaricaSSL "phackt/pentest/privesc/windows/procdump" procdump.exe" "phackt/pentest/raw/master/privesc/windows/procdump.exe"}
+        '497' {ScaricaSSL "phackt/pentest/privesc/windows/procdump64" "procdump64.exe" "phackt/pentest/raw/master/privesc/windows/procdump64.exe"}
+        '498' {ScaricaBat "phackt/pentest/privesc/windows/wmic_info" "wmic_info.bat" "phackt/pentest/master/privesc/windows/wmic_info.bat"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
