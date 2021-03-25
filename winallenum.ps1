@@ -833,7 +833,7 @@ while($true){
         '493' {ScaricaSSL "phackt/pentest/privesc/windows/nc" "nc.exe" "phackt/pentest/raw/master/privesc/windows/nc.exe"}
         '494' {ScaricaSSL "phackt/pentest/privesc/windows/nc64" "nc64.exe" "phackt/pentest/raw/master/privesc/windows/nc64.exe"}
         '495' {ScaricaBat "phackt/pentest/privesc/windows/privesc" "privesc.bat" "phackt/pentest/master/privesc/windows/privesc.bat"}
-        '496' {ScaricaSSL "phackt/pentest/privesc/windows/procdump" procdump.exe" "phackt/pentest/raw/master/privesc/windows/procdump.exe"}
+        '496' {ScaricaSSL "phackt/pentest/privesc/windows/procdump" "procdump.exe" "phackt/pentest/raw/master/privesc/windows/procdump.exe"}
         '497' {ScaricaSSL "phackt/pentest/privesc/windows/procdump64" "procdump64.exe" "phackt/pentest/raw/master/privesc/windows/procdump64.exe"}
         '498' {ScaricaBat "phackt/pentest/privesc/windows/wmic_info" "wmic_info.bat" "phackt/pentest/master/privesc/windows/wmic_info.bat"}
         default{write-host 'ERROR: this choice is incorrect'}
