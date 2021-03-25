@@ -248,6 +248,8 @@ while($true){
     write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2`t`t`t`t`t413. jaredhaight/PSAttack";
     write-host " 449. VikasSukhija/Downloads/Multi-Tools`t`t`t`t455. PowerShellEmpire/PowerTools`t`t471. S3cur3Th1sSh1t/PowerSharpPack";
     write-host " 474. TonyPhipps/Meerkat`t`t`t`t`t477. andrew-d/static-binaries/windows/x86`t`t`t`t`t478. andrew-d/static-binaries/windows/x64";
+    write-host " 485. sysinternals.com/files/SysinternalsSuite`t`t`t`t486. sysinternals.com/files/SysinternalsSuite-ARM64";
+    write-host " 487. ohpe/juicy-potato";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -815,6 +817,9 @@ while($true){
         '482' {cd C:\; findstr /SI /M "password" *.xml *.ini *.txt}
         '483' {cd C:\; findstr /si password *.xml *.ini *.txt *.config}
         '484' {cd C:\; findstr /spin "password" *.*}
+        '485' {ScaricaExt "sysinternals.com/files/SysinternalsSuite" "SysinternalsSuite.zip" "https://download.sysinternals.com/files/SysinternalsSuite.zip"}
+        '486' {ScaricaExt "sysinternals.com/files/SysinternalsSuite-ARM64" "SysinternalsSuite-ARM64.zip" "https://download.sysinternals.com/files/SysinternalsSuite-ARM64.zip"}
+        '487' {ScaricaSSL "ohpe/juicy-potato" "JuicyPotato.exe" "ohpe/juicy-potato/releases/download/v0.1/JuicyPotato.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
