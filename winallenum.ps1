@@ -360,7 +360,7 @@ while($true){
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
     write-host " 454. Active Directory infos`t`t`t`t`t459. Dump memory of a process`t`t`t`t`t460. Enable/Disable Evasion/Bypassing";
     write-host " 482. find password in *.xml *.ini *.txt`t`t`t483. find password in *.xml *.ini *.txt *.config`t`t`t484. find password in all files";
-    write-host " 488. upnp info";
+    write-host " 488. upnp info`t`t`t`t`t`t499. check bash exists";
     write-host "WEBAPP";
     write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
@@ -836,6 +836,7 @@ while($true){
         '496' {ScaricaSSL "phackt/pentest/privesc/windows/procdump" "procdump.exe" "phackt/pentest/raw/master/privesc/windows/procdump.exe"}
         '497' {ScaricaSSL "phackt/pentest/privesc/windows/procdump64" "procdump64.exe" "phackt/pentest/raw/master/privesc/windows/procdump64.exe"}
         '498' {ScaricaBat "phackt/pentest/privesc/windows/wmic_info" "wmic_info.bat" "phackt/pentest/master/privesc/windows/wmic_info.bat"}
+        '499' {cmd /c 'if exist C:\Windows\System32\bash.exe (echo "C:\Windows\System32\bash.exe exists") else echo "C:\Windows\System32\bash.exe NOT exists"'}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
