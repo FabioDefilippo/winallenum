@@ -172,7 +172,7 @@ while($true){
     write-host " 311. 3gstudent/Winpcap_Install`t`t`t`t`t312. 3gstudent/Dump-Clear-Password-after-KB2871997-installed";
     write-host " 379. orlyjamie/mimikittenz`t`t`t`t`t381. digitalcorpora/bulk_extractor32`t`t`t382. digitalcorpora/bulk_extractor64";
     write-host " 386. moonD4rk/HackBrowserData`t`t`t`t`t501. r3motecontrol/Ghostpack-CompiledBinaries/SafetyKatz";
-    write-host " 503. r3motecontrol/Ghostpack-CompiledBinaries/SharpDPAPI";
+    write-host " 503. r3motecontrol/Ghostpack-CompiledBinaries/SharpDPAPI`t`t`t`t`t`t504. r3motecontrol/Ghostpack-CompiledBinaries/SharpDump";
     write-host "ENUMERATION";
     write-host " 1. HarmJ0y/PowerUp`t`t`t`t`t`t2. absolomb/WindowsEnum`t`t`t`t`t`t3. Rasta-Mouse/Sherlock";
     write-host " 4. Enjoiz/Privesc`t`t`t`t`t`t5. 411Hall/Jaws-Enum`t`t`t`t`t`t6. carlospolop/winPEAS";
