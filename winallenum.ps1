@@ -131,6 +131,7 @@ while($true){
     write-host "AZURE";
     write-host " 58. PrateekKumarSingh/AzViz`t`t`t`t`t153. hausec/PowerZure`t`t`t`t`t`t189. NetSPI/MicroBurst/Az";
     write-host " 190. NetSPI/MicroBurst/AzureAD`t`t`t`t`t191. NetSPI/MicroBurst/AzureRM`t`t`t`t`t250. dafthack/MSOLSpray";
+    write-host " 508. FSecureLABS/Azurite`t`t`t`t`t509. nccgroup/azucar`t`t510. adrecon/AzureADRecon";
     write-host "BACKDOOR - SHELLCODE - PERSISTENCE";
     write-host " 263. HarmJ0y/DAMP`t`t`t`t`t`t33. eternallybored.org/netcat-win32-1.12`t`t437. mgeeky/Stracciatella";
     write-host " 415. Hackplayers/Salsa-tools/EvilSalsa_x64/NET3.5`t`t416. Hackplayers/Salsa-tools/EvilSalsa_x86/NET3.5";
@@ -848,6 +849,9 @@ while($true){
         '505' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpRoast" "SharpRoast.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpRoast.exe"}
         '506' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpUp" "SharpUp.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpUp.exe"}
         '507' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpWMI" "SharpWMI.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpWMI.exe"}
+        '508' {ScaricaSSL "FSecureLABS/Azurite" "Azurite.zip" "FSecureLABS/Azurite/archive/refs/heads/master.zip"}
+        '509' {ScaricaSSL "nccgroup/azucar" "azucar.zip" "nccgroup/azucar/archive/refs/heads/master.zip"}
+        '510' {Scarica "adrecon/AzureADRecon" "AzureADRecon.ps1" "adrecon/AzureADRecon/master/AzureADRecon.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
