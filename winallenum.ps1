@@ -374,6 +374,7 @@ while($true){
     write-host " 402. tokyoneon/Chimera/shells/misc/Get-WLAN-Keys";
     write-host "WMI";
     write-host " 262. Cybereason/Invoke-WMILM`t`t`t`t`t344. Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility`t351. Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility";
+    write-host " 507. r3motecontrol/Ghostpack-CompiledBinaries/SharpWMI";
     write-host "OTHERS - ?";
     write-host " 399. tokyoneon/Chimera/shells/misc/Get-Information";
     
