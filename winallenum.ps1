@@ -837,6 +837,14 @@ while($true){
         '497' {ScaricaSSL "phackt/pentest/privesc/windows/procdump64" "procdump64.exe" "phackt/pentest/raw/master/privesc/windows/procdump64.exe"}
         '498' {ScaricaBat "phackt/pentest/privesc/windows/wmic_info" "wmic_info.bat" "phackt/pentest/master/privesc/windows/wmic_info.bat"}
         '499' {cmd /c 'if exist C:\Windows\System32\bash.exe (echo "C:\Windows\System32\bash.exe exists") else echo "C:\Windows\System32\bash.exe NOT exists"'}
+        '500' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/Rubeus" "Rubeus.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/Rubeus.exe"}
+        '501' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SafetyKatz" "SafetyKatz.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SafetyKatz.exe"}
+        '502' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/Seatbelt" "Seatbelt.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/Seatbelt.exe"}
+        '503' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpDPAPI" "SharpDPAPI.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpDPAPI.exe"}
+        '504' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpDump" "SharpDump.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpDump.exe"}
+        '505' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpRoast" "SharpRoast.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpRoast.exe"}
+        '506' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpUp" "SharpUp.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpUp.exe"}
+        '507' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpWMI" "SharpWMI.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpWMI.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
