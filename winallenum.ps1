@@ -182,7 +182,7 @@ while($true){
     write-host " 244. phackt/Invoke-Recon`t`t`t`t`t292. Z3R0th-13/Enum`t`t498. phackt/pentest/privesc/windows/wmic_info";
     write-host " 294. Z3R0th-13/Profit`t`t`t`t`t`t295. Xservus/P0w3rSh3ll`t`t`t`t`t`t296. threatexpress/red-team-scripts/HostEnum";
     write-host " 345. Mr-Un1k0d3r/RedTeamCSharpScripts/enumerateuser`t`t348. Mr-Un1k0d3r/RedTeamCSharpScripts/set";
-    write-host " 353. ankitdobhal/TTLOs`t`t`t`t`t`t407. M4ximuss/Powerless";
+    write-host " 353. ankitdobhal/TTLOs`t`t`t`t`t`t407. M4ximuss/Powerless`t`t`t`t`t`t506. r3motecontrol/Ghostpack-CompiledBinaries/SharpUp";
     write-host " 293. duckingtoniii/Powershell-Domain-User-Enumeration`t`t450. adrianlois/Fingerprinting-envio-FTP-PowerShell/SysInfo";
     write-host "EVASION - BYPASS";
     write-host " 154. HarmJ0y/Invoke-Obfuscation`t`t`t`t179. FuzzySecurity/PowerShell-Suite/Bypass-UAC`t`t200. danielbohannon/Invoke-Obfuscation";
