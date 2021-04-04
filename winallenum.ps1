@@ -151,6 +151,8 @@ while($true){
     write-host " 178. nolvis/nolvis-cobol-tool/CobolTool";
     write-host "COVER TRACKING";
     write-host " 209. ivan-sincek/file-shredder";
+    write-host "CRACKING";
+    write-host " 511. skelsec/pypykatz";
     write-host "DCOM";
     write-host " 274. sud0woodo/DCOMrade";
     write-host "DECOMILER"
@@ -852,6 +854,7 @@ while($true){
         '508' {ScaricaSSL "FSecureLABS/Azurite" "Azurite.zip" "FSecureLABS/Azurite/archive/refs/heads/master.zip"}
         '509' {ScaricaSSL "nccgroup/azucar" "azucar.zip" "nccgroup/azucar/archive/refs/heads/master.zip"}
         '510' {Scarica "adrecon/AzureADRecon" "AzureADRecon.ps1" "adrecon/AzureADRecon/master/AzureADRecon.ps1"}
+        '511' {ScaricaSSL "skelsec/pypykatz" "pypykatz.exe" "skelsec/pypykatz/releases/download/0.4.8/pypykatz.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
