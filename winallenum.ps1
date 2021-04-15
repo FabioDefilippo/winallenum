@@ -192,7 +192,7 @@ while($true){
     write-host " 197. HackLikeAPornstar/GibsonBird/applocker-bypas-checker`t216. danielbohannon/Invoke-CradleCrafter";
     write-host " 236. 360-Linton-Lab/WMIHACKER`t`t`t`t`t245. the-xentropy/xencrypt`t`t`t`t`t279. OmerYa/Invisi-Shell";
     write-host " 280. lukebaggett/dnscat2-powershell`t`t`t`t303. kmkz/PowerShell/amsi-bypass`t`t`t`t304. kmkz/PowerShell/CLM-bypass";
-    write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass";
+    write-host " 361. 3gstudent/Bypass-Windows-AppLocker`t`t`t362. netbiosX/FodhelperUACBypass`t`t`t`t512. GetRektBoy724/BetterXencrypt";
     write-host " 364. gushmazuko/WinBypass/SluiHijackBypass`t`t`t365. gushmazuko/WinBypass/EventVwrBypass`t`t403. Arno0x/DNSExfiltrator";
     write-host " 360. L3cr0f/DccwBypassUAC`t`t`t`t`t367. Mncx86/Windows-10-UAC-bypass`t`t`t`t`t`t`t`t476. Aetsu/OffensivePipeline";
     write-host " 412. p3nt4/PowerShdll`t`t`t`t`t`t414. OmerYa/Invisi-Shell`t470. microsoft/CSS-Exchange/Test-ProxyLogon";
