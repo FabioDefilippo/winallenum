@@ -855,6 +855,7 @@ while($true){
         '509' {ScaricaSSL "nccgroup/azucar" "azucar.zip" "nccgroup/azucar/archive/refs/heads/master.zip"}
         '510' {Scarica "adrecon/AzureADRecon" "AzureADRecon.ps1" "adrecon/AzureADRecon/master/AzureADRecon.ps1"}
         '511' {ScaricaSSL "skelsec/pypykatz" "pypykatz.exe" "skelsec/pypykatz/releases/download/0.4.8/pypykatz.exe"}
+        '512' {Scarica "GetRektBoy724/BetterXencrypt" "betterxencrypt.ps1" "GetRektBoy724/BetterXencrypt/main/betterxencrypt.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
