@@ -1,6 +1,10 @@
 # winallenum
 Thi powershell script has got to run in remote hacked windows host, even for pivoting
 
+## Warning:
+1. this script will download other tools; be careful!
+2. if you want hack an host, before use <a href="https://github.com/FabioDefilippo/linuxallremote/blob/master/linuxallremote.sh">linuxallremote</a> from my repositories!
+
 - over 500 scripts and executables to hack local and remote machines;
 - static-binaries and standalone executables ready to use;
 
