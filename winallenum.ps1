@@ -365,7 +365,16 @@ while($true){
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
     write-host " 454. Active Directory infos`t`t`t`t`t459. Dump memory of a process`t`t`t`t`t460. Enable/Disable Evasion/Bypassing";
     write-host " 482. find password in *.xml *.ini *.txt`t`t`t483. find password in *.xml *.ini *.txt *.config`t`t`t484. find password in all files";
-    write-host " 488. upnp info`t`t`t`t`t`t499. check bash exists";
+    write-host " 488. upnp info`t`t`t`t`t`t499. check bash exists`t`t`t`t`t`t513. list all open ports";
+    write-host " 514. Hostname`t`t`t`t`t`t`t515. All Users informations`t`t`t`t`t516. permissions on /Users directories lax";
+    write-host " 517. Password and storage information`t`t`t`t518. Search Password informations`t`t`t`t519. Audit setting";
+    write-host " 520. WEF Setting`t`t`t`t`t`t521. LAPS installed`t`t`t`t`t`t522. UAC Enabled (0x1)?";
+    write-host " 523. AV registered`t`t`t`t`t`t524. Cron Jobs`t`t`t`t`t`t`t525. Hosts";
+    write-host " 526. Cache DNS`t`t`t`t`t`t`t527. Network and IP info`t`t`t`t`t528. ARP History";
+    write-host " 529. Default route`t`t`t`t`t`t530. List all TCP connections`t`t`t`t`t531. List all UDP connections";
+    write-host " 532. Show Firewall infos`t`t`t`t`t533. Running Services`t`t`t`t`t`t534. Services installed";
+    write-host " 535. Softwares installed`t`t`t`t`t536. All WMIC infos`t`t`t`t`t`t537. DB passwords";
+    write-host " 538. inetpub directory\wwwroot check";
     write-host "WEBAPP";
     write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
