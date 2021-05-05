@@ -176,6 +176,8 @@ while($true){
     write-host " 379. orlyjamie/mimikittenz`t`t`t`t`t381. digitalcorpora/bulk_extractor32`t`t`t382. digitalcorpora/bulk_extractor64";
     write-host " 386. moonD4rk/HackBrowserData`t`t`t`t`t501. r3motecontrol/Ghostpack-CompiledBinaries/SafetyKatz";
     write-host " 503. r3motecontrol/Ghostpack-CompiledBinaries/SharpDPAPI`t`t`t`t`t`t504. r3motecontrol/Ghostpack-CompiledBinaries/SharpDump";
+    write-host " 539. jschicht/ExtractUsnJrnl/ExtractUsnJrnl.au3`t`t`t540. jschicht/ExtractUsnJrnl/ExtractUsnJrnl.exe";
+    write-host " 541. jschicht/ExtractUsnJrnl/ExtractUsnJrnl64.exe";
     write-host "ENUMERATION";
     write-host " 1. HarmJ0y/PowerUp`t`t`t`t`t`t2. absolomb/WindowsEnum`t`t`t`t`t`t3. Rasta-Mouse/Sherlock";
     write-host " 4. Enjoiz/Privesc`t`t`t`t`t`t5. 411Hall/Jaws-Enum`t`t`t`t`t`t6. carlospolop/winPEAS";
@@ -891,6 +893,9 @@ while($true){
         '536' {wmic service list brief; wmic service list config; wmic process; wmic service; wmic USERACCOUNT; wmic group list full; wmic nicconfig where IPenable='true'; wmic volume; wmic netuse list full; wmic qfe; wmic startup; wmic PRODUCT; wmic OS; wmic Timezone}
         '537' {cmd /c 'dir /B /S C:\*mdb'}
         '538' {dir /A C:\inetpub\wwwroot\}
+        '539' {Scarica "jschicht/ExtractUsnJrnl/ExtractUsnJrnl.au3" "ExtractUsnJrnl.au3" "jschicht/ExtractUsnJrnl/master/ExtractUsnJrnl.au3"}
+        '540' {ScaricaSSL "jschicht/ExtractUsnJrnl/ExtractUsnJrnl.exe" "ExtractUsnJrnl.exe" "jschicht/ExtractUsnJrnl/raw/master/ExtractUsnJrnl.exe"}
+        '541' {ScaricaSSL "jschicht/ExtractUsnJrnl/ExtractUsnJrnl64.exe" "ExtractUsnJrnl64.exe" "jschicht/ExtractUsnJrnl/raw/master/ExtractUsnJrnl64.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
