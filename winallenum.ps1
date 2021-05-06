@@ -277,10 +277,10 @@ while($true){
     write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t354. Killeroo/PowerPing.x86";
     write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm";
     write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2`t`t`t`t`t413. jaredhaight/PSAttack";
-    write-host " 449. VikasSukhija/Downloads/Multi-Tools`t`t`t`t455. PowerShellEmpire/PowerTools`t`t471. S3cur3Th1sSh1t/PowerSharpPack";
-    write-host " 474. TonyPhipps/Meerkat`t`t`t`t`t477. andrew-d/static-binaries/windows/x86`t`t`t`t`t478. andrew-d/static-binaries/windows/x64";
-    write-host " 485. sysinternals.com/files/SysinternalsSuite`t`t`t`t486. sysinternals.com/files/SysinternalsSuite-ARM64";
-    write-host " 487. ohpe/juicy-potato`t`t`t`t`t502. r3motecontrol/Ghostpack-CompiledBinaries/Seatbelt";
+    write-host " 449. VikasSukhija/Downloads/Multi-Tools`t`t`t455. PowerShellEmpire/PowerTools`t`t471. S3cur3Th1sSh1t/PowerSharpPack";
+    write-host " 474. TonyPhipps/Meerkat`t`t`t`t`t477. andrew-d/static-binaries/windows/x86`t`t`t`t478. andrew-d/static-binaries/windows/x64";
+    write-host " 485. sysinternals.com/files/SysinternalsSuite`t`t`t486. sysinternals.com/files/SysinternalsSuite-ARM64";
+    write-host " 487. ohpe/juicy-potato`t`t`t`t`t`t502. r3motecontrol/Ghostpack-CompiledBinaries/Seatbelt";
     write-host "MITM";
     write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
     write-host " 290. bettercap/bettercap";
@@ -309,7 +309,7 @@ while($true){
     write-host " 278. ScorpionesLabs/DVS`t`t`t`t`t297. silentsignal/wpc-ps/WindowsPrivescCheck`t`t298. pentestmonkey/windows-privesc-check";
     write-host " 305. kmkz/PowerShell/ole-payload-generator`t`t`t324. sysinternals.com/AccessChk`t`t`t`t`t373. antonioCoco/RoguePotato";
     write-host " 440. xct/xc/PrivescCheck`t`t`t`t`t453. Mr-Un1k0d3r/SCShell`t`t`t`t`t480. abatchy17/WindowsExploits";
-    write-host " 481. SecWiki/windows-kernel-exploits`t`t`t489. phackt/pentest/privesc/accesschk`t`t`t490 phackt/pentest/privesc/accesschk64";
+    write-host " 481. SecWiki/windows-kernel-exploits`t`t`t`t489. phackt/pentest/privesc/accesschk`t`t`t`t490 phackt/pentest/privesc/accesschk64";
     write-host " 491. phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management`t`t`t492. phackt/pentest/privesc/windows/Set-LHSTokenPrivilege";
     write-host " 495. phackt/pentest/privesc/windows/privesc";
     write-host "PROXY - REVPROXY";
@@ -338,7 +338,7 @@ while($true){
     write-host " 393. tokyoneon/Chimera/shells/Invoke-PowerShellUdpOneLine`t394. tokyoneon/Chimera/shells/generic1`t`t`t395. tokyoneon/Chimera/shells/generic2";
     write-host " 396. tokyoneon/Chimera/shells/generic3`t`t`t`t397. tokyoneon/Chimera/shells/powershell_reverse_shell";
     write-host " 388. tokyoneon/Chimera/shells/Invoke-PowerShellIcmp`t`t392. tokyoneon/Chimera/shells/Invoke-PowerShellUdp";
-    write-host " 493. phackt/pentest/privesc/windows/nc`t`t`t494. phackt/pentest/privesc/windows/nc64";
+    write-host " 493. phackt/pentest/privesc/windows/nc`t`t`t`t494. phackt/pentest/privesc/windows/nc64";
     write-host "SCANNING";
     write-host " 47. nmap.org/nmap-7.80-win32`t`t`t`t`t17. samratashok/nishang/Scan";
     write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus";
@@ -347,7 +347,7 @@ while($true){
     write-host "SMB";
     write-host " 59. mvelazc0/Invoke-SMBLogin`t`t`t`t`t52. vletoux/smbscanner`t`t`t`t`t`t125. Kevin-Robertson/Invoke-TheHash";
     write-host " 55. InfosecMatter/Minimalistic-offensive-security-tools`t`t`t`t`t`t`t`t`t36. threatexpress/Invoke-PipeShell";
-    write-host " 133. ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets`t`t387. deepsecurity-pe/GoGhost`t`t`t448. arjansturing/smbv1finder";
+    write-host " 133. ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets`t`t387. deepsecurity-pe/GoGhost`t`t`t`t`t448. arjansturing/smbv1finder";
     write-host " 447. Dviros/Excalibur`t`t`t`t`t`t461. ShawnDEvans/smbmap/psutils/Get-FileLockProcess";
     write-host "SNIFFER";
     write-host " 53. sperner/PowerShell/Sniffer";
@@ -389,8 +389,8 @@ while($true){
     write-host " 338. scheduled tasks`t`t`t`t`t`t339. autorun startup`t`t`t`t`t`t340. check AlwaysInstallElevated enabled";
     write-host " 341. snmp config`t`t`t`t`t`t342. password in registry`t`t`t`t`t343. sysprep or unattend files";
     write-host " 454. Active Directory infos`t`t`t`t`t459. Dump memory of a process`t`t`t`t`t460. Enable/Disable Evasion/Bypassing";
-    write-host " 482. find password in *.xml *.ini *.txt`t`t`t483. find password in *.xml *.ini *.txt *.config`t`t`t484. find password in all files";
-    write-host " 488. upnp info`t`t`t`t`t`t499. check bash exists`t`t`t`t`t`t513. list all open ports";
+    write-host " 482. find password in *.xml *.ini *.txt`t`t`t483. find password in *.xml *.ini *.txt *.config`t484. find password in all files";
+    write-host " 488. upnp info`t`t`t`t`t`t`t499. check bash exists`t`t`t`t`t`t513. list all open ports";
     write-host " 514. Hostname`t`t`t`t`t`t`t515. All Users informations`t`t`t`t`t516. permissions on /Users directories lax";
     write-host " 517. Password and storage information`t`t`t`t518. Search Password informations`t`t`t`t519. Audit setting";
     write-host " 520. WEF Setting`t`t`t`t`t`t521. LAPS installed`t`t`t`t`t`t522. UAC Enabled (0x1)?";
