@@ -7,6 +7,7 @@ Thi powershell script has got to run in remote hacked windows host, even for piv
 
 - over 500 scripts and executables to hack local and remote machines;
 - static-binaries and standalone executables ready to use;
+- interactive selection of releases;
 
 Please, share and starring my repos, follow me and... Happy hacking!
 
