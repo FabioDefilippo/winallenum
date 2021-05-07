@@ -878,7 +878,7 @@ while($true){
         '507' {ScaricaSSL "r3motecontrol/Ghostpack-CompiledBinaries/SharpWMI" "SharpWMI.exe" "r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpWMI.exe"}
         '508' {ScaricaSSL "FSecureLABS/Azurite" "Azurite.zip" "FSecureLABS/Azurite/archive/refs/heads/master.zip"}
         '509' {ScaricaSSL "nccgroup/azucar" "azucar.zip" "nccgroup/azucar/archive/refs/heads/master.zip"}
-        '510' {Scarica "adrecon/AzureADRecon" "AzureADRecon.ps1" "adrecon/AzureADRecon/master/AzureADRecon.ps1"}
+        '510' {if(Test-Path .\AzureADRecon.ps1){if($Cred -ne $null){.\AzureADRecon.ps1 -Credential $Cred}else{.\AzureADRecon.ps1}}else{Scarica "adrecon/AzureADRecon" "AzureADRecon.ps1" "adrecon/AzureADRecon/master/AzureADRecon.ps1"}}
         '511' {ScaricaRel "skelsec/pypykatz"}
         '512' {Scarica "GetRektBoy724/BetterXencrypt" "betterxencrypt.ps1" "GetRektBoy724/BetterXencrypt/main/betterxencrypt.ps1"}
         '513' {netstat -ano | findstr /i listen}
