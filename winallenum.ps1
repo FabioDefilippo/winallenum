@@ -236,7 +236,7 @@ while($true){
     write-host " 231. limbenjamin/nTimetools";
     write-host "FTP";
     write-host " 452. tonylanglet/crushftp.powershell`t`t`t`t451. SMATechnologies/winscp-powershell";
-    write-host "GATHERING";
+    write-host "GATHERING - DOXING";
     write-host " 109. TonyPhipps/Meerkat/Modules`t`t`t`t16. samratashok/nishang/Gather`t`t`t`t`t184. dafthack/PowerMeta";
     write-host " 439. vivami/SauronEye/v0.0.9";
     write-host "GUESSING";
@@ -246,7 +246,7 @@ while($true){
     write-host " 246. nccgroup/acCOMplice`t`t`t`t`t277. antonioCoco/Mapping-Injection`t`t`t`t308. 3gstudent/CLR-Injection_x64";
     write-host " 309. 3gstudent/CLR-Injection_x86`t`t`t`t310. 3gstudent/COM-Object-hijacking`t`t`t`t380. uknowsec/SharpSQLTools";
     write-host " 456. rem1ndsec/DLLJack`t`t`t`t`t`t457. wietze/windows-dll-hijacking`t`t`t`t`t458. Flangvik/DLLSideloader";
-    write-host " 472. ctxis/DLLHSCx64`t`t`t`t`t`t473. ctxis/DLLHSCx86";
+    write-host " 472. ctxis/DLLHSC";
     write-host "HTTP";
     write-host " 266. salu90/PSFPT/BruteForce-Basic-Auth";
     write-host "iOS";
@@ -274,16 +274,14 @@ while($true){
     write-host " 248. k8gege/PowerLadon`t`t`t`t`t`t252. BankSecurity/Red_Team`t`t`t`t`t253. cutaway-security/chaps";
     write-host " 254. QAX-A-Team/CobaltStrike-Toolset`t`t`t`t256. Kevin-Robertson/Inveigh`t`t`t`t`t247. JoelGMSec/AutoRDPwn";
     write-host " 257. scipag/KleptoKitty`t`t`t`t`t261. homjxi0e/PowerAvails`t`t`t`t`t281. jaredhaight/PSAttackBuildTool/v1.9.1";
-    write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t354. Killeroo/PowerPing.x86";
-    write-host " 355. Killeroo/PowerPing`t`t`t`t`t356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm";
-    write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t384. Invoke-IR/PowerForensicsv2`t`t`t`t`t413. jaredhaight/PSAttack";
+    write-host " 313. chocolatey/install`t`t`t`t`t352. rvrsh3ll/Misc-Powershell-Scripts`t`t`t354. Killeroo/PowerPing";
+    write-host " 356. PowerShellMafia/PowerSploit`t`t`t`t357. fireeye/commando-vm`t`t`t487. ohpe/juicy-potato";
+    write-host " 383. Invoke-IR/PowerForensics`t`t`t`t`t413. jaredhaight/PSAttack`t`t`t502. r3motecontrol/Ghostpack-CompiledBinaries/Seatbelt";
     write-host " 449. VikasSukhija/Downloads/Multi-Tools`t`t`t455. PowerShellEmpire/PowerTools`t`t471. S3cur3Th1sSh1t/PowerSharpPack";
     write-host " 474. TonyPhipps/Meerkat`t`t`t`t`t477. andrew-d/static-binaries/windows/x86`t`t`t`t478. andrew-d/static-binaries/windows/x64";
     write-host " 485. sysinternals.com/files/SysinternalsSuite`t`t`t486. sysinternals.com/files/SysinternalsSuite-ARM64";
-    write-host " 487. ohpe/juicy-potato`t`t`t`t`t`t502. r3motecontrol/Ghostpack-CompiledBinaries/Seatbelt";
     write-host "MITM";
-    write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t273. odedshimon/BruteShark/BruteSharkDesktopInstaller_x64";
-    write-host " 290. bettercap/bettercap";
+    write-host " 163. Kevin-Robertson/Inveigh`t`t`t`t`t272. odedshimon/BruteShark`t`t`t`t`t290. bettercap/bettercap";
     write-host "OSINT";
     write-host " 255. ecstatic-nobel/pOSINT`t`t`t`t`t462. ElevenPaths/FOCA";
     write-host "OWA";
@@ -298,7 +296,7 @@ while($true){
     write-host "PIVOTING";
     write-host " 265. attactics/Invoke-DCOMPowerPointPivot";
     write-host "POST-EXPLOITATION";
-    write-host " 374. BloodHoundAD/BloodHound-win32-x64`t`t`t`t375. BloodHoundAD/BloodHound-win32-ia32`t`t`t377. gfoss/PSRecon";
+    write-host " 374. BloodHoundAD/BloodHound`t`t`t`t377. gfoss/PSRecon";
     write-host " 376. enigma0x3/Old-Powershell-payload-Excel-Delivery`t`t441. mubix/post-exploitation";
     write-host "PRIVESC";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
@@ -313,7 +311,7 @@ while($true){
     write-host " 491. phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management`t`t`t492. phackt/pentest/privesc/windows/Set-LHSTokenPrivilege";
     write-host " 495. phackt/pentest/privesc/windows/privesc";
     write-host "PROXY - REVPROXY";
-    write-host " 404. fatedier/frp_386`t`t`t`t`t`t405. fatedier/frp_amd64`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
+    write-host " 404. fatedier/frp`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
     write-host "PXE";
     write-host " 320. wavestone-cdt/powerpxe";
     write-host "RAT";
@@ -358,7 +356,7 @@ while($true){
     write-host "SSH";
     write-host " 104. InfosecMatter/SSH-PuTTY-login-bruteforcer";
     write-host "TEXT EDITOR";
-    write-host " 314. zyedidia/micro/v2.0.8-win32`t`t`t`t315. zyedidia/micro/v2.0.8-win64";
+    write-host " 314. zyedidia/micro";
     write-host "TUNNELING - FORWARDING";
     write-host " 34. T3rry7f/ICMPTunnel/IcmpTunnel_C`t`t`t`t35. T3rry7f/ICMPTunnel/IcmpTunnel_C_64`t`t`t144. Kevin-Robertson/Inveigh/Inveigh-Relay";
     write-host " 169. deepzec/Win-PortFwd`t`t`t`t`t249. p3nt4/Invoke-SocksProxy";
