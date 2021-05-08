@@ -102,11 +102,13 @@ function ScaricaEDB($EXPL)
 
 function ScaricaRel($URL)
 {
-    $EXES=@(((((invoke-webrequest -uri https://github.com/$URL/releases/).content|findstr "releases/download").split()|findstr "href").split("=")|findstr "download").replace('"', ''))
+    $RELK="releases/download/";
+    $EXES=@(((((invoke-webrequest -uri https://github.com/$URL/releases/).content|findstr $RELK).split()|findstr "href").split("=")|findstr "download").replace('"', ''))
     $DIM=1;
     foreach($EXE in $EXES)
     {
-        write-host "$DIM. $EXE";
+        $EXI=$EXE.replace($RELK, "");
+        write-host "$DIM. $EXI";
         $DIM++;
     }
     $REL=Read-Host "Choose a release";
