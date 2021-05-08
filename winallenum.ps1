@@ -257,7 +257,7 @@ while($true){
     write-host " 37. mdavis332/DomainPasswordSpray/Invoke-DomainPasswordSpray`t38. mdavis332/DomainPasswordSpray/Get-DomainPasswordPolicy";
     write-host " 39. mdavis332/DomainPasswordSpray/Get-DomainUserList`t`t134. nidem/kerberoast/GetUserSPNs";
     write-host " 223. tmenochet/PowerSpray`t`t`t`t`t251. NotMedic/NetNTLMtoSilverTicket`t`t`t`t500. r3motecontrol/Ghostpack-CompiledBinaries/Rubeus";
-    write-host " 505. r3motecontrol/Ghostpack-CompiledBinaries/SharpRoast";
+    write-host " 505. r3motecontrol/Ghostpack-CompiledBinaries/SharpRoast`t`t273. ropnop/kerbrute";
     write-host "LDAP";
     write-host " 145. Nillth/PWSH-LDAP/LDAP-Query`t`t`t`t147. dinigalab/ldapsearch`t`t`t`t`t318. roggenk/PowerShell/LDAPS";
     write-host " 48. 3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain`t`t`t`t`t`t346. Mr-Un1k0d3r/RedTeamCSharpScripts/ldapquery";
@@ -649,6 +649,7 @@ while($true){
         '270' {ScaricaExt "Decompile-Net-code" "Decompile-DotNet.ps1" "https://gallery.technet.microsoft.com/scriptcenter/Decompile-Net-code-in-4581620b/file/134845/1/Decompile-DotNet.ps1"}
         '271' {ScaricaSSL "FuzzySecurity/Capcom-Rootkit/Driver/Capcom" "Capcom.sys" "FuzzySecurity/Capcom-Rootkit/raw/master/Driver/Capcom.sys"}
         '272' {ScaricaRel "odedshimon/BruteShark"}
+        '273' {ScaricaRel "ropnop/kerbrute"}
         '274' {ScaricaSSL "sud0woodo/DCOMrade" "DCOMrade.zip" "sud0woodo/DCOMrade/archive/master.zip"}
         '275' {ScaricaRel "quasar/Quasar"}
         '276' {$HFILE=read-host "Digit full path file to hash"; if(test-path $HFILE){$HALGO=read-host "Digit an hash algo"; if($HALGO -ne ""){certutil.exe -hashfile $HFILE $HALGO}}}
