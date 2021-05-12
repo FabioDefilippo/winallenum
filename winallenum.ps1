@@ -311,7 +311,7 @@ while($true){
     write-host " 440. xct/xc/PrivescCheck`t`t`t`t`t453. Mr-Un1k0d3r/SCShell`t`t`t`t`t480. abatchy17/WindowsExploits";
     write-host " 481. SecWiki/windows-kernel-exploits`t`t`t`t489. phackt/pentest/privesc/accesschk`t`t`t490 phackt/pentest/privesc/accesschk64";
     write-host " 491. phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management`t`t`t492. phackt/pentest/privesc/windows/Set-LHSTokenPrivilege";
-    write-host " 495. phackt/pentest/privesc/windows/privesc";
+    write-host " 495. phackt/pentest/privesc/windows/privesc`t`t`t542. Ascotbe/Kernelhub";
     write-host "PROXY - REVPROXY";
     write-host " 404. fatedier/frp`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
     write-host "PXE";
@@ -913,6 +913,7 @@ while($true){
         '539' {Scarica "jschicht/ExtractUsnJrnl/ExtractUsnJrnl.au3" "ExtractUsnJrnl.au3" "jschicht/ExtractUsnJrnl/master/ExtractUsnJrnl.au3"}
         '540' {ScaricaSSL "jschicht/ExtractUsnJrnl/ExtractUsnJrnl.exe" "ExtractUsnJrnl.exe" "jschicht/ExtractUsnJrnl/raw/master/ExtractUsnJrnl.exe"}
         '541' {ScaricaSSL "jschicht/ExtractUsnJrnl/ExtractUsnJrnl64.exe" "ExtractUsnJrnl64.exe" "jschicht/ExtractUsnJrnl/raw/master/ExtractUsnJrnl64.exe"}
+        '542' {ScaricaSSL "Ascotbe/Kernelhub" "Kernelhub.zip" "Ascotbe/Kernelhub/archive/refs/heads/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
