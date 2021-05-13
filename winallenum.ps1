@@ -178,6 +178,9 @@ while($true){
     write-host " 209. ivan-sincek/file-shredder";
     write-host "CRACKING";
     write-host " 511. skelsec/pypykatz";
+    write-host "CVE";
+    write-host " 545. unamer/CVE-2018-8120/x86`t`t`t546. unamer/CVE-2018-8120/x64`t`t`t544. ZephrFish/CVE-2020-1350";
+    write-host " 547. cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION";
     write-host "DCOM";
     write-host " 274. sud0woodo/DCOMrade";
     write-host "DECOMILER"
@@ -312,7 +315,6 @@ while($true){
     write-host " 481. SecWiki/windows-kernel-exploits`t`t`t`t489. phackt/pentest/privesc/accesschk`t`t`t490 phackt/pentest/privesc/accesschk64";
     write-host " 491. phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management`t`t`t492. phackt/pentest/privesc/windows/Set-LHSTokenPrivilege";
     write-host " 495. phackt/pentest/privesc/windows/privesc`t`t`t542. Ascotbe/Kernelhub`t`t`t543. danigargu/CVE-2020-0796";
-    write-host " 544. ZephrFish/CVE-2020-1350";
     write-host "PROXY - REVPROXY";
     write-host " 404. fatedier/frp`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
     write-host "PXE";
@@ -917,6 +919,9 @@ while($true){
         '542' {ScaricaSSL "Ascotbe/Kernelhub" "Kernelhub.zip" "Ascotbe/Kernelhub/archive/refs/heads/master.zip"}
         '543' {ScaricaRel "danigargu/CVE-2020-0796"}
         '544' {ScaricaSSL "ZephrFish/CVE-2020-1350" "CVE-2020-1350.exe" "ZephrFish/CVE-2020-1350/raw/master/CVE-2020-1350.exe"; ScaricaSSL "ZephrFish/CVE-2020-1350/PoC" "PoC.exe" "ZephrFish/CVE-2020-1350/raw/master/PoC.exe"; Scarica "ZephrFish/CVE-2020-1350" "windows-exploit.ps1" "ZephrFish/CVE-2020-1350/master/windows-exploit.ps1"}
+        '545' {ScaricaSSL "unamer/CVE-2018-8120/x86" "CVE-2018-8120-x86.exe" "unamer/CVE-2018-8120/raw/master/Release/CVE-2018-8120.exe"}
+        '546' {ScaricaSSL "unamer/CVE-2018-8120/x64" "CVE-2018-8120-x64.exe" "unamer/CVE-2018-8120/raw/master/x64/Release/CVE-2018-8120.exe"}
+        '547' {ScaricaRel "cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
