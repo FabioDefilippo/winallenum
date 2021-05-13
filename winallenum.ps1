@@ -181,6 +181,7 @@ while($true){
     write-host "CVE";
     write-host " 545. unamer/CVE-2018-8120/x86`t`t`t546. unamer/CVE-2018-8120/x64`t`t`t544. ZephrFish/CVE-2020-1350";
     write-host " 547. cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION";
+    write-host " 548. itm4n/CVEs/CVE-2020-1170`t`t`t549. nu11secur1ty/Windows10Exploits`t543. danigargu/CVE-2020-0796";
     write-host "DCOM";
     write-host " 274. sud0woodo/DCOMrade";
     write-host "DECOMILER"
@@ -314,7 +315,7 @@ while($true){
     write-host " 440. xct/xc/PrivescCheck`t`t`t`t`t453. Mr-Un1k0d3r/SCShell`t`t`t`t`t480. abatchy17/WindowsExploits";
     write-host " 481. SecWiki/windows-kernel-exploits`t`t`t`t489. phackt/pentest/privesc/accesschk`t`t`t490 phackt/pentest/privesc/accesschk64";
     write-host " 491. phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management`t`t`t492. phackt/pentest/privesc/windows/Set-LHSTokenPrivilege";
-    write-host " 495. phackt/pentest/privesc/windows/privesc`t`t`t542. Ascotbe/Kernelhub`t`t`t543. danigargu/CVE-2020-0796";
+    write-host " 495. phackt/pentest/privesc/windows/privesc`t`t`t542. Ascotbe/Kernelhub";
     write-host "PROXY - REVPROXY";
     write-host " 404. fatedier/frp`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
     write-host "PXE";
@@ -922,6 +923,8 @@ while($true){
         '545' {ScaricaSSL "unamer/CVE-2018-8120/x86" "CVE-2018-8120-x86.exe" "unamer/CVE-2018-8120/raw/master/Release/CVE-2018-8120.exe"}
         '546' {ScaricaSSL "unamer/CVE-2018-8120/x64" "CVE-2018-8120-x64.exe" "unamer/CVE-2018-8120/raw/master/x64/Release/CVE-2018-8120.exe"}
         '547' {ScaricaRel "cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION"}
+        '548' {Scarica "itm4n/CVEs/CVE-2020-1170" "DefenderArbitraryFileDelete.ps1" "itm4n/CVEs/master/CVE-2020-1170/DefenderArbitraryFileDelete.ps1"}
+        '549' {ScaricaSSL "nu11secur1ty/Windows10Exploits" "Windows10Exploits.zip" "nu11secur1ty/Windows10Exploits/archive/refs/heads/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
