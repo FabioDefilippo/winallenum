@@ -180,8 +180,10 @@ while($true){
     write-host " 511. skelsec/pypykatz";
     write-host "CVE";
     write-host " 545. unamer/CVE-2018-8120/x86`t`t`t546. unamer/CVE-2018-8120/x64`t`t`t544. ZephrFish/CVE-2020-1350";
-    write-host " 547. cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION";
+    write-host " 547. cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION`t`t`t`t`t552. padovah4ck/CVE-2020-0683";
     write-host " 548. itm4n/CVEs/CVE-2020-1170`t`t`t549. nu11secur1ty/Windows10Exploits`t543. danigargu/CVE-2020-0796";
+    write-host " 553. afang5472/CVE-2020-0753-and-CVE-2020-0754`t`t`t`t`t554. goichot/CVE-2020-3435";
+    write-host " 555. goichot/CVE-2020-3434`t`t`t556. goichot/CVE-2020-3433";
     write-host "DCOM";
     write-host " 274. sud0woodo/DCOMrade";
     write-host "DECOMILER"
@@ -929,6 +931,11 @@ while($true){
         '549' {ScaricaSSL "nu11secur1ty/Windows10Exploits" "Windows10Exploits.zip" "nu11secur1ty/Windows10Exploits/archive/refs/heads/master.zip"}
         '550' {Scarica "cert-lv/exchange_webshell_detection" "detect_webshells.ps1" "cert-lv/exchange_webshell_detection/main/detect_webshells.ps1"}
         '551' {ScaricSSL "ZhuriLab/Exploits" "Exploits.zip" "ZhuriLab/Exploits/archive/refs/heads/master.zip"}
+        '552' {ScaricaSSL "padovah4ck/CVE-2020-0683/MsiExploit" "MsiExploit.exe" "padovah4ck/CVE-2020-0683/raw/master/bin_MsiExploit/MsiExploit.exe"; ScaricaSSL "padovah4ck/CVE-2020-0683/foo" "foo.msi" "padovah4ck/CVE-2020-0683/raw/master/bin_MsiExploit/foo.msi"}
+        '553' {ScaricaSSL "afang5472/CVE-2020-0753-and-CVE-2020-0754" "CVE-2020-0753-and-CVE-2020-0754.zip" "afang5472/CVE-2020-0753-and-CVE-2020-0754/archive/refs/heads/master.zip"}
+        '554' {ScaricaSSL "goichot/CVE-2020-3435" "CVE-2020-3435-profile-modification.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3435-profile-modification.exe"}
+        '555' {ScaricaSSL "goichot/CVE-2020-3434" "CVE-2020-3434-DoS.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3434-DoS.exe"}
+        '556' {ScaricaSSL "goichot/CVE-2020-3433" "CVE-2020-3433-privesc.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3433-privesc.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
