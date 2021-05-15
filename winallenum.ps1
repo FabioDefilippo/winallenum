@@ -234,7 +234,7 @@ while($true){
     write-host " 20. WindowsExploits/CVE-2012-0217/sysret`t`t`t21. WindowsExploits/CVE-2016-3309/bfill`t`t`t22. WindowsExploits/CVE-2016-3371/40429";
     write-host " 23. WindowsExploits/CVE-2016-7255/CVE-2016-7255`t`t24. WindowsExploits/CVE-2017-0213_x86`t`t`t25. WindowsExploits/CVE-2017-0213_x64";
     write-host " 26. EmpireProject/Empire/privesc`t`t`t`t27. EmpireProject/Empire/exploitation`t`t`t28. hausec/PowerZure";
-    write-host " 302. exploit-db all exploits";
+    write-host " 302. exploit-db all exploits`t`t`t`t`t551. ZhuriLab/Exploits";
     write-host "EXTRA";
     write-host " 181. gallery.technet.microsoft.com/scriptcenter/PS2EXE-Convert/PS2EXE`t`t`t`t`t`t`t`t192. NetSPI/MicroBurst/MSOL";
     write-host " 233. antonioCoco/Invoke-RunasCs";
@@ -408,6 +408,8 @@ while($true){
     write-host " 350. Mr-Un1k0d3r/RedTeamCSharpScripts/webhunter";
     write-host "WEBDAV";
     write-host " 269. p3nt4/Invoke-TmpDavFS";
+    write-host "WEBSHELL";
+    write-host " 550. cert-lv/exchange_webshell_detection";
     write-host "WINRM";
     write-host " 158. davehardy20/Invoke-WinRMAttack`t`t`t`t159. d1pakda5/PowerShell-for-Pentesters/Code/44/Get-WinRMPassword";
     write-host " 408. antonioCoco/RogueWinRM";
@@ -925,6 +927,8 @@ while($true){
         '547' {ScaricaRel "cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION"}
         '548' {Scarica "itm4n/CVEs/CVE-2020-1170" "DefenderArbitraryFileDelete.ps1" "itm4n/CVEs/master/CVE-2020-1170/DefenderArbitraryFileDelete.ps1"}
         '549' {ScaricaSSL "nu11secur1ty/Windows10Exploits" "Windows10Exploits.zip" "nu11secur1ty/Windows10Exploits/archive/refs/heads/master.zip"}
+        '550' {Scarica "cert-lv/exchange_webshell_detection" "detect_webshells.ps1" "cert-lv/exchange_webshell_detection/main/detect_webshells.ps1"}
+        '551' {ScaricSSL "ZhuriLab/Exploits" "Exploits.zip" "ZhuriLab/Exploits/archive/refs/heads/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
