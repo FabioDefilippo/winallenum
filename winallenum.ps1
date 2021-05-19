@@ -365,7 +365,7 @@ while($true){
     write-host " 388. tokyoneon/Chimera/shells/Invoke-PowerShellIcmp`t`t392. tokyoneon/Chimera/shells/Invoke-PowerShellUdp";
     write-host " 493. phackt/pentest/privesc/windows/nc`t`t`t`t494. phackt/pentest/privesc/windows/nc64";
     write-host "SCANNING";
-    write-host " 47. nmap.org/nmap-7.80-win32`t`t`t`t`t17. samratashok/nishang/Scan";
+    write-host " 47. nmap.org tools`t`t`t`t`t17. samratashok/nishang/Scan";
     write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus";
     write-host " 401. tokyoneon/Chimera/shells/misc/Invoke-PortScan`t`t388. thom-s/netsec-ps-scripts/printer-telnet-ftp-report";
     write-host " 475. k8gege/K8tools/K8PortScan";
