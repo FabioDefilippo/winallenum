@@ -90,6 +90,25 @@ function ScaricaExt($TESTO, $FILENAME, $URL)
     }
 }
 
+function ScaricaMul($URL)
+{
+$EXES=@((((invoke-webrequest -uri $URL).content|findstr "href").split("=")).split('"')|findstr ".exe .zip"|findstr /v ">")
+$DIM=1;
+    foreach($EXE in $EXES)
+    {
+        write-host "$DIM. $EXE";
+        $DIM++;
+    }
+    $REL=Read-Host "Choose a release";
+    try{
+        $EXEFL=$EXES[$REL-1];
+        write-host "download "$EXEFL
+        invoke-webrequest -uri $URL$MIO -OutFile $EXEFL;
+    }catch{
+        write-host $_
+    }
+}
+
 function ScaricaEDB($EXPL)
 {
     write-host "Downloading exploit-db/$EXPL";
@@ -472,7 +491,7 @@ while($true){
         '44' {write-host "you will get https://github.com/mattifestation/PowerShellArsenal/WindowsInternals"; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "mattifestation/PowerShellArsenal/WindowsInternals/$FILENAME" "$FILENAME" "mattifestation/PowerShellArsenal/master/WindowsInternals/$FILENAME"}}
         '45' {write-host "you will get https://github.com/andrew-d/static-binaries/windows/x86"; $FILENAME=read-host 'Digit filename with extension (example nmap.exe)'; if($FILENAME -ne ""){write-host "downloading andrew-d/static-binaries/windows/x86/$FILENAME"; try{invoke-webrequest -uri https://github.com/andrew-d/static-binaries/raw/master/binaries/windows/x86/$FILENAME -outfile $FILENAME}catch{write-host $_}}else{write-host $FILENAME" is not a valid name"}}
         '46' {write-host "you will get https://github.com/andrew-d/static-binaries/windows/x64"; $FILENAME=read-host 'Digit filename with extension (example heartbleeder.exe)'; if($FILENAME -ne ""){write-host "downloading andrew-d/static-binaries/windows/x64/$FILENAME"; try{invoke-webrequest -uri https://github.com/andrew-d/static-binaries/raw/master/binaries/windows/x64/$FILENAME -outfile $FILENAME}catch{write-host $_}}else{write-host $FILENAME" is not a valid name"}}
-        '47' {ScaricaExt "nmap.org/nmap-7.80-win32" "nmap-7.80-win32.zip" "https://nmap.org/dist/nmap-7.80-win32.zip"}
+        '47' {ScaricaMul "https://nmap.org/dist/"}
         '48' {Scarica "3gstudent/Homework-of-Powershell/Invoke-DomainPasswordSprayOutsideTheDomain" "Invoke-DomainPasswordSprayOutsideTheDomain.ps1" "3gstudent/Homework-of-Powershell/master/Invoke-DomainPasswordSprayOutsideTheDomain.ps1"}
         '49' {write-host "you will get https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon"; $FILENAME=read-host 'Digit filename with extension (example exploit.ps1)'; if($FILENAME -ne ""){Scarica "PowerShellMafia/PowerSploit/Recon/$FILENAME" "$FILENAME" "PowerShellMafia/PowerSploit/master/Recon/$FILENAME"}}
         '50' {Scarica "BloodHoundAD/Ingestors/SharpHound" "SharpHound.ps1" "BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1"}
