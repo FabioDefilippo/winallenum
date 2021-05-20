@@ -155,7 +155,7 @@ while($true){
     write-host "winallenum, by FabioDefilippoSoftware";
     write-host " 0. exit`t"$EVT;
     write-host "365";
-    write-host " 268. dafthack/MFASweep";
+    write-host " 268. dafthack/MFASweep`t`t`t`t`t557. ANSSI-FR/DFIR-O365RC";
     write-host "ACTIVE DIRECTORY";
     write-host " 13. samratashok/nishang/ActiveDirectory`t`t`t50. BloodHoundAD/Ingestors/SharpHound`t`t`t51. PyroTek3/PowerShell-AD-Recon";
     write-host " 150. HarmJ0y/ASREPRoast`t`t`t`t`t152. Kevin-Robertson/Powermad`t`t`t`t`t156. AlsidOfficial/UncoverDCShadow";
@@ -955,6 +955,7 @@ while($true){
         '554' {ScaricaSSL "goichot/CVE-2020-3435" "CVE-2020-3435-profile-modification.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3435-profile-modification.exe"}
         '555' {ScaricaSSL "goichot/CVE-2020-3434" "CVE-2020-3434-DoS.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3434-DoS.exe"}
         '556' {ScaricaSSL "goichot/CVE-2020-3433" "CVE-2020-3433-privesc.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3433-privesc.exe"}
+        '557' {ScaricaSSL "ANSSI-FR/DFIR-O365RC" "DFIR-O365RC.zip" "ANSSI-FR/DFIR-O365RC/archive/refs/heads/main.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
