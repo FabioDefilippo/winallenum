@@ -202,7 +202,7 @@ while($true){
     write-host " 547. cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION`t`t`t`t`t552. padovah4ck/CVE-2020-0683";
     write-host " 548. itm4n/CVEs/CVE-2020-1170`t`t`t549. nu11secur1ty/Windows10Exploits`t543. danigargu/CVE-2020-0796";
     write-host " 553. afang5472/CVE-2020-0753-and-CVE-2020-0754`t`t`t`t`t554. goichot/CVE-2020-3435";
-    write-host " 555. goichot/CVE-2020-3434`t`t`t556. goichot/CVE-2020-3433";
+    write-host " 555. goichot/CVE-2020-3434`t`t`t556. goichot/CVE-2020-3433`t`t`t`t560. exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732";
     write-host "DCOM";
     write-host " 274. sud0woodo/DCOMrade";
     write-host "DECOMILER"
@@ -959,6 +959,7 @@ while($true){
         '557' {ScaricaSSL "ANSSI-FR/DFIR-O365RC" "DFIR-O365RC.zip" "ANSSI-FR/DFIR-O365RC/archive/refs/heads/main.zip"}
         '558' {ScaricaRel "antonioCoco/RemotePotato0"}
         '559' {ScaricaRel "wdelmas/remote-potato"}
+        '560' {ScaricaSSL "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732" "Windows-Privilege-Escalation-CVE-2021-1732.zip" "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732/archive/refs/heads/main.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
