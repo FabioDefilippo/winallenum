@@ -336,7 +336,8 @@ while($true){
     write-host " 440. xct/xc/PrivescCheck`t`t`t`t`t453. Mr-Un1k0d3r/SCShell`t`t`t`t`t480. abatchy17/WindowsExploits";
     write-host " 481. SecWiki/windows-kernel-exploits`t`t`t`t489. phackt/pentest/privesc/accesschk`t`t`t490 phackt/pentest/privesc/accesschk64";
     write-host " 491. phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management`t`t`t492. phackt/pentest/privesc/windows/Set-LHSTokenPrivilege";
-    write-host " 495. phackt/pentest/privesc/windows/privesc`t`t`t542. Ascotbe/Kernelhub";
+    write-host " 495. phackt/pentest/privesc/windows/privesc`t`t`t542. Ascotbe/Kernelhub`t`t`t558. antonioCoco/RemotePotato0";
+    write-host " 559. wdelmas/remote-potato";
     write-host "PROXY - REVPROXY";
     write-host " 404. fatedier/frp`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
     write-host "PXE";
@@ -956,6 +957,8 @@ while($true){
         '555' {ScaricaSSL "goichot/CVE-2020-3434" "CVE-2020-3434-DoS.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3434-DoS.exe"}
         '556' {ScaricaSSL "goichot/CVE-2020-3433" "CVE-2020-3433-privesc.exe" "goichot/CVE-2020-3433/raw/master/bin/CVE-2020-3433-privesc.exe"}
         '557' {ScaricaSSL "ANSSI-FR/DFIR-O365RC" "DFIR-O365RC.zip" "ANSSI-FR/DFIR-O365RC/archive/refs/heads/main.zip"}
+        '558' {ScaricaRel "antonioCoco/RemotePotato0"}
+        '559' {ScaricaRel "wdelmas/remote-potato"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
