@@ -169,7 +169,7 @@ while($true){
     write-host "ANALISYS";
     write-host " 30. sysinternals/NotMyFault`t`t`t`t`t31. sysinternals/Procdump`t`t`t`t`t32. sysinternals/PSTools";
     write-host " 174. sysinternals/TCPView`t`t`t`t`t369. PwnDexter/SharpEDRChecker`t`t`t`t`t496. phackt/pentest/privesc/windows/procdump";
-    write-host " 497. phackt/pentest/privesc/windows/procdump64";
+    write-host " 497. phackt/pentest/privesc/windows/procdump64`t`t`t563. med0x2e/GadgetToJScript";
     write-host "ANONYMIZATION";
     write-host " 234. torbrowser/9.5/tor-win64-0.4.3.5`t`t`t`t235. torbrowser/9.5/tor-win32-0.4.3.5";
     write-host "AZURE";
@@ -964,6 +964,7 @@ while($true){
         '560' {ScaricaSSL "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732" "Windows-Privilege-Escalation-CVE-2021-1732.zip" "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732/archive/refs/heads/main.zip"}
         '561' {if(Test-Path "C:\Windows\System32\tscon.exe"){if(Test-Path "C:\Windows\System32\query.exe"){query user; $TSID=read-host "Digit a session ID"; if($TSID -ne ""){foreach($TENT in get-content $FILE){tscon /password:$TENT}}}}}
         '562' {ScaricaSSL "mdiazcl/fuzzbunch-debian" "fuzzbunch-debian.zip" "mdiazcl/fuzzbunch-debian/archive/refs/heads/master.zip"}
+        '563' {ScaricaRel "med0x2e/GadgetToJScript"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
