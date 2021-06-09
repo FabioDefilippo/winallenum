@@ -263,6 +263,8 @@ while($true){
     write-host " 231. limbenjamin/nTimetools";
     write-host "FTP";
     write-host " 452. tonylanglet/crushftp.powershell`t`t`t`t451. SMATechnologies/winscp-powershell";
+    write-host "FUZZING"
+    write-host " 562. mdiazcl/fuzzbunch-debian";
     write-host "GATHERING - DOXING";
     write-host " 109. TonyPhipps/Meerkat/Modules`t`t`t`t16. samratashok/nishang/Gather`t`t`t`t`t184. dafthack/PowerMeta";
     write-host " 439. vivami/SauronEye/v0.0.9";
@@ -961,6 +963,7 @@ while($true){
         '559' {ScaricaRel "wdelmas/remote-potato"}
         '560' {ScaricaSSL "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732" "Windows-Privilege-Escalation-CVE-2021-1732.zip" "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732/archive/refs/heads/main.zip"}
         '561' {if(Test-Path "C:\Windows\System32\tscon.exe"){if(Test-Path "C:\Windows\System32\query.exe"){query user; $TSID=read-host "Digit a session ID"; if($TSID -ne ""){foreach($TENT in get-content $FILE){tscon /password:$TENT}}}}}
+        '562' {ScaricaSSL "mdiazcl/fuzzbunch-debian" "fuzzbunch-debian.zip" "mdiazcl/fuzzbunch-debian/archive/refs/heads/master.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
