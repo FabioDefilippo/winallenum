@@ -443,7 +443,7 @@ while($true){
     write-host " 262. Cybereason/Invoke-WMILM`t`t`t`t`t344. Mr-Un1k0d3r/RedTeamCSharpScripts/WMIUtility`t351. Mr-Un1k0d3r/RedTeamCSharpScripts/wmiutility";
     write-host " 507. r3motecontrol/Ghostpack-CompiledBinaries/SharpWMI";
     write-host "OTHERS - ?";
-    write-host " 399. tokyoneon/Chimera/shells/misc/Get-Information";
+    write-host " 399. tokyoneon/Chimera/shells/misc/Get-Information`t`t`t`t`t`t564. lawrenceamer/TChopper";
     
     $RISP=read-host 'Make your choice';
     switch ($RISP){
@@ -965,6 +965,7 @@ while($true){
         '561' {if(Test-Path "C:\Windows\System32\tscon.exe"){if(Test-Path "C:\Windows\System32\query.exe"){query user; $TSID=read-host "Digit a session ID"; if($TSID -ne ""){foreach($TENT in get-content $FILE){tscon /password:$TENT}}}}}
         '562' {ScaricaSSL "mdiazcl/fuzzbunch-debian" "fuzzbunch-debian.zip" "mdiazcl/fuzzbunch-debian/archive/refs/heads/master.zip"}
         '563' {ScaricaRel "med0x2e/GadgetToJScript"}
+        '564' {ScaricaSSL "lawrenceamer/TChopper" "chopper.exe" "lawrenceamer/TChopper/raw/main/release/chopper.exe"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
