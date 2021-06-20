@@ -366,7 +366,7 @@ while($true){
     write-host " 393. tokyoneon/Chimera/shells/Invoke-PowerShellUdpOneLine`t394. tokyoneon/Chimera/shells/generic1`t`t`t395. tokyoneon/Chimera/shells/generic2";
     write-host " 396. tokyoneon/Chimera/shells/generic3`t`t`t`t397. tokyoneon/Chimera/shells/powershell_reverse_shell";
     write-host " 388. tokyoneon/Chimera/shells/Invoke-PowerShellIcmp`t`t392. tokyoneon/Chimera/shells/Invoke-PowerShellUdp";
-    write-host " 493. phackt/pentest/privesc/windows/nc`t`t`t`t494. phackt/pentest/privesc/windows/nc64";
+    write-host " 493. phackt/pentest/privesc/windows/nc`t`t`t`t494. phackt/pentest/privesc/windows/nc64`t`t`t565. r00t-3xp10it/redpill";
     write-host "SCANNING";
     write-host " 47. nmap.org tools`t`t`t`t`t17. samratashok/nishang/Scan";
     write-host " 188. gallery.technet.microsoft.com/scriptcenter/Getting-Windows-Defender/Get-AntiMalwareStatus";
@@ -966,6 +966,7 @@ while($true){
         '562' {ScaricaSSL "mdiazcl/fuzzbunch-debian" "fuzzbunch-debian.zip" "mdiazcl/fuzzbunch-debian/archive/refs/heads/master.zip"}
         '563' {ScaricaRel "med0x2e/GadgetToJScript"}
         '564' {ScaricaSSL "lawrenceamer/TChopper" "chopper.exe" "lawrenceamer/TChopper/raw/main/release/chopper.exe"}
+        '565' {ScaricaSSL "r00t-3xp10it/redpill" "redpill.zip" "r00t-3xp10it/redpill/archive/refs/heads/main.zip"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
