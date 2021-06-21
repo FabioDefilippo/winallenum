@@ -327,7 +327,7 @@ while($true){
     write-host "POST-EXPLOITATION";
     write-host " 374. BloodHoundAD/BloodHound`t`t`t`t`t377. gfoss/PSRecon";
     write-host " 376. enigma0x3/Old-Powershell-payload-Excel-Delivery`t`t441. mubix/post-exploitation";
-    write-host "PRIVESC";
+    write-host "PRIVESC - LATERAL MOVEMENT";
     write-host " 10. offensive-security/exploitdb-windows_x86/local`t`t11. offensive-security/exploitdb-windows_x64/local`t12. samratashok/nishang/Escalation";
     write-host " 14. samratashok/nishang/Backdoors`t`t`t`t15. samratashok/nishang/Bypass`t`t`t`t`t18. samratashok/nishang/powerpreter";
     write-host " 29. itm4n/PrivescCheck`t`t`t`t`t`t60. PrintDemon PrivEsc`t`t`t`t`t`t368. offensive-security/exploitdb-windows/local";
@@ -339,7 +339,7 @@ while($true){
     write-host " 481. SecWiki/windows-kernel-exploits`t`t`t`t489. phackt/pentest/privesc/accesschk`t`t`t490 phackt/pentest/privesc/accesschk64";
     write-host " 491. phackt/pentest/privesc/windows/Microsoft.ActiveDirectory.Management`t`t`t492. phackt/pentest/privesc/windows/Set-LHSTokenPrivilege";
     write-host " 495. phackt/pentest/privesc/windows/privesc`t`t`t542. Ascotbe/Kernelhub`t`t`t558. antonioCoco/RemotePotato0";
-    write-host " 559. wdelmas/remote-potato";
+    write-host " 559. wdelmas/remote-potato`t`t`t`t`t566. S3cur3Th1sSh1t/NamedPipePTH/Invoke-ImpersonateUser-PTH";
     write-host "PROXY - REVPROXY";
     write-host " 404. fatedier/frp`t`t`t`t`t`t479. p3nt4/Invoke-SocksProxy";
     write-host "PXE";
@@ -967,6 +967,7 @@ while($true){
         '563' {ScaricaRel "med0x2e/GadgetToJScript"}
         '564' {ScaricaSSL "lawrenceamer/TChopper" "chopper.exe" "lawrenceamer/TChopper/raw/main/release/chopper.exe"}
         '565' {ScaricaSSL "r00t-3xp10it/redpill" "redpill.zip" "r00t-3xp10it/redpill/archive/refs/heads/main.zip"}
+        '566' {Scarica "S3cur3Th1sSh1t/NamedPipePTH/Invoke-ImpersonateUser-PTH" "Invoke-ImpersonateUser-PTH.ps1" "S3cur3Th1sSh1t/NamedPipePTH/main/Invoke-ImpersonateUser-PTH.ps1"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
