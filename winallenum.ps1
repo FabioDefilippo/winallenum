@@ -349,6 +349,7 @@ while($true){
     write-host " 372. BenChaliah/Arbitrium-RAT`t`t`t`t`t400. tokyoneon/Chimera/shells/misc/Invoke-PoshRatHttp";
     write-host "RDP";
     write-host " 146. 3gstudent/List-RDP-Connections-History`t`t`t286. Viralmaniar/Remote-Desktop-Caching`t`t`t288. technet.microsoft/scriptcenter/NLA";
+    write-host " 567. BSI-Bund/RdpCacheStitcher";
     write-host "RECON";
     write-host " 49. PowerShellMafia/PowerSploit/Recon`t`t`t`t167. xorrior/RemoteRecon";
     write-host "REG KEYS";
@@ -968,6 +969,7 @@ while($true){
         '564' {ScaricaSSL "lawrenceamer/TChopper" "chopper.exe" "lawrenceamer/TChopper/raw/main/release/chopper.exe"}
         '565' {ScaricaSSL "r00t-3xp10it/redpill" "redpill.zip" "r00t-3xp10it/redpill/archive/refs/heads/main.zip"}
         '566' {Scarica "S3cur3Th1sSh1t/NamedPipePTH/Invoke-ImpersonateUser-PTH" "Invoke-ImpersonateUser-PTH.ps1" "S3cur3Th1sSh1t/NamedPipePTH/main/Invoke-ImpersonateUser-PTH.ps1"}
+        '567' {ScaricaRel "BSI-Bund/RdpCacheStitcher"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
