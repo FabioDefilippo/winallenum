@@ -347,6 +347,7 @@ while($true){
     write-host "RAT";
     write-host " 213. FortyNorthSecurity/WMImplant`t`t`t`t275. quasar/Quasar.v1.4.0`t`t`t`t`t370. 3gstudent/Javascript-Backdoor (aka JSRat)";
     write-host " 372. BenChaliah/Arbitrium-RAT`t`t`t`t`t400. tokyoneon/Chimera/shells/misc/Invoke-PoshRatHttp";
+    write-host " 568. qwqdanchun/DcRat";
     write-host "RDP";
     write-host " 146. 3gstudent/List-RDP-Connections-History`t`t`t286. Viralmaniar/Remote-Desktop-Caching`t`t`t288. technet.microsoft/scriptcenter/NLA";
     write-host " 567. BSI-Bund/RdpCacheStitcher";
@@ -970,6 +971,7 @@ while($true){
         '565' {ScaricaSSL "r00t-3xp10it/redpill" "redpill.zip" "r00t-3xp10it/redpill/archive/refs/heads/main.zip"}
         '566' {Scarica "S3cur3Th1sSh1t/NamedPipePTH/Invoke-ImpersonateUser-PTH" "Invoke-ImpersonateUser-PTH.ps1" "S3cur3Th1sSh1t/NamedPipePTH/main/Invoke-ImpersonateUser-PTH.ps1"}
         '567' {ScaricaRel "BSI-Bund/RdpCacheStitcher"}
+        '568' {ScaricaRel "qwqdanchun/DcRat"}
         default{write-host 'ERROR: this choice is incorrect'}
     }
     read-host "Press ENTER to continue";
